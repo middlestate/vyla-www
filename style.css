@@ -1379,7 +1379,7 @@ header .menuButton:hover .bar2 {
 	.footer-contact {
 		width: 60%;
 		padding: 4rem;
-		margin-top: 8rem;
+		margin-top: 10rem;
 	}
 	.footer-contact-details {
 		margin-bottom: 0;
@@ -1392,6 +1392,6 @@ header .menuButton:hover .bar2 {
 		margin-bottom: 3rem;
 	}
 	.footer-contact {
-		margin-top: 10rem;
+		margin-top: 20rem;
 	}
 }
