@@ -593,7 +593,7 @@ header .menuButton:hover .bar2 {
     background-color: #00529C;
     color: #FFF;
     text-decoration: none;
-    /* display: inline-block; */
+    display: inline-block;
     overflow: hidden;
     position: relative;
 	z-index: 1;
