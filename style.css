@@ -613,6 +613,7 @@ header .menuButton:hover .bar2 {
 }
 .button.button-lightblue {
 	background-color: #58B0E3;
+	width: 16rem;
 }
 .button::after {
 	content: '';
