@@ -18,7 +18,7 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='hero is-primary is-bold is-medium'>
+    <section className='hero is-highlight-green is-bold is-medium' style={{position: 'relative', paddingTop: 240, top: 150}}>
       <div className='hero-body'>
         <div className='container'>
           <div className='columns'>

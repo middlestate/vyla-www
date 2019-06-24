@@ -43,6 +43,7 @@
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.7.0",
     "react-helmet": "^5.2.0",
+    "react-scroll-parallax": "^2.1.2",
     "react-share": "^2.4.0",
     "uglifyjs-webpack-plugin": "^2.1.1"
   },
