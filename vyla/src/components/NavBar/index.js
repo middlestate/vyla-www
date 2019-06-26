@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Link, graphql, StaticQuery } from 'gatsby'
-import SearchBox from '../SearchBox'
+// import SearchBox from '../SearchBox'
 import VylaButton from '../VylaButton'
 // import {ReactComponent as Icon} from '../../assets/img/vyla-logo.svg'
 import Logo from '../../assets/img/vyla-logo.svg'
@@ -15,51 +15,92 @@ const NavBar = ({ toggleNavbar, isActive }) => (
       }
     `}
     render={data => (
-      <nav className='navbar is-fixed-top' aria-label='main navigation'>
-        <div className='navbar-brand'>
-          <Link to='/' className='navbar-item'>
+      <Fragment>
+        <div className='header-left'>
+          <Link to='/' className='logo'>
             <img src={Logo} />
           </Link>
-          <div className='navbar-item is-hidden-desktop' style={{marginLeft: 'auto'}}>
+        </div>
+        <div className='header-right'>
+          <div className='navigation'>
+            <nav className='main'>
+              <ul>
+                <li>
+                  <Link to='/about'>About</Link>
+                </li>
+                <li>
+                  <Link to='/thefarm'>The Farm</Link>
+                </li>
+                <li>
+                  <Link to='/contact'>Contact</Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div className='navigation-c2a'>
             <VylaButton
               url='https://mdst.typeform.com/to/VTG8Y7'
-              classes='button buttonV button-small button-blue has-text-white'
+              classes='button button-small button-blue'
               text='Join Us'
             />
-          </div>
-          <button
-            className={`button navbar-burger ${isActive ? 'is-active' : ''}`}
-            data-target='navMenu'
-            onClick={toggleNavbar}>
-            <span />
-            <span />
-            <span />
-          </button>
-        </div>
-        <div
-          className={`navbar-menu ${isActive ? 'is-active' : ''}`}
-          id='navMenu'>
-          <div className='navbar-end'>
-            <SearchBox searchIndex={data.siteSearchIndex.index} />
-            <Link className='navbar-item' to='/about'>
-              ABOUT
-            </Link>
-            <Link className='navbar-item' to='/thefarm'>
-              THE FARM
-            </Link>
-            <div className='navbar-item'>
-              <Link to='/contact'>CONTACT</Link>
+            <div className='mobile-button'>
+              <button
+                className={`menuButton ${isActive ? 'is-showNav' : ''}`}
+                data-target='navMenu'
+                onClick={toggleNavbar}>
+                <div className='icon'>
+                  <div className='bar bar1' />
+                  <div className='bar bar2' />
+                </div>
+              </button>
             </div>
-            <div className='navbar-item is-hidden-mobile'>
-              <VylaButton
-                url='https://mdst.typeform.com/to/VTG8Y7'
-                classes='button buttonV button-small button-blue has-text-white'
-                text='Join Us'
-              />
+          </div>
+          <div className={`navigation-mobile ${isActive ? 'is-showNav' : ''} `}>
+            <div className='container'>
+              <nav className='mobile'>
+                <ul>
+                  <li>
+                    <Link to='/about'>About</Link>
+                  </li>
+                  <li>
+                    <Link to='/thefarm'>The Farm</Link>
+                  </li>
+                  <li>
+                    <Link to='/contact'>Contact</Link>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
-      </nav>
+      </Fragment>
+
+      // <nav className='navbar is-fixed-top' aria-label='main navigation'>
+      //   <div className='navbar-brand'>
+      //     <Link to='/' className='navbar-item'>
+      //       <img src={Logo} />
+      //     </Link>
+      //     <div className='navbar-item is-hidden-desktop' style={{marginLeft: 'auto'}}>
+      //       <VylaButton
+      //         url='https://mdst.typeform.com/to/VTG8Y7'
+      //         classes='button buttonV button-small button-blue has-text-white'
+      //         text='Join Us'
+      //       />
+      //     </div>
+      //     <button
+      //       className={`button navbar-burger ${isActive ? 'is-active' : ''}`}
+      //       data-target='navMenu'
+      //       onClick={toggleNavbar}>
+      //       <span />
+      //       <span />
+      //       <span />
+      //     </button>
+      //   </div>
+      //   <div
+      //     className={`navbar-menu ${isActive ? 'is-active' : ''}`}
+      //     id='navMenu'>
+      //   </div>
+      // </nav>
     )}
   />
 )

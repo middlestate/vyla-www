@@ -1,9 +1,7 @@
 import React from 'react'
 
 const VylaButton = ({ classes, url, text }) => (
-  <div style={{ overflow: 'hidden', width: 140 }} className={classes}>
-    <a href={url} style={{color: 'white'}}>{text}</a>
-  </div>
+  <a href={url} className={classes}>{text}</a>
 )
 
 export default VylaButton

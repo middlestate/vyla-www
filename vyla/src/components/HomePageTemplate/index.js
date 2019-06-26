@@ -1,60 +1,40 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Offerings from '../Offerings'
-import Testimonials from '../Testimonials'
+// import Offerings from '../Offerings'
+// import Testimonials from '../Testimonials'
+// import { ParallaxProvider } from 'react-scroll-parallax'
 import PropTypes from 'prop-types'
+import Hero from '../Hero'
+import WhatWeDo from '../WhatWeDo'
+import Mission from '../Mission'
 
 const HomePageTemplate = ({
   title,
   heading,
   description,
-  offerings,
+  image,
   meta_title,
   meta_description,
-  testimonials,
+  what_we_do,
+  mission,
 }) => (
   <div>
     <Helmet>
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='hero is-highlight-green is-bold is-medium' style={{position: 'relative', paddingTop: 240, top: 150}}>
-      <div className='hero-body'>
-        <div className='container'>
-          <div className='columns'>
-            <div className='column is-10 is-offset-1'>
-              <div className='section'>
-                <h1 className='title'>
-                  {title}
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section className='section section--gradient'>
-      <div className='container'>
-
-        <div className='section'>
-          <div className='columns'>
-            <div className='column is-10 is-offset-1'>
-              <div className='content'>
-                <div>
-                  <h3 className='has-text-weight-semibold is-size-2'>
-                    {heading}
-                  </h3>
-                  <p>{description}</p>
-                </div>
-                <Offerings gridItems={offerings.blurbs} />
-                <h2 className='has-text-weight-semibold is-size-2'>Testimonials</h2>
-                <Testimonials testimonials={testimonials} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Hero image={image} heading={heading} description={description} />
+    <WhatWeDo what_we_do={what_we_do} />
+    <Mission
+      title={mission.title}
+      heading={mission.heading}
+      cite_name={mission.cite_name}
+      cite_image={mission.cite_image}
+      cite_text={mission.cite_text}
+      cite_logo={mission.cite_logo}
+      quote={mission.quote}
+      cards={mission.cards}
+    />
   </div>
 )
 
@@ -64,11 +44,32 @@ HomePageTemplate.propTypes = {
   meta_description: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
+  image: PropTypes.image,
+  what_we_do: PropTypes.shape({
+    image: PropTypes.string,
+    alt: PropTypes.string,
+    tagline: PropTypes.string,
+    heading: PropTypes.string,
+    content: PropTypes.array,
+  }),
+  mission: PropTypes.shape({
+    title: PropTypes.string,
+    heading: PropTypes.string,
+    cite_name: PropTypes.string,
+    cite_image: PropTypes.string,
+    cite_text: PropTypes.string,
+    quote: PropTypes.string,
+    cards: PropTypes.shape({
+      image: PropTypes.string,
+      heading: PropTypes.string,
+      list: PropTypes.shape({
+        list_item: PropTypes.string,
+      }),
+    }),
+  }),
   offerings: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
-  testimonials: PropTypes.array,
-
 }
 
 export default HomePageTemplate

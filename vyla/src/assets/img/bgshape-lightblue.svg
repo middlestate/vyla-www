@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700px" height="700px" viewBox="0 0 700 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>bgshape-lightblue</title>
+    <desc>Created with Sketch.</desc>
+    <g id="bgshape-lightblue" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M99.996562,200 L267,200 C336.375179,200 394.739318,222.536735 435.506752,262.564765 C476.753026,303.062949 500,361.349987 500,433 L500,600.00125 C500,655.229725 544.771525,700.00125 600,700.00125 C655.228475,700.00125 700,655.229725 700,600.00125 L700,433 C700,179.604085 517.078236,0 267,0 L99.996562,0 C44.768087,0 -0.003438,44.771525 -0.003438,100 C-0.003438,155.228475 44.768087,200 99.996562,200 Z" id="Path" fill="#58B0E3" fill-rule="nonzero"></path>
+    </g>
+</svg>
