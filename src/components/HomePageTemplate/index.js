@@ -24,8 +24,9 @@ const HomePageTemplate = ({
     <Helmet>
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
-    </Helmet>
-    <Hero image={image} heading={heading} description={description} title={title} />
+      </Helmet>
+      <div>{title}</div>
+    <Hero image={image} heading={heading} description={description} />
     <WhatWeDo what_we_do={what_we_do} />
     <Mission
       title={mission.title}
@@ -69,7 +70,7 @@ HomePageTemplate.propTypes = {
     cards: PropTypes.shape({
       image: PropTypes.string,
       heading: PropTypes.string,
-      list: PropTypes.shape({
+      list: PropTypes.objectOf({
         list_item: PropTypes.string,
       }),
     }),

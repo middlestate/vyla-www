@@ -12,13 +12,13 @@ const Card = props => {
           <div className='card-title'>
             <h3>{heading}</h3>
           </div>
+          </div>
           <div className='card-list'>
             <ul>
               {list.map((item, i) => <li key={i}>{item.list_item}</li>)}
             </ul>
           </div>
         </div>
-      </div>
     </div>
   )
 }

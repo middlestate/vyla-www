@@ -30,7 +30,7 @@ const Mission = ({
       <div className='container'>
         <div className='quote-block'>
           <div className='quote-text'>{quote}</div>
-          <div className='quote-author'>
+          <div className='quote-autor'>
             <div className='quote-author-logo'>
               <img src={cite_logo} alt={cite_logo} />
             </div>
@@ -56,7 +56,7 @@ Mission.propTypes = {
   cards: PropTypes.shape({
     image: PropTypes.string,
     heading: PropTypes.string,
-    list: PropTypes.shape({
+    list: PropTypes.objectOf({
       list_item: PropTypes.string,
     }),
   }),
