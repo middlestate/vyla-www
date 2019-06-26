@@ -14,7 +14,7 @@ const WhatWeDo = props => {
           <p className='tagline'>{tagline}</p>
           <h2>{heading}</h2>
           <div className='text-content' />
-          {content.map(paragraph => <p>{paragraph.text}</p>)}
+          {content.map((paragraph, i) => <p key={i}>{paragraph.text}</p>)}
         </div>
         <div className='button-c2a'>
           <VylaButton

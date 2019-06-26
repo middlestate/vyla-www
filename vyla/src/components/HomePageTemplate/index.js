@@ -7,6 +7,7 @@ import PropTypes from 'prop-types'
 import Hero from '../Hero'
 import WhatWeDo from '../WhatWeDo'
 import Mission from '../Mission'
+import BenefitAnalysis from '../BenefitAnalysis'
 
 const HomePageTemplate = ({
   title,
@@ -17,13 +18,14 @@ const HomePageTemplate = ({
   meta_description,
   what_we_do,
   mission,
+  benefit_analysis,
 }) => (
   <div>
     <Helmet>
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <Hero image={image} heading={heading} description={description} />
+    <Hero image={image} heading={heading} description={description} title={title} />
     <WhatWeDo what_we_do={what_we_do} />
     <Mission
       title={mission.title}
@@ -35,6 +37,11 @@ const HomePageTemplate = ({
       quote={mission.quote}
       cards={mission.cards}
     />
+    <BenefitAnalysis
+      title={benefit_analysis.title}
+      heading={benefit_analysis.heading}
+      cards={benefit_analysis.cards}
+    />
   </div>
 )
 
@@ -44,7 +51,7 @@ HomePageTemplate.propTypes = {
   meta_description: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
-  image: PropTypes.image,
+  image: PropTypes.string,
   what_we_do: PropTypes.shape({
     image: PropTypes.string,
     alt: PropTypes.string,
@@ -67,8 +74,14 @@ HomePageTemplate.propTypes = {
       }),
     }),
   }),
-  offerings: PropTypes.shape({
-    blurbs: PropTypes.array,
+  benefit_analysis: PropTypes.shape({
+    title: PropTypes.string,
+    heading: PropTypes.string,
+    cards: PropTypes.shape({
+      image: PropTypes.string,
+      heading: PropTypes.string,
+      content: PropTypes.string,
+    }),
   }),
 }
 
