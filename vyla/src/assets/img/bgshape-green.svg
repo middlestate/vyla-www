@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="700px" height="700px" viewBox="0 0 700 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
-    <title>bgshape-green</title>
-    <desc>Created with Sketch.</desc>
-    <g id="bgshape-green" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M100,200 L267.003438,200 C336.378617,200 394.742756,222.536735 435.51019,262.564765 C476.756464,303.062949 500.003438,361.349987 500.003438,433 L500.003438,600.00125 C500.003438,655.229725 544.774963,700.00125 600.003438,700.00125 C655.231913,700.00125 700.003438,655.229725 700.003438,600.00125 L700.003438,433 C700.003438,179.604085 517.081674,0 267.003438,0 L100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 Z" id="Path" fill="#00845D" fill-rule="nonzero"></path>
-    </g>
-</svg>
