@@ -1,6 +1,5 @@
 ---
 templateKey: 'home-page'
-title: Vyla
 meta_title: Vyla | Dairy has a story to tell
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
