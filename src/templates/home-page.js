@@ -63,12 +63,10 @@ export const pageQuery = graphql`
           cite_name
           cite_logo
           cards {
-            card {
-              image
-              heading
-              list {
-                list_item
-              }
+            image
+            heading
+            list {
+              list_item
             }
           }
         }
@@ -76,22 +74,10 @@ export const pageQuery = graphql`
           title
           heading
           cards {
-            card {
-              image
-              heading
-              content
-            }
-          }
-        }
-        offerings {
-          blurbs {
             image
-            text
+            heading
+            content
           }
-        }
-        testimonials {
-          author
-          quote
         }
       }
     }

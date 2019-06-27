@@ -17,11 +17,11 @@ const BenefitAnalysis = ({ title, heading, cards }) => (
             <div className='card-content'>
               <div className='card-title'>
                 <h3>
-                  {i + 1}. {card.card.heading}
+                  {i + 1}. {card.heading}
                 </h3>
               </div>
               <div className='card-text'>
-                <p>{card.card.content}</p>
+                <p>{card.content}</p>
               </div>
             </div>
           </div>
@@ -34,13 +34,7 @@ const BenefitAnalysis = ({ title, heading, cards }) => (
 BenefitAnalysis.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
-  cards: PropTypes.arrayOf({
-    card: PropTypes.shape({
-      image: PropTypes.string,
-      heading: PropTypes.string,
-      content: PropTypes.string,
-    }),
-  }),
+  cards: PropTypes.array
 }
 
 export default BenefitAnalysis

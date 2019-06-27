@@ -1,7 +1,7 @@
 backend:
   name: test-repo
   #git-gateway
-  branch: vyla-gatsby
+  branch: gatsby-vyla
 
 publish_mode: editorial_workflow
 media_folder: static/img
@@ -20,11 +20,9 @@ collections:
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
           - {label: "Hero Image", name: image, widget: image}
-          - {label: "What we do", name: "what_we_do", widget: object, fields: [{label: Image, name: image, widget: image},{label: Alt, name: alt, widget: text},{label: Tagline, name: tagline, widget: text},{label: Content, name: content, widget: list, fields: [{label: Text, name: text, widget: text},{label: Text, name: text, widget: text},{label: Text, name: text, widget: text}]}]}
-          - {label: Mission, name: mission, widget: object, fields:[{label: Title, name: title, widget: text}, {label: Heading, name: heading, widget:text}, {label: Quote, name: quote, widget: text}, {label: "Citation Logo",name: "cite_logo",widget: image}, {label: "Citation Name", name: "cite_name", widget: text}, {label: "Citation Text", name: "cite_text", widget: text}, {label: Cards, name: cards, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Heading, name: heading, widget: text}, {label: List, name: list, widget: list, fields: [{label: "List Item", name: "list_item", widget: text}]}]}]}
-          - {label: "Benefit Analysis", name: "benefit_analysis", widget: object, fields:[{label: Title, name: title, widget: text},{label: Heading, name: heading, widget: text}, {label: Cards, name: cards, widget: list, fields: [{label: Image, name:image, widget: image}, {label: Heading, name: heading, widget: text},{label: Content, name: content, widget: text}]}]}
-          - {label: Offerings, name: offerings, widget: object, fields: [{label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
+          - {label: "What we do", name: "what_we_do", widget: object, fields: [{label: Image, name: image, widget: image},{label: Alt, name: alt, widget: string},{label: Tagline, name: tagline, widget: string},{label: Content, name: content, widget: list, fields: [{label: Text, name: text, widget: text}]}]}
+          - {label: Mission, name: mission, widget: object, fields:[{label: Title, name: title, widget: string}, {label: Heading, name: heading, widget:string}, {label: Quote, name: quote, widget: text}, {label: "Citation Logo",name: "cite_logo",widget: image}, {label: "Citation Name", name: "cite_name", widget: string}, {label: "Citation Text", name: "cite_text", widget: text}, {label: Cards, name: cards, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Heading, name: heading, widget: string}, {label: List, name: list, widget: list, fields: [{label: "List Item", name: "list_item", widget: text}]}]}]}
+          - {label: "Benefit Analysis", name: "benefit_analysis", widget: object, fields:[{label: Title, name: title, widget: string},{label: Heading, name: heading, widget: string}, {label: Cards, name: cards, widget: list, fields: [{label: Image, name:image, widget: image}, {label: Heading, name: heading, widget: string},{label: Content, name: content, widget: text}]}]}
           - {label: "Meta Title", name: "meta_title", widget: "string"}
           - {label: "Meta Description", name: "meta_description", widget: "text"}
       - file: "src/pages/about/index.md"

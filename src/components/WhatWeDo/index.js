@@ -34,11 +34,7 @@ WhatWeDo.propTypes = {
     alt: PropTypes.string,
     tagline: PropTypes.string,
     heading: PropTypes.string,
-    content: PropTypes.arrayOf(
-      PropTypes.shape({
-        text: PropTypes.string,
-      }),
-    ),
+    content: PropTypes.array,
   }),
 }
 export default WhatWeDo

@@ -2,13 +2,13 @@ import React from 'react'
 import { Parallax } from 'react-scroll-parallax'
 import VylaButton from '../VylaButton'
 
-const ParallaxImage = props => (
-  <Parallax y={[100, -150]} x={[50, 50]}>
-    <div className='image-block rounded-bottomright'>
-      <img src={props.image} alt='hero-image-cows' />
-    </div>
-  </Parallax>
-)
+// const ParallaxImage = props => (
+//   <Parallax y={[100, -150]} x={[50, 50]}>
+//     <div className='image-block rounded-bottomright'>
+//       <img src={props.image} alt='hero-image-cows' />
+//     </div>
+//   </Parallax>
+// )
 
 const Hero = props => (
   <section className='hero'>
@@ -16,7 +16,7 @@ const Hero = props => (
     <div className='container'>
       <Parallax
         className='image-block rounded-bottomright'
-        y={[0, -100]}
+        y={[80, -80]} tagInner='figure'
       >
         <img src={props.image} />
       </Parallax>

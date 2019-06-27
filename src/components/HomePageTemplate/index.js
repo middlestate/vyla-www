@@ -25,7 +25,7 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
       </Helmet>
-      <div>{title}</div>
+      {/* <div>{title}</div> */}
     <Hero image={image} heading={heading} description={description} />
     <WhatWeDo what_we_do={what_we_do} />
     <Mission
@@ -67,22 +67,12 @@ HomePageTemplate.propTypes = {
     cite_image: PropTypes.string,
     cite_text: PropTypes.string,
     quote: PropTypes.string,
-    cards: PropTypes.shape({
-      image: PropTypes.string,
-      heading: PropTypes.string,
-      list: PropTypes.objectOf({
-        list_item: PropTypes.string,
-      }),
-    }),
+    cards: PropTypes.array,
   }),
   benefit_analysis: PropTypes.shape({
     title: PropTypes.string,
     heading: PropTypes.string,
-    cards: PropTypes.shape({
-      image: PropTypes.string,
-      heading: PropTypes.string,
-      content: PropTypes.string,
-    }),
+    cards: PropTypes.array,
   }),
 }
 
