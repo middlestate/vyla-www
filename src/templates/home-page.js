@@ -74,7 +74,6 @@ export const pageQuery = graphql`
           title
           heading
           cards {
-            image
             heading
             content
           }
