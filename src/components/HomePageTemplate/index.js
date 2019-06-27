@@ -10,7 +10,6 @@ import Mission from '../Mission'
 import BenefitAnalysis from '../BenefitAnalysis'
 
 const HomePageTemplate = ({
-  title,
   heading,
   description,
   image,
@@ -25,7 +24,6 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
       </Helmet>
-      {/* <div>{title}</div> */}
     <Hero image={image} heading={heading} description={description} />
     <WhatWeDo what_we_do={what_we_do} />
     <Mission
@@ -47,7 +45,6 @@ const HomePageTemplate = ({
 )
 
 HomePageTemplate.propTypes = {
-  title: PropTypes.string,
   meta_title: PropTypes.string,
   meta_description: PropTypes.string,
   heading: PropTypes.string,

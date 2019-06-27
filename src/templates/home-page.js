@@ -10,7 +10,6 @@ const HomePage = ({ data }) => {
   return (
     <Layout>
       <HomePageTemplate
-        title={frontmatter.title}
         meta_title={frontmatter.meta_title}
         meta_description={frontmatter.meta_description}
         heading={frontmatter.heading}
@@ -40,7 +39,6 @@ export const pageQuery = graphql`
   query IndexPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
-        title
         meta_title
         meta_description
         heading
