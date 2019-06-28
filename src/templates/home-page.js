@@ -18,8 +18,6 @@ const HomePage = ({ data }) => {
         what_we_do={frontmatter.what_we_do}
         mission={frontmatter.mission}
         benefit_analysis={frontmatter.benefit_analysis}
-        offerings={frontmatter.offerings}
-        testimonials={frontmatter.testimonials}
       />
     </Layout>
   )

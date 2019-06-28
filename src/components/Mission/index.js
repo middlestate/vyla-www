@@ -19,7 +19,8 @@ const Mission = ({
           <p className='tagline'>{title}</p>
           <h2>{heading}</h2>
         </div>
-        <div className='mission-cards'>
+          <div className='mission-cards'>
+            {console.log(cards)}
           {cards.map((card, i) => (
             <Card key={i} card={card} />
           ))}

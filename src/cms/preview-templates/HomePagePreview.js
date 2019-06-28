@@ -20,8 +20,8 @@ const HomePagePreview = ({ entry, getAsset }) => {
       heading={entry.getIn(['data', 'heading'])}
       description={entry.getIn(['data', 'description'])}
       what_we_do={what_we_do}
-      mission={mission}
-      benefit_analysis={benefit_analysis}
+      mission={{ mission }}
+      benefit_analysis={{ benefit_analysis }}
     />
   )
 }

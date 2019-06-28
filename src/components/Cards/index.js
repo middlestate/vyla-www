@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Card = props => {
-  let { image, heading, list } = props.card
+  let {image, heading, list} = props.card
   return (
     <div className='card-container'>
       <div className='card-content'>

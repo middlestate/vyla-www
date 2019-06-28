@@ -2,10 +2,7 @@
 templateKey: 'home-page'
 meta_title: Vyla | Dairy has a story to tell
 meta_description: >-
-  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-  ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
-  venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis
-  consectetur purus sit amet fermentum.
+  We are lifting ourselves to a new standard of integration to bring new value to our farms, to our industry, and to the world’s table.
 heading: Dairy has a story to tell, and a new way to tell it.
 description: >-
   We are lifting ourselves to a new standard of integration to bring new value to our farms, to our industry, and to the world’s table.
