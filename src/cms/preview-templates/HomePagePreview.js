@@ -8,12 +8,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
 
   const entryMission = entry.getIn([
     'data',
-    'title',
-    'heading',
-    'quote',
-    'cite_text',
-    'cite_name',
-    'cite_logo',
+    'mission',
     'cards'])
   const mission = entryMission ? entryMission.toJS : []
 
