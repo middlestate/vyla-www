@@ -1,13 +1,13 @@
-import React from 'react'
-import Helmet from 'react-helmet'
+import React from 'react';
+import Helmet from 'react-helmet';
 // import Offerings from '../Offerings'
 // import Testimonials from '../Testimonials'
 // import { ParallaxProvider } from 'react-scroll-parallax'
-import PropTypes from 'prop-types'
-import Hero from '../Hero'
-import WhatWeDo from '../WhatWeDo'
-import Mission from '../Mission'
-import BenefitAnalysis from '../BenefitAnalysis'
+import PropTypes from 'prop-types';
+import Hero from '../Hero';
+import WhatWeDo from '../WhatWeDo';
+import Mission from '../Mission';
+import BenefitAnalysis from '../BenefitAnalysis';
 
 const HomePageTemplate = ({
   heading,
@@ -17,12 +17,12 @@ const HomePageTemplate = ({
   meta_description,
   what_we_do,
   mission,
-  benefit_analysis,
+  benefit_analysis
 }) => (
   <div>
     <Helmet>
       <title>{meta_title}</title>
-      <meta name='description' content={meta_description} />
+      <meta name="description" content={meta_description} />
     </Helmet>
     <Hero image={image} heading={heading} description={description} />
     <WhatWeDo what_we_do={what_we_do} />
@@ -42,7 +42,7 @@ const HomePageTemplate = ({
       cards={benefit_analysis.cards}
     />
   </div>
-)
+);
 
 HomePageTemplate.propTypes = {
   meta_title: PropTypes.string,
@@ -55,7 +55,7 @@ HomePageTemplate.propTypes = {
     alt: PropTypes.string,
     tagline: PropTypes.string,
     heading: PropTypes.string,
-    content: PropTypes.array,
+    content: PropTypes.array
   }),
   mission: PropTypes.shape({
     title: PropTypes.string,
@@ -64,13 +64,20 @@ HomePageTemplate.propTypes = {
     cite_image: PropTypes.string,
     cite_text: PropTypes.string,
     quote: PropTypes.string,
-    cards: PropTypes.array,
+    cards: PropTypes.arrayOf(
+      PropTypes.shape({
+        image: PropTypes.string,
+        heading: PropTypes.string,
+        list: PropTypes.array
+      })
+    )
   }),
   benefit_analysis: PropTypes.shape({
     title: PropTypes.string,
     heading: PropTypes.string,
     cards: PropTypes.array,
-  }),
-}
 
-export default HomePageTemplate
+  })
+};
+
+export default HomePageTemplate;

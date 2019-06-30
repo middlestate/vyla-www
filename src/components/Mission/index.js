@@ -54,7 +54,13 @@ Mission.propTypes = {
   cite_logo: PropTypes.string,
   cite_name: PropTypes.string,
   cite_text: PropTypes.string,
-  cards: PropTypes.array,
+  cards: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string,
+      heading: PropTypes.string,
+      list: PropTypes.array
+    })
+  )
 }
 
 export default Mission

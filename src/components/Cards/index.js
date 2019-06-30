@@ -1,21 +1,21 @@
 import React from 'react'
-import PropTypes, { shape } from 'prop-types'
-const Card = props => {
-  let {image, heading, list} = props.card
+import PropTypes from 'prop-types'
+const Card = ({ card }) => {
+  console.log('card list >>>',card.list)
   return (
     <div className='card-container'>
       <div className='card-content'>
         <div className='card-header'>
           <div className='card-icon'>
-            <img src={image} alt={image} />
+            <img src={card.image} alt={card.image} />
           </div>
           <div className='card-title'>
-            <h3>{heading}</h3>
+            <h3>{card.heading}</h3>
           </div>
           </div>
           <div className='card-list'>
             <ul>
-              {list.map((item, i) => <li key={i}>{item.list_item}</li>)}
+              {card.list.map((item, i) => <li key={i}>{item.list_item}</li>)}
             </ul>
           </div>
         </div>
@@ -25,7 +25,7 @@ const Card = props => {
 
 Card.propTypes = {
   card: PropTypes.shape({
-    title: PropTypes.string,
+    heading: PropTypes.string,
     image: PropTypes.string,
     list: PropTypes.array
   })
