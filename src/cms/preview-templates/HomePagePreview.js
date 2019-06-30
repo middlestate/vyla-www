@@ -6,10 +6,18 @@ const HomePagePreview = ({ entry, getAsset }) => {
   const entryWhatWeDo = entry.getIn(['data', 'what_we_do'])
   const what_we_do = entryWhatWeDo ? entryWhatWeDo.toJS() : []
 
-  const entryMission = entry.getIn(['data', 'mission'])
+  const entryMission = entry.getIn([
+    'data',
+    'title',
+    'heading',
+    'quote',
+    'cite_text',
+    'cite_name',
+    'cite_logo',
+    'cards'])
   const mission = entryMission ? entryMission.toJS : []
 
-  const entryBenefitAnalysis = entry.getIn(['data', 'benefit_analysis'])
+  const entryBenefitAnalysis = entry.getIn(['data', 'cards'])
   const benefit_analysis = entryBenefitAnalysis ? entryBenefitAnalysis.toJS : []
 
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PropTypes, { shape } from 'prop-types'
 const Card = props => {
   let {image, heading, list} = props.card
   return (
@@ -21,6 +21,15 @@ const Card = props => {
         </div>
     </div>
   )
+}
+
+Card.propTypes = {
+  card: PropTypes.shape({
+    title: PropTypes.string,
+    image: PropTypes.string,
+    list: PropTypes.array
+  })
+
 }
 
 export default Card

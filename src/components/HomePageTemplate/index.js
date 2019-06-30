@@ -23,7 +23,7 @@ const HomePageTemplate = ({
     <Helmet>
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
-      </Helmet>
+    </Helmet>
     <Hero image={image} heading={heading} description={description} />
     <WhatWeDo what_we_do={what_we_do} />
     <Mission
