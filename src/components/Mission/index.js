@@ -20,7 +20,6 @@ const Mission = ({
           <h2>{heading}</h2>
         </div>
           <div className='mission-cards'>
-            {console.log(cards)}
           {cards.map((card, i) => (
             <Card key={i} card={card} />
           ))}
@@ -58,7 +57,7 @@ Mission.propTypes = {
     PropTypes.shape({
       image: PropTypes.string,
       heading: PropTypes.string,
-      list: PropTypes.array
+      list_items: PropTypes.array
     })
   )
 }

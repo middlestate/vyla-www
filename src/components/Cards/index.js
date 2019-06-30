@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 const Card = ({ card }) => {
-  console.log('card list >>>',card.list)
+  console.log(card)
   return (
     <div className='card-container'>
       <div className='card-content'>
@@ -15,7 +15,7 @@ const Card = ({ card }) => {
           </div>
           <div className='card-list'>
             <ul>
-              {card.list.map((item, i) => <li key={i}>{item.list_item}</li>)}
+              {card.list_items.map((item, i) => <li key={i}>{item.list_item}</li>)}
             </ul>
           </div>
         </div>
@@ -27,7 +27,7 @@ Card.propTypes = {
   card: PropTypes.shape({
     heading: PropTypes.string,
     image: PropTypes.string,
-    list: PropTypes.array
+    list_items: PropTypes.array
   })
 
 }

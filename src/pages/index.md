@@ -30,19 +30,19 @@ mission:
   cards:
     - image: /img/particle-icon-transform.svg
       heading: Transform
-      list:
+      list_items:
         - list_item: Dairy efficiency
         - list_item: Sustainability Metrics
         - list_item: The consumer perception
     - image: /img/particle-icon-build.svg
       heading: Build
-      list:
+      list_items:
         - list_item: The Story - yours and the industry with metrics
         - list_item: The Trust - based on fact not emotion
         - list_item: The forward movement - our industry moving
     - image: /img/particle-icon-create.svg
       heading: Connect
-      list:
+      list_items:
         - list_item: With data
         - list_item: With control
         - list_item: With collaboration

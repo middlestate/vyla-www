@@ -68,7 +68,7 @@ HomePageTemplate.propTypes = {
       PropTypes.shape({
         image: PropTypes.string,
         heading: PropTypes.string,
-        list: PropTypes.array
+        list_items: PropTypes.array
       })
     )
   }),
