@@ -61,9 +61,7 @@ export const pageQuery = graphql`
           cards {
             image
             heading
-            list_items {
-              list_item
-            }
+            list_items
           }
         }
         benefit_analysis {

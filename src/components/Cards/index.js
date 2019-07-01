@@ -15,7 +15,7 @@ const Card = ({ card }) => {
           </div>
           <div className='card-list'>
             <ul>
-              {card.list_items.map((item, i) => <li key={i}>{item.list_item}</li>)}
+              {card.list_items.map((item, i) => <li key={i}>{item}</li>)}
             </ul>
           </div>
         </div>

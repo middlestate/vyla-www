@@ -25,7 +25,13 @@ const HomePageTemplate = ({
       <meta name="description" content={meta_description} />
     </Helmet>
     <Hero image={image} heading={heading} description={description} />
-    <WhatWeDo what_we_do={what_we_do} />
+      <WhatWeDo
+        image={what_we_do.image}
+        alt={what_we_do.alt}
+        tagline={what_we_do.tagline}
+        heading={what_we_do.heading}
+        content={what_we_do.content}
+      />
     <Mission
       title={mission.title}
       heading={mission.heading}

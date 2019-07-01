@@ -31,22 +31,22 @@ mission:
     - image: /img/particle-icon-transform.svg
       heading: Transform
       list_items:
-        - list_item: Dairy efficiency
-        - list_item: Sustainability Metrics
-        - list_item: The consumer perception
+        - Dairy efficiency
+        - Sustainability Metrics
+        - The consumer perception
     - image: /img/particle-icon-build.svg
       heading: Build
       list_items:
-        - list_item: The Story - yours and the industry with metrics
-        - list_item: The Trust - based on fact not emotion
-        - list_item: The forward movement - our industry moving
+        - The Story - yours and the industry with metrics
+        - The Trust - based on fact not emotion
+        - The forward movement - our industry moving
     - image: /img/particle-icon-create.svg
       heading: Connect
       list_items:
-        - list_item: With data
-        - list_item: With control
-        - list_item: With collaboration
-        - list_item: With transparency
+        - With data
+        - With control
+        - With collaboration
+        - With transparency
 benefit_analysis:
   title: Benefit Analysis
   heading: A transparent supply chain to give everyone a better view.
