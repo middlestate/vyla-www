@@ -81,7 +81,12 @@ HomePageTemplate.propTypes = {
   benefit_analysis: PropTypes.shape({
     title: PropTypes.string,
     heading: PropTypes.string,
-    cards: PropTypes.array,
+    cards: PropTypes.arrayOf(
+      PropTypes.shape({
+        heading: PropTypes.string,
+        content: PropTypes.string,
+      })
+    ),
 
   })
 };
