@@ -1,6 +1,7 @@
 import React from 'react'
 import { Parallax } from 'react-scroll-parallax'
 import VylaButton from '../VylaButton'
+import Image from '../Image'
 
 // const ParallaxImage = props => (
 //   <Parallax y={[100, -150]} x={[50, 50]}>
@@ -18,7 +19,7 @@ const Hero = props => (
         className='image-block rounded-bottomright'
         y={[80, -80]} tagInner='figure'
       >
-        <img src={props.image} />
+        <Image src={props.image} />
       </Parallax>
       <div className='text-block rounded-topleft white-bg'>
         <h1>{props.heading}</h1>
