@@ -12,7 +12,6 @@ const Mission = ({
   cards,
 }) => (
     <Fragment>
-      {console.log('CARDS IN MISSION',cards)}
     <section className='mission'>
       <div className='particle-bg' />
       <div className='container'>
