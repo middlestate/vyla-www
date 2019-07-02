@@ -1,6 +1,7 @@
 ---
 templateKey: 'home-page'
-meta_title: Vyla | Dairy has a story to tell
+title: Vyla
+meta_title: 'Vyla | Dairy has a story to tell'
 meta_description: >-
   We are lifting ourselves to a new standard of integration to bring new value to our farms, to our industry, and to the world’s table.
 heading: Dairy has a story to tell, and a new way to tell it.
