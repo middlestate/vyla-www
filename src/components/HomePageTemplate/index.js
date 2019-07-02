@@ -21,19 +21,18 @@ const HomePageTemplate = ({
   benefit_analysis
 }) => (
     <div>
-      {console.log('MISSION CARDS',mission.cards)}
     <Helmet>
       <title>{meta_title}</title>
       <meta name="description" content={meta_description} />
     </Helmet>
     <Hero image={image} heading={heading} description={description} />
-      <WhatWeDo
-        image={what_we_do.image}
-        alt={what_we_do.alt}
-        tagline={what_we_do.tagline}
-        heading={what_we_do.heading}
-        content={what_we_do.content}
-      />
+    <WhatWeDo
+      image={what_we_do.image}
+      alt={what_we_do.alt}
+      tagline={what_we_do.tagline}
+      heading={what_we_do.heading}
+      content={what_we_do.content}
+    />
     <Mission
       title={mission.title}
       heading={mission.heading}

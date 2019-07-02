@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { ParallaxProvider } from 'react-scroll-parallax';
+// import { ParallaxProvider } from 'react-scroll-parallax';
 import Helmet from 'react-helmet';
 import '../../assets/sass/styles.scss';
 import config from '../../../config';
@@ -34,9 +34,7 @@ class Layout extends Component {
             </div>
           </header>
         </div>
-        <ParallaxProvider>
           <Fragment>{this.props.children}</Fragment>
-        </ParallaxProvider>
           <Footer />
       </Fragment>
     );
