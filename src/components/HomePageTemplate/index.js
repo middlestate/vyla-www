@@ -19,7 +19,8 @@ const HomePageTemplate = ({
   mission,
   benefit_analysis
 }) => (
-  <div>
+    <div>
+      {console.log('MISSION CARDS',mission.cards)}
     <Helmet>
       <title>{meta_title}</title>
       <meta name="description" content={meta_description} />

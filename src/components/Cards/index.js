@@ -1,35 +1,40 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-const Card = ({ card }) => {
-  console.log(card)
-  return (
-    <div className='card-container'>
-      <div className='card-content'>
-        <div className='card-header'>
-          <div className='card-icon'>
-            <img src={card.image} alt={card.image} />
+import React from 'react';
+import PropTypes from 'prop-types';
+
+const Cards = ({ cards }) => (
+  <div className="mission-cards">
+    {cards.map(card => (
+      <div key={card.heading} className="card-container">
+        <div className="card-content">
+          <div className="card-header">
+            <div className="card-icon">
+              <img src={card.image} alt={card.image} />
+            </div>
+            <div className="card-title">
+              <h3>{card.heading}</h3>
+            </div>
           </div>
-          <div className='card-title'>
-            <h3>{card.heading}</h3>
-          </div>
-          </div>
-          <div className='card-list'>
+          <div className="card-list">
             <ul>
-              {card.list_items.map((item, i) => <li key={i}>{item}</li>)}
+              {card.list_items.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
             </ul>
           </div>
         </div>
-    </div>
+      </div>
+    ))}
+  </div>
+);
+
+Cards.propTypes = {
+  cards: PropTypes.arrayOf(
+    PropTypes.shape({
+      heading: PropTypes.string,
+      image: PropTypes.string,
+      list_items: PropTypes.array
+    })
   )
-}
+};
 
-Card.propTypes = {
-  card: PropTypes.shape({
-    heading: PropTypes.string,
-    image: PropTypes.string,
-    list_items: PropTypes.array
-  })
-
-}
-
-export default Card
+export default Cards;
