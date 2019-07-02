@@ -20,7 +20,7 @@ const Mission = ({
           <p className='tagline'>{title}</p>
           <h2>{heading}</h2>
         </div>
-        <Cards cards={cards} />
+        <Cards data={cards} />
       </div>
     </section>
     <section className='quote section-divider'>

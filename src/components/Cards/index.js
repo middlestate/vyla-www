@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Cards = ({ cards }) => (
+const Cards = ({ data }) => (
   <div className="mission-cards">
-    {cards.map(card => (
+    {data.map(card => (
       <div key={card.heading} className="card-container">
         <div className="card-content">
           <div className="card-header">
@@ -28,7 +28,7 @@ const Cards = ({ cards }) => (
 );
 
 Cards.propTypes = {
-  cards: PropTypes.arrayOf(
+  data: PropTypes.arrayOf(
     PropTypes.shape({
       heading: PropTypes.string,
       image: PropTypes.string,
