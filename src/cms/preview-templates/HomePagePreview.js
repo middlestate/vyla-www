@@ -11,11 +11,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
   const entryMissionCards = entry.getIn(['data', 'mission', 'cards']);
   const missionCards = entryMissionCards ? entryMissionCards.toJS : [];
 
-  const entryBenefitAnalysisCards = entry.getIn([
-    'data',
-    'benefit_analysis',
-    'cards'
-  ]);
+  const entryBenefitAnalysisCards = entry.getIn(['data','benefit_analysis','cards']);
   const benefitAnalysisCards = entryBenefitAnalysisCards
     ? entryBenefitAnalysisCards.toJS
     : [];

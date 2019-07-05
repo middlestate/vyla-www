@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import BenefitCards from '../BenefitCards';
 
 const BenefitAnalysis = ({ title, heading, cards }) => (
   <section className='benefits parallax-section'>
@@ -9,24 +10,7 @@ const BenefitAnalysis = ({ title, heading, cards }) => (
         <p className='tagline'>{title}</p>
         <h2>{heading}</h2>
       </div>
-      <div className='benefit-cards'>
-        {cards.map((card, i) => (
-          <div
-            key={i}
-            className={`card-container ${i === 0 ? 'card-active' : ''}`}>
-            <div className='card-content'>
-              <div className='card-title'>
-                <h3>
-                  {i + 1}. {card.heading}
-                </h3>
-              </div>
-              <div className='card-text'>
-                <p>{card.content}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      <BenefitCards data={cards} />
     </div>
   </section>
 )
