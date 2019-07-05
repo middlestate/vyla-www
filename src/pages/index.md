@@ -1,12 +1,9 @@
 ---
 templateKey: 'home-page'
 title: Vyla
-meta_title: Vyla | Dairy has a story to tell
+meta_title: 'Vyla | Dairy has a story to tell'
 meta_description: >-
-  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-  ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
-  venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis
-  consectetur purus sit amet fermentum.
+  We are lifting ourselves to a new standard of integration to bring new value to our farms, to our industry, and to the world’s table.
 heading: Dairy has a story to tell, and a new way to tell it.
 description: >-
   We are lifting ourselves to a new standard of integration to bring new value to our farms, to our industry, and to the world’s table.
@@ -34,41 +31,37 @@ mission:
   cards:
     - image: /img/particle-icon-transform.svg
       heading: Transform
-      list:
-        - list_item: Dairy efficiency
-        - list_item: Sustainability Metrics
-        - list_item: The consumer perception
+      list_items:
+        - Dairy efficiency
+        - Sustainability Metrics
+        - The consumer perception
     - image: /img/particle-icon-build.svg
       heading: Build
-      list:
-        - list_item: The Story - yours and the industry with metrics
-        - list_item: The Trust - based on fact not emotion
-        - list_item: The forward movement - our industry moving
+      list_items:
+        - The Story - yours and the industry with metrics
+        - The Trust - based on fact not emotion
+        - The forward movement - our industry moving
     - image: /img/particle-icon-create.svg
       heading: Connect
-      list:
-        - list_item: With data
-        - list_item: With control
-        - list_item: With collaboration
-        - list_item: With transparency
+      list_items:
+        - With data
+        - With control
+        - With collaboration
+        - With transparency
 benefit_analysis:
   title: Benefit Analysis
   heading: A transparent supply chain to give everyone a better view.
   cards:
-    - image: /img/vyla-logo.svg
-      heading: Farmers
+    - heading: Farmers
       content: >
         Farmers get more meaningful ideas and answers because the data that inspires those ideas are industry-wide, whichtakerisk out of changing farming practices.
-    - image: /img/vyla-logo.svg
-      heading: Retailers
+    - heading: Retailers
       content: >
         Retailers can offer radical transparency from soil to shelf and everywhere in between, so customers know every product’story,and have new reason to be loyal shoppers.
-    - image: /img/vyla-logo.svg
-      heading: Processors
+    - heading: Processors
       content: >
         Processors get a competitive advantage by seeing the origins behind their ingredients, so they can improve mix ratiosefficiencies and create products that are better suited to consumer tastes.
-    - image: /img/vyla-logo.svg
-      heading: Consumers
+    - heading: Consumers
       content: >
         Consumers who can see where their food comes from, how it’s been produced, and what impacts its’ having on sustainability and the environment are  more brand loyal.
 ---

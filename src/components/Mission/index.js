@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
-import Card from '../Cards'
+import Cards from '../Cards'
 
 const Mission = ({
   title,
@@ -11,7 +11,7 @@ const Mission = ({
   cite_text,
   cards,
 }) => (
-  <Fragment>
+    <Fragment>
     <section className='mission'>
       <div className='particle-bg' />
       <div className='container'>
@@ -19,11 +19,7 @@ const Mission = ({
           <p className='tagline'>{title}</p>
           <h2>{heading}</h2>
         </div>
-        <div className='mission-cards'>
-          {cards.map((card, i) => (
-            <Card key={i} card={card} />
-          ))}
-        </div>
+        <Cards data={cards} />
       </div>
     </section>
     <section className='quote section-divider'>
@@ -53,7 +49,13 @@ Mission.propTypes = {
   cite_logo: PropTypes.string,
   cite_name: PropTypes.string,
   cite_text: PropTypes.string,
-  cards: PropTypes.array,
+  cards: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string,
+      heading: PropTypes.string,
+      list_items: PropTypes.array
+    })
+  )
 }
 
 export default Mission

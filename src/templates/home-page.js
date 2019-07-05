@@ -19,8 +19,6 @@ const HomePage = ({ data }) => {
         what_we_do={frontmatter.what_we_do}
         mission={frontmatter.mission}
         benefit_analysis={frontmatter.benefit_analysis}
-        offerings={frontmatter.offerings}
-        testimonials={frontmatter.testimonials}
       />
     </Layout>
   )
@@ -65,16 +63,13 @@ export const pageQuery = graphql`
           cards {
             image
             heading
-            list {
-              list_item
-            }
+            list_items
           }
         }
         benefit_analysis {
           title
           heading
           cards {
-            image
             heading
             content
           }

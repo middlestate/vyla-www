@@ -1,34 +1,61 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import HomePageTemplate from '../../components/HomePageTemplate'
+import React from 'react';
+import PropTypes from 'prop-types';
+import HomePageTemplate from '../../components/HomePageTemplate';
 
 const HomePagePreview = ({ entry, getAsset }) => {
-  const entryWhatWeDo = entry.getIn(['data', 'what_we_do'])
-  const what_we_do = entryWhatWeDo ? entryWhatWeDo.toJS() : []
+  const entryWhatWeDoContent = entry.getIn(['data', 'what_we_do', 'content']);
+  const what_we_do_content = entryWhatWeDoContent
+    ? entryWhatWeDoContent.toJS()
+    : [];
 
-  const entryMission = entry.getIn(['data', 'mission'])
-  const mission = entryMission ? entryMission.toJS : []
+  const entryMissionCards = entry.getIn(['data', 'mission', 'cards']);
+  const missionCards = entryMissionCards ? entryMissionCards.toJS : [];
 
-  const entryBenefitAnalysis = entry.getIn(['data', 'benefit_analysis'])
-  const benefit_analysis = entryBenefitAnalysis ? entryBenefitAnalysis.toJS : []
-
+  const entryBenefitAnalysisCards = entry.getIn([
+    'data',
+    'benefit_analysis',
+    'cards'
+  ]);
+  const benefitAnalysisCards = entryBenefitAnalysisCards
+    ? entryBenefitAnalysisCards.toJS
+    : [];
   return (
     <HomePageTemplate
-      title={entry.getIn(['data', 'title'])}
+      title={entry.getIn(['data','title'])}
       meta_title={entry.getIn(['data', 'meta_title'])}
       meta_description={entry.getIn(['data', 'meta_description'])}
       heading={entry.getIn(['data', 'heading'])}
       description={entry.getIn(['data', 'description'])}
-      image={entry.getIn(['data', 'image'])}
+      what_we_do={{
+        image: entry.getIn('data', 'what_we_do', 'image'),
+        alt: entry.getIn('data', 'what_we_do', 'alt'),
+        tagline: entry.getIn('data', 'what_we_do', 'tagline'),
+        heading: entry.getIn('data', 'what_we_do', 'heading'),
+        content: what_we_do_content
+      }}
+      mission={{
+        title: entry.getIn(['data', 'mission', 'title']),
+        heading: entry.getIn(['data', 'mission', 'heading']),
+        quote: entry.getIn(['data', 'mission', 'quote']),
+        cite_image: entry.getIn(['data', 'mission', 'cite_image']),
+        cite_name: entry.getIn(['data', 'mission', 'cite_name']),
+        cite_text: entry.getIn(['data', 'mission', 'cite_text']),
+        cards: missionCards
+      }}
+      benefit_analysis={{
+        title: entry.getIn(['data', 'benefit_analysis', 'title']),
+        heading: entry.getIn(['data', 'benefit_analysis', 'heading']),
+        cards: benefitAnalysisCards
+      }}
     />
-  )
-}
+  );
+};
 
 HomePagePreview.propTypes = {
   entry: PropTypes.shape({
-    getIn: PropTypes.func,
+    getIn: PropTypes.func
   }),
-  getAsset: PropTypes.func,
-}
+  getAsset: PropTypes.func
+};
 
-export default HomePagePreview
+export default HomePagePreview;

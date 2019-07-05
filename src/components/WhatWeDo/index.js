@@ -2,8 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import VylaButton from '../VylaButton'
 
-const WhatWeDo = props => {
-  let { image, alt, tagline, heading, content } = props.what_we_do
+const WhatWeDo = ({
+  image,
+  alt,
+  tagline,
+  heading,
+  content
+}) => {
   return (
     <section className='whatwedo'>
       <div className='container'>
