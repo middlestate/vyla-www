@@ -86,7 +86,7 @@ HomePageTemplate.propTypes = {
     cards: PropTypes.arrayOf(
       PropTypes.shape({
         heading: PropTypes.string,
-        content: PropTypes.string,
+        content: PropTypes.text,
       })
     ),
 

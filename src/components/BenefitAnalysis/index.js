@@ -36,7 +36,7 @@ BenefitAnalysis.propTypes = {
   heading: PropTypes.string,
   cards: PropTypes.arrayOf(
     PropTypes.shape({
-      content: PropTypes.string,
+      content: PropTypes.text,
       heading: PropTypes.string
     })
   )
