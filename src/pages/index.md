@@ -4,10 +4,11 @@ title: Vyla
 meta_title: 'Vyla | Dairy has a story to tell'
 meta_description: >-
   We are lifting ourselves to a new standard of integration to bring new value to our farms, to our industry, and to the world’s table.
-heading: Dairy has a story to tell, and a new way to tell it.
-description: >-
-  We are lifting ourselves to a new standard of integration to bring new value to our farms, to our industry, and to the world’s table.
-image: /img/hero-image-cows.jpg
+hero:
+  heading: Dairy has a story to tell, and a new way to tell it.
+  description: >-
+    We are lifting ourselves to a new standard of integration to bring new value to our farms, to our industry, and to the world’s table.
+  image: /img/hero-image-cows.jpg
 what_we_do:
   image: /img/vyla-dashboard-ipad.png
   alt: vyla-dashboard-ipad

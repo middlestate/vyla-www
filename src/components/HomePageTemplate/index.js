@@ -11,11 +11,9 @@ import BenefitAnalysis from '../BenefitAnalysis';
 
 const HomePageTemplate = ({
   title,
-  heading,
-  description,
-  image,
   meta_title,
   meta_description,
+  hero,
   what_we_do,
   mission,
   benefit_analysis
@@ -25,7 +23,7 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name="description" content={meta_description} />
     </Helmet>
-    <Hero image={image} heading={heading} description={description} title={title} />
+    <Hero image={hero.image} heading={hero.heading} description={hero.description} />
     <WhatWeDo
       image={what_we_do.image}
       alt={what_we_do.alt}
@@ -55,8 +53,11 @@ HomePageTemplate.propTypes = {
   title: PropTypes.string,
   meta_title: PropTypes.string,
   meta_description: PropTypes.string,
-  heading: PropTypes.string,
-  description: PropTypes.string,
+  hero: PropTypes.shape({
+    image: PropTypes.string,
+    heading: PropTypes.string,
+    description: PropTypes.string
+  }),
   image: PropTypes.string,
   what_we_do: PropTypes.shape({
     image: PropTypes.string,

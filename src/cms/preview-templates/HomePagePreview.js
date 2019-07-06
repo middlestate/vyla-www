@@ -22,6 +22,11 @@ const HomePagePreview = ({ entry, getAsset }) => {
       meta_description={entry.getIn(['data', 'meta_description'])}
       heading={entry.getIn(['data', 'heading'])}
       description={entry.getIn(['data', 'description'])}
+      hero={{
+        image: entry.getIn('data', 'hero', 'image'),
+        heading: entry.getIn('data', 'hero', 'heading'),
+        description: entry.getIn('data', 'hero', 'description')
+      }}
       what_we_do={{
         image: entry.getIn('data', 'what_we_do', 'image'),
         alt: entry.getIn('data', 'what_we_do', 'alt'),

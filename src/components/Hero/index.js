@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import { Parallax } from 'react-scroll-parallax';
 import VylaButton from '../VylaButton';
 import Image from '../Image';
@@ -37,5 +38,11 @@ const Hero = props => (
     </div>
   </section>
 );
+
+Hero.propTypes = {
+  image: PropTypes.string,
+  heading: PropTypes.string,
+  description: PropTypes.string
+}
 
 export default Hero;
