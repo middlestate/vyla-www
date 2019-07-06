@@ -72,24 +72,12 @@ HomePageTemplate.propTypes = {
     cite_image: PropTypes.string,
     cite_text: PropTypes.string,
     quote: PropTypes.string,
-    cards: PropTypes.arrayOf(
-      PropTypes.shape({
-        image: PropTypes.string,
-        heading: PropTypes.string,
-        list_items: PropTypes.array
-      })
-    )
+    cards: PropTypes.array
   }),
   benefit_analysis: PropTypes.shape({
     title: PropTypes.string,
     heading: PropTypes.string,
-    cards: PropTypes.arrayOf(
-      PropTypes.shape({
-        heading: PropTypes.string,
-        content: PropTypes.text,
-      })
-    ),
-
+    cards: PropTypes.array
   })
 };
 
