@@ -25,7 +25,7 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name="description" content={meta_description} />
     </Helmet>
-    <Hero image={image} heading={heading} description={description} />
+    <Hero image={image} heading={heading} description={description} title={title} />
     <WhatWeDo
       image={what_we_do.image}
       alt={what_we_do.alt}
