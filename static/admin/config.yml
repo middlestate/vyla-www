@@ -13,9 +13,9 @@ collections:
     files:
       - file: "src/pages/index.md"
         label: "Home Page"
-        name: "home-page"
+        name: "home"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home"}
           - {label: "Title", name: title, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
