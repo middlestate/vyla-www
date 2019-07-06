@@ -49,7 +49,7 @@ mission:
         - With collaboration
         - With transparency
 benefit_analysis:
-  title: Benefit Analysis
+  title: 'Benefit Analysis'
   heading: A transparent supply chain to give everyone a better view.
   cards:
     - heading: Farmers
