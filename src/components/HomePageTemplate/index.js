@@ -1,7 +1,5 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-// import Offerings from '../Offerings'
-// import Testimonials from '../Testimonials'
 // import { ParallaxProvider } from 'react-scroll-parallax'
 import PropTypes from 'prop-types';
 import Hero from '../Hero';
@@ -58,7 +56,6 @@ HomePageTemplate.propTypes = {
     heading: PropTypes.string,
     description: PropTypes.string
   }),
-  image: PropTypes.string,
   what_we_do: PropTypes.shape({
     image: PropTypes.string,
     alt: PropTypes.string,
