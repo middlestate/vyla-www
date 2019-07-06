@@ -35,7 +35,6 @@ const HomePagePreview = ({ entry, getAsset }) => {
         content: what_we_do_content
       }}
       mission={{
-        title: entry.getIn(['data', 'mission', 'title']),
         heading: entry.getIn(['data', 'mission', 'heading']),
         quote: entry.getIn(['data', 'mission', 'quote']),
         cite_image: entry.getIn(['data', 'mission', 'cite_image']),
