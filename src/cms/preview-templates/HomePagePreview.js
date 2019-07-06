@@ -11,13 +11,13 @@ const HomePagePreview = ({ entry, getAsset }) => {
   const entryMissionCards = entry.getIn(['data', 'mission', 'cards']);
   const missionCards = entryMissionCards ? entryMissionCards.toJS : [];
 
-  const entryBenefitAnalysisCards = entry.getIn(['data','benefit_analysis','cards']);
+  const entryBenefitAnalysisCards = entry.getIn(['data', 'benefit_analysis', 'cards']);
   const benefitAnalysisCards = entryBenefitAnalysisCards
     ? entryBenefitAnalysisCards.toJS
     : [];
   return (
     <HomePageTemplate
-      title={entry.getIn(['data','title'])}
+      title={entry.getIn(['data', 'title'])}
       meta_title={entry.getIn(['data', 'meta_title'])}
       meta_description={entry.getIn(['data', 'meta_description'])}
       heading={entry.getIn(['data', 'heading'])}
@@ -40,12 +40,12 @@ const HomePagePreview = ({ entry, getAsset }) => {
         cite_image: entry.getIn(['data', 'mission', 'cite_image']),
         cite_name: entry.getIn(['data', 'mission', 'cite_name']),
         cite_text: entry.getIn(['data', 'mission', 'cite_text']),
-        cards: missionCards
+        cards: {missionCards}
       }}
       benefit_analysis={{
         title: entry.getIn(['data', 'benefit_analysis', 'title']),
         heading: entry.getIn(['data', 'benefit_analysis', 'heading']),
-        cards: benefitAnalysisCards
+        cards: { benefitAnalysisCards }
       }}
     />
   );
