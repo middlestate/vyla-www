@@ -24,7 +24,7 @@ BenefitCards.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
       heading: PropTypes.string,
-      content: PropTypes.array
+      content: PropTypes.text
     })
   )
 };
