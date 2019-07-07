@@ -14,7 +14,6 @@ const HomePage = ({ data }) => {
         meta_title={frontmatter.meta_title}
         meta_description={frontmatter.meta_description}
         hero={frontmatter.hero}
-        image={frontmatter.image}
         what_we_do={frontmatter.what_we_do}
         mission={frontmatter.mission}
         benefit_analysis={frontmatter.benefit_analysis}
