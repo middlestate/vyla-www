@@ -8,13 +8,14 @@ const HomePagePreview = ({ entry, getAsset }) => {
     ? entryWhatWeDoContent.toJS()
     : [];
 
-  // const entryMissionCards = entry.getIn(['data', 'mission', 'cards']);
-  // const missionCards = entryMissionCards ? entryMissionCards.toJS : [];
+  const entryMissionCards = entry.getIn(['data', 'mission', 'cards']);
+  const missionCards = entryMissionCards ? entryMissionCards.toJS : [];
 
-  // const entryBenefitAnalysisCards = entry.getIn(['data', 'benefit_analysis', 'cards']);
-  // const benefitAnalysisCards = entryBenefitAnalysisCards
-  //   ? entryBenefitAnalysisCards.toJS
-  //   : [];
+  const entryBenefitAnalysisCards = entry.getIn(['data', 'benefit_analysis', 'cards']);
+  const benefitAnalysisCards = entryBenefitAnalysisCards
+    ? entryBenefitAnalysisCards.toJS
+    : [];
+
   return (
     <HomePageTemplate
       title={entry.getIn(['data', 'title'])}
@@ -41,12 +42,12 @@ const HomePagePreview = ({ entry, getAsset }) => {
         cite_image: entry.getIn(['data', 'mission', 'cite_image']),
         cite_name: entry.getIn(['data', 'mission', 'cite_name']),
         cite_text: entry.getIn(['data', 'mission', 'cite_text']),
-        cards: entry.getIn(['data', 'mission', 'cards'])
+        cards: missionCards
       }}
       benefit_analysis={{
         title: entry.getIn(['data', 'benefit_analysis', 'title']),
         heading: entry.getIn(['data', 'benefit_analysis', 'heading']),
-        cards: entry.getIn(['data', 'entry', 'cards'])
+        cards: benefitAnalysisCards
       }}
     />
   );
