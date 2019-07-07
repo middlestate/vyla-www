@@ -18,12 +18,7 @@ const BenefitAnalysis = ({ title, heading, cards }) => (
 BenefitAnalysis.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
-  cards: PropTypes.arrayOf(
-    PropTypes.shape({
-      content: PropTypes.text,
-      heading: PropTypes.string
-    })
-  )
+  cards: PropTypes.array
 }
 
 export default BenefitAnalysis

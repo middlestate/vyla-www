@@ -9,31 +9,35 @@ const HomePagePreview = ({ entry, getAsset }) => {
     : [];
 
   const entryMissionCards = entry.getIn(['data', 'mission', 'cards']);
-  const missionCards = entryMissionCards ? entryMissionCards.toJS : [];
+  const missionCards = entryMissionCards ? entryMissionCards.toJS() : [];
 
-  const entryBenefitAnalysisCards = entry.getIn(['data','benefit_analysis','cards']);
+  const entryBenefitAnalysisCards = entry.getIn(['data', 'benefit_analysis', 'cards']);
   const benefitAnalysisCards = entryBenefitAnalysisCards
-    ? entryBenefitAnalysisCards.toJS
+    ? entryBenefitAnalysisCards.toJS()
     : [];
+
   return (
     <HomePageTemplate
       title={entry.getIn(['data','title'])}
       meta_title={entry.getIn(['data', 'meta_title'])}
       meta_description={entry.getIn(['data', 'meta_description'])}
-      heading={entry.getIn(['data', 'heading'])}
-      description={entry.getIn(['data', 'description'])}
+      hero={{
+        image: entry.getIn(['data', 'hero', 'image']),
+        heading: entry.getIn(['data', 'hero', 'heading']),
+        description: entry.getIn(['data', 'hero', 'description'])
+      }}
       what_we_do={{
-        image: entry.getIn('data', 'what_we_do', 'image'),
-        alt: entry.getIn('data', 'what_we_do', 'alt'),
-        tagline: entry.getIn('data', 'what_we_do', 'tagline'),
-        heading: entry.getIn('data', 'what_we_do', 'heading'),
+        image: entry.getIn(['data', 'what_we_do', 'image']),
+        alt: entry.getIn(['data', 'what_we_do', 'alt']),
+        tagline: entry.getIn(['data', 'what_we_do', 'tagline']),
+        heading: entry.getIn(['data', 'what_we_do', 'heading']),
         content: what_we_do_content
       }}
       mission={{
         title: entry.getIn(['data', 'mission', 'title']),
         heading: entry.getIn(['data', 'mission', 'heading']),
         quote: entry.getIn(['data', 'mission', 'quote']),
-        cite_image: entry.getIn(['data', 'mission', 'cite_image']),
+        cite_logo: entry.getIn(['data', 'mission', 'cite_logo']),
         cite_name: entry.getIn(['data', 'mission', 'cite_name']),
         cite_text: entry.getIn(['data', 'mission', 'cite_text']),
         cards: missionCards

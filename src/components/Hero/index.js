@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import { Parallax } from 'react-scroll-parallax';
 import VylaButton from '../VylaButton';
 import Image from '../Image';
@@ -11,7 +12,11 @@ import Image from '../Image';
 //   </Parallax>
 // )
 
-const Hero = props => (
+const Hero = ({
+  image,
+  heading,
+  description
+}) => (
   <section className="hero">
     <div className="highlight highlight-green" />
     <div className="container">
@@ -20,12 +25,12 @@ const Hero = props => (
         y={[80, -80]} tagInner='figure' tagOuter='figure'
       > */}
       <div className="image-block rounded-bottomright">
-        <img src={props.image} />
+        <img src={image} />
       </div>
       {/* </Parallax> */}
       <div className="text-block rounded-topleft white-bg">
-        <h1>{props.heading}</h1>
-        <p className="intro">{props.description}</p>
+        <h1>{heading}</h1>
+        <p className="intro">{description}</p>
         <div className="button-c2a">
           <VylaButton
             url="https://mdst.typeform.com/to/VTG8Y7"
@@ -37,5 +42,11 @@ const Hero = props => (
     </div>
   </section>
 );
+
+Hero.propTypes = {
+  image: PropTypes.string,
+  heading: PropTypes.string,
+  description: PropTypes.string
+}
 
 export default Hero;
