@@ -9,15 +9,16 @@ const HomePagePreview = ({ entry, getAsset }) => {
     : [];
 
   const entryMissionCards = entry.getIn(['data', 'mission', 'cards']);
-  const missionCards = entryMissionCards ? entryMissionCards.toJS : [];
+  const missionCards = entryMissionCards ? entryMissionCards.toJS() : [];
 
   const entryBenefitAnalysisCards = entry.getIn(['data', 'benefit_analysis', 'cards']);
   const benefitAnalysisCards = entryBenefitAnalysisCards
-    ? entryBenefitAnalysisCards.toJS
+    ? entryBenefitAnalysisCards.toJS()
     : [];
 
   return (
     <HomePageTemplate
+      title={entry.getIn(['data','title'])}
       meta_title={entry.getIn(['data', 'meta_title'])}
       meta_description={entry.getIn(['data', 'meta_description'])}
       hero={{
