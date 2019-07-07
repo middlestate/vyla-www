@@ -53,11 +53,3 @@ Mission.propTypes = {
 }
 
 export default Mission
-/*
-.shape({
-    image: PropTypes.string,
-    heading: PropTypes.string,
-    list: PropTypes.objectOf({
-      list_item: PropTypes.string,
-    }),
-    */
