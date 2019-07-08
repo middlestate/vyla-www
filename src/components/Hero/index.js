@@ -14,9 +14,8 @@ import Image from '../Image';
 
 const Content = props => (
   <div className='text-content'>
-    {console.log('>>>>>',props.text)}
     {props.text.map((text, i) =>
-      <p>{text.text}</p>
+      <p key={i}>{text.text}</p>
       )}
   </div>
 )
@@ -44,7 +43,6 @@ const Hero = ({
         <h1>{heading}</h1>
           <p className="intro">{description}</p>
           {content ? <Content text={content} /> : ''}
-        <p className="intro">{description}</p>
         <div className="button-c2a">
           <VylaButton
             url="https://mdst.typeform.com/to/VTG8Y7"
@@ -64,7 +62,7 @@ Hero.propTypes = {
   description: PropTypes.string,
   content: PropTypes.arrayOf(
     PropTypes.shape({
-      text: PropTypes.array
+      text: PropTypes.string
     })
   )
 }
