@@ -23,7 +23,6 @@ const FarmPageTemplate = ({
       image={hero.image}
       heading={hero.heading}
       description={hero.description}
-      content={hero.content}
     />
     <Story
       image={story.image}
@@ -47,7 +46,7 @@ FarmPageTemplate.propTypes = {
     image: PropTypes.string,
     background_color: PropTypes.string,
     heading: PropTypes.string,
-    content: PropTypes.array
+    description: PropTypes.string
   }),
   story: PropTypes.shape({
     image: PropTypes.string,

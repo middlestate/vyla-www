@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import FarmPageTemplate from '../../components/FarmPageTemplate';
 
 const FarmPagePreview = ({ entry, getAsset }) => {
-  const entryHeroContent = entry.getIn(['data', 'hero', 'content']);
-  const heroContent = entryHeroContent ? entryHeroContent.toJS() : [];
+  // const entryHeroContent = entry.getIn(['data', 'hero', 'content']);
+  // const heroContent = entryHeroContent ? entryHeroContent.toJS() : [];
 
   const entryStoryContent = entry.getIn(['data', 'story', 'content']);
   const storyContent = entryStoryContent ? entryStoryContent.toJS() : [];
@@ -28,7 +28,6 @@ const FarmPagePreview = ({ entry, getAsset }) => {
         background_color: entry.getIn(['data', 'hero', 'background_color']),
         heading: entry.getIn(['data', 'hero', 'heading']),
         description: entry.getIn(['data', 'hero', 'description']),
-        content: heroContent
       }}
       story={{
         image: entry.getIn(['data', 'story', 'image']),

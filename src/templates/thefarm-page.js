@@ -42,9 +42,6 @@ export const FarmPageQuery = graphql`
           image
           heading
           description
-          content {
-            text
-          }
         }
         story {
           image
