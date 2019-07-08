@@ -14,9 +14,6 @@ const AboutPagePreview = ({ entry, getAsset }) => {
 
   return (
     <AboutPageTemplate
-      title={entry.getIn(['data', 'title'])}
-      meta_title={entry.getIn(['data', 'meta_title'])}
-      meta_description={entry.getIn(['data', 'meta_description'])}
       hero={{
         image: entry.getIn(['data', 'hero', 'image']),
         background_color: entry.getIn(['data', 'hero', 'background_color']),
