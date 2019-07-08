@@ -1,48 +1,47 @@
 import React from 'react';
-import PropTypes from 'prop-types'
-import { Parallax } from 'react-scroll-parallax';
+import PropTypes from 'prop-types';
 import VylaButton from '../VylaButton';
+import Plx from 'react-plx';
 import Image from '../Image';
 
-// const ParallaxImage = props => (
-//   <Parallax y={[100, -150]} x={[50, 50]}>
-//     <div className='image-block rounded-bottomright'>
-//       <img src={props.image} alt='hero-image-cows' />
-//     </div>
-//   </Parallax>
-// )
-
 const Content = props => (
-  <div className='text-content'>
-    {props.text.map((text, i) =>
+  <div className="text-content">
+    {props.text.map((text, i) => (
       <p key={i}>{text.text}</p>
-      )}
+    ))}
   </div>
-)
+);
 
+const parallaxData = [
+  {
+    start: 0,
+    end: 500,
+    properties: [
+      {
+        startValue: 1,
+        endValue: 2,
+        property: 'translateY'
+      }
+    ]
+  }
+];
 
-const Hero = ({
-  image,
-  background_color,
-  heading,
-  description,
-  content
-}) => (
+const Hero = ({ image, background_color, heading, description, content }) => (
   <section className="hero">
-      <div className="highlight" style={{backgroundColor: background_color}}/>
+    <div className="highlight" style={{ backgroundColor: background_color }} />
     <div className="container">
-      {/* <Parallax
-        className='image-block rounded-bottomright'
-        y={[80, -80]} tagInner='figure' tagOuter='figure'
-      > */}
-      <div className="image-block rounded-bottomright">
+      <Plx
+        className="image-block rounded-bottomright"
+        parallaxData={parallaxData}>
         <img src={image} />
-      </div>
-      {/* </Parallax> */}
+      </Plx>
+      {/* <div className="image-block rounded-bottomright">
+        <img src={image} />
+      </div> */}
       <div className="text-block rounded-topleft white-bg">
         <h1>{heading}</h1>
-          <p className="intro">{description}</p>
-          {content ? <Content text={content} /> : ''}
+        <p className="intro">{description}</p>
+        {content ? <Content text={content} /> : ''}
         <div className="button-c2a">
           <VylaButton
             url="https://mdst.typeform.com/to/VTG8Y7"
@@ -65,6 +64,6 @@ Hero.propTypes = {
       text: PropTypes.string
     })
   )
-}
+};
 
 export default Hero;

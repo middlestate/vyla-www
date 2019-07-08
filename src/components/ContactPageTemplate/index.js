@@ -25,7 +25,7 @@ const ContactPageTemplate = ({
         <h1>{title}</h1>
         <p className="intro">{subtitle}</p>
         <p>{description}</p>
-        <div class="footer-links">
+        <div className="footer-links">
           <ul>
             <li>Contact us directly</li>
           </ul>
