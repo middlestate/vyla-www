@@ -10,9 +10,12 @@ const ContactPage = ({data}) => {
     <Layout>
       <ContactPageTemplate
         title={frontmatter.title}
+        image={frontmatter.image}
+        background_color={frontmatter.background_color}
         subtitle={frontmatter.subtitle}
         meta_title={frontmatter.meta_title}
-        meta_description={frontmatter.meta_description}
+        description={frontmatter.description}
+        email={frontmatter.email}
       />
     </Layout>
   )
@@ -33,9 +36,12 @@ export const contactPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        image
+        background_color
         subtitle
         meta_title
-        meta_description
+        description
+        email
       }
     }
   }

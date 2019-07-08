@@ -61,9 +61,12 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
           - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: "Background Color", name: background_color, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: "Meta Title", name: "meta_title", widget: "string"}
-          - {label: "Meta Description", name: "meta_description", widget: "text"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Email", name: "email", widget: "text"}
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
