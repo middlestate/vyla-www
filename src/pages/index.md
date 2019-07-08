@@ -5,6 +5,7 @@ meta_title: 'Vyla | Dairy has a story to tell'
 meta_description: >-
   We are lifting ourselves to a new standard of integration to bring new value to our farms, to our industry, and to the world’s table.
 hero:
+  background_color: "#00845d"
   heading: Dairy has a story to tell, and a new way to tell it.
   description: >-
     We are lifting ourselves to a new standard of integration to bring new value to our farms, to our industry, and to the world’s table.
@@ -21,14 +22,15 @@ what_we_do:
         We will capture data from more sources, analyze it on an industry-wide scale, and provide every stakeholder with new ways to do more good, in more places, for better outcomes.
     - text: >
         The end goal, to meet and exceed consumer expectations so everyone benefits.
-mission:
-  title: MISSION
-  heading: Objectives and Outcomes
+quote:
   quote: >-
     “We are excited to be a part of a collaborative, technology-forward effort, led by global dairy leaders, to deploy data and insights in new and meaningful ways.”
   cite_logo: /img/partner-logos-nestle.svg
   cite_name: Hans Joehr
   cite_text: Head of Corporate Agriculture for Nestlé.
+mission:
+  title: MISSION
+  heading: Objectives and Outcomes
   cards:
     - image: /img/particle-icon-transform.svg
       heading: Transform

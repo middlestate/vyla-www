@@ -1,11 +1,12 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-// import { ParallaxProvider } from 'react-scroll-parallax'
 import PropTypes from 'prop-types';
 import Hero from '../Hero';
 import WhatWeDo from '../WhatWeDo';
 import Mission from '../Mission';
 import BenefitAnalysis from '../BenefitAnalysis';
+import Quote from '../Quote';
+import { HELMET_PROPS } from 'react-helmet/lib/HelmetConstants';
 
 const HomePageTemplate = ({
   title,
@@ -14,14 +15,20 @@ const HomePageTemplate = ({
   hero,
   what_we_do,
   mission,
+  quote,
   benefit_analysis
 }) => (
-    <div>
+  <div>
     <Helmet>
       <title>{meta_title}</title>
       <meta name="description" content={meta_description} />
     </Helmet>
-    <Hero image={hero.image} heading={hero.heading} description={hero.description} />
+    <Hero
+      image={hero.image}
+      background_color={hero.background_color}
+      heading={hero.heading}
+      description={hero.description}
+    />
     <WhatWeDo
       image={what_we_do.image}
       alt={what_we_do.alt}
@@ -32,12 +39,13 @@ const HomePageTemplate = ({
     <Mission
       title={mission.title}
       heading={mission.heading}
-      cite_name={mission.cite_name}
-      cite_image={mission.cite_image}
-      cite_text={mission.cite_text}
-      cite_logo={mission.cite_logo}
-      quote={mission.quote}
       cards={mission.cards}
+    />
+    <Quote
+      quote={quote.quote}
+      cite_logo={quote.cite_logo}
+      cite_name={quote.cite_name}
+      cite_text={quote.cite_text}
     />
     <BenefitAnalysis
       title={benefit_analysis.title}
@@ -53,6 +61,7 @@ HomePageTemplate.propTypes = {
   meta_description: PropTypes.string,
   hero: PropTypes.shape({
     image: PropTypes.string,
+    background_color: PropTypes.string,
     heading: PropTypes.string,
     description: PropTypes.string
   }),
@@ -66,11 +75,13 @@ HomePageTemplate.propTypes = {
   mission: PropTypes.shape({
     title: PropTypes.string,
     heading: PropTypes.string,
-    cite_name: PropTypes.string,
-    cite_image: PropTypes.string,
-    cite_text: PropTypes.string,
-    quote: PropTypes.string,
     cards: PropTypes.array
+  }),
+  quote: PropTypes.shape({
+    quote: PropTypes.string,
+    cite_logo: PropTypes.string,
+    cite_name: PropTypes.string,
+    cite_text: PropTypes.string
   }),
   benefit_analysis: PropTypes.shape({
     title: PropTypes.string,

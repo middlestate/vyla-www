@@ -1,46 +1,66 @@
-import React from 'react'
-import Content from '../Content'
-import PropTypes from 'prop-types'
+import React from 'react';
+import Helmet from 'react-helmet';
+import PropTypes from 'prop-types';
+import Hero from '../Hero';
+import Mission from '../Mission';
+import Story from '../Story';
 
-const AboutPageTemplate = ({title, content, contentComponent}) => {
-  const PageContent = contentComponent || Content
-
-  return (
-    <div>
-      <section className='hero is-primary is-bold is-medium'>
-        <div className='hero-body'>
-          <div className='container'>
-            <div className='columns'>
-              <div className='column is-10 is-offset-1'>
-                <div className='section'>
-                  <h1 className='title'>
-                    {title}
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className='section section--gradient'>
-        <div className='container'>
-          <div className='columns'>
-            <div className='column is-10 is-offset-1'>
-              <div className='section'>
-                <PageContent className='content' content={content} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  )
-}
+const AboutPageTemplate = ({
+  title,
+  meta_title,
+  meta_description,
+  hero,
+  story,
+  mission
+}) => (
+  <div>
+    <Helmet>
+      <title>{meta_title}</title>
+      <meta name="description" content={meta_description} />
+    </Helmet>
+    <Hero
+      background_color={hero.background_color}
+      image={hero.image}
+      heading={hero.heading}
+      description={hero.description}
+      content={hero.content}
+    />
+    <Story
+      image={story.image}
+      title={story.title}
+      heading={story.heading}
+      content={story.content}
+    />
+    <Mission
+      title={mission.title}
+      heading={mission.heading}
+      cards={mission.cards}
+    />
+  </div>
+);
 
 AboutPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-}
+  title: PropTypes.string,
+  meta_title: PropTypes.string,
+  meta_description: PropTypes.string,
+  hero: PropTypes.shape({
+    background_color: PropTypes.string,
+    image: PropTypes.string,
+    heading: PropTypes.string,
+    description: PropTypes.string,
+    content: PropTypes.array
+  }),
+  story: PropTypes.shape({
+    image: PropTypes.string,
+    title: PropTypes.string,
+    heading: PropTypes.string,
+    content: PropTypes.array
+  }),
+  mission: PropTypes.shape({
+    title: PropTypes.string,
+    heading: PropTypes.string,
+    cards: PropTypes.array
+  })
+};
 
-export default AboutPageTemplate
+export default AboutPageTemplate;

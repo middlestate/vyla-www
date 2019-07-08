@@ -14,11 +14,12 @@ import Image from '../Image';
 
 const Hero = ({
   image,
+  background_color,
   heading,
   description
 }) => (
   <section className="hero">
-    <div className="highlight highlight-green" />
+      <div className="highlight" style={{backgroundColor: background_color}}/>
     <div className="container">
       {/* <Parallax
         className='image-block rounded-bottomright'
@@ -45,6 +46,7 @@ const Hero = ({
 
 Hero.propTypes = {
   image: PropTypes.string,
+  background_color: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string
 }

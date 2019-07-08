@@ -1,11 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import HomePageTemplate from '../components/HomePageTemplate'
-import Layout from '../components/Layout'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import HomePageTemplate from '../components/HomePageTemplate';
+import Layout from '../components/Layout';
 
 const HomePage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
@@ -16,21 +16,22 @@ const HomePage = ({ data }) => {
         hero={frontmatter.hero}
         what_we_do={frontmatter.what_we_do}
         mission={frontmatter.mission}
+        quote={frontmatter.quote}
         benefit_analysis={frontmatter.benefit_analysis}
       />
     </Layout>
-  )
-}
+  );
+};
 
 HomePage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
-}
+      frontmatter: PropTypes.object
+    })
+  })
+};
 
-export default HomePage
+export default HomePage;
 
 export const pageQuery = graphql`
   query IndexPage($id: String!) {
@@ -40,6 +41,7 @@ export const pageQuery = graphql`
         meta_title
         meta_description
         hero {
+          background_color
           image
           heading
           description
@@ -56,15 +58,17 @@ export const pageQuery = graphql`
         mission {
           title
           heading
-          quote
-          cite_text
-          cite_name
-          cite_logo
           cards {
             image
             heading
             list_items
           }
+        }
+        quote {
+          quote
+          cite_text
+          cite_name
+          cite_logo
         }
         benefit_analysis {
           title
@@ -77,4 +81,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
