@@ -1,40 +1,37 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import AboutPageTemplate from '../components/AboutPageTemplate'
-import Layout from '../components/Layout'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import FarmPageTemplate from '../components/FarmPageTemplate';
+import Layout from '../components/Layout';
 
-const AboutPage = ({data}) => {
-  const {frontmatter} = data.markdownRemark
-
+const FarmPage = ({ data }) => {
+  const { frontmatter } = data.markdownRemark;
   return (
     <Layout>
-      <AboutPageTemplate
+      <FarmPageTemplate
         title={frontmatter.title}
         meta_title={frontmatter.meta_title}
         meta_description={frontmatter.meta_description}
         hero={frontmatter.hero}
-        content={frontmatter.content}
-        image={frontmatter.image}
         story={frontmatter.story}
-        mission={frontmatter.mission}
+        benefit_analysis={frontmatter.benefit_analysis}
       />
     </Layout>
-  )
-}
+  );
+};
 
-AboutPage.propTypes = {
+FarmPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object
     })
-  }),
-}
+  })
+};
 
-export default AboutPage
+export default FarmPage;
 
-export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
+export const FarmPageQuery = graphql`
+  query FarmPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
@@ -57,13 +54,12 @@ export const aboutPageQuery = graphql`
             text
           }
         }
-        mission {
+        benefit_analysis {
           title
           heading
           cards {
-            image
             heading
-            list_items
+            content
           }
         }
       }

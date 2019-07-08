@@ -34,6 +34,17 @@ collections:
           - {label: "Hero Section", name: hero, widget: object, fields: [{label: "Background Color", name: "background_color", widget: string}, {label: Image, name: image, widget: image},{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Content, name: content, widget: list, fields:[{label: Text, name: text, widget: text}]}]}
           - {label: Story, name: story, widget: object, fields: [{label: Title, name: title, widget: string},{label: Heading, name: heading, widget: text},{label: Image, name: image, widget: image},{label: Content, name: content, widget: list, fields: [{label: Text, name: text, widget: text}]}]}
           - {label: "Mission", name: mission, widget: object, fields:[{label: Title, name: title, widget: string}, {label: Heading, name: heading, widget:string}, {label: Cards, name: cards, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Heading, name: heading, widget: string}, {label: "List Items", name: "list_items", widget: list}]}]}
+      - file: "src/pages/thefarm/index.md"
+        label: "The Farm Page"
+        name: "thefarm"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "thefarm-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: "Meta Title", name: "meta_title", widget: "string"}
+          - {label: "Meta Description", name: "meta_description", widget: "text"}
+          - {label: "Hero Section", name: hero, widget: object, fields: [{label: "Background Color", name: "background_color", widget: string}, {label: Image, name: image, widget: image},{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Content, name: content, widget: list, fields:[{label: Text, name: text, widget: text}]}]}
+          - {label: Story, name: story, widget: object, fields: [{label: Title, name: title, widget: string},{label: Heading, name: heading, widget: text},{label: Image, name: image, widget: image},{label: Content, name: content, widget: list, fields: [{label: Text, name: text, widget: text}]}]}
+          - {label: "Benefit Analysis", name: "benefit_analysis", widget: object, fields:[{label: Title, name: title, widget: string},{label: Heading, name: heading, widget: string}, {label: Cards, name: cards, widget: list, fields: [{label: Heading, name: heading, widget: string},{label: Content, name: content, widget: text}]}]}
       - file: "src/pages/pricing/index.md"
         label: "Pricing Page"
         name: "pricing"
