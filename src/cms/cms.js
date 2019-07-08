@@ -10,7 +10,7 @@ import ContactPagePreview from './preview-templates/ContactPagePreview'
 CMS.registerPreviewStyle('/styles.css')
 CMS.registerPreviewTemplate('home', HomePagePreview)
 CMS.registerPreviewTemplate('about', AboutPagePreview)
-CMS.registerPreviewStyle('thefarm', FarmPagePreview)
+CMS.registerPreviewTemplate('thefarm', FarmPagePreview)
 CMS.registerPreviewTemplate('pricing', PricingPagePreview)
 CMS.registerPreviewTemplate('contact', ContactPagePreview)
 CMS.registerPreviewTemplate('blog', ArticlePreview)
