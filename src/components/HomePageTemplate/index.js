@@ -6,7 +6,6 @@ import WhatWeDo from '../WhatWeDo';
 import Mission from '../Mission';
 import BenefitAnalysis from '../BenefitAnalysis';
 import Quote from '../Quote';
-import { HELMET_PROPS } from 'react-helmet/lib/HelmetConstants';
 
 const HomePageTemplate = ({
   title,
