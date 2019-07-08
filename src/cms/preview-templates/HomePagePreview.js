@@ -44,10 +44,10 @@ const HomePagePreview = ({ entry, getAsset }) => {
         cards: missionCards
       }}
       quote={{
-        quote: entry.getIn(['data', 'mission', 'quote']),
-        cite_logo: entry.getIn(['data', 'mission', 'cite_logo']),
-        cite_name: entry.getIn(['data', 'mission', 'cite_name']),
-        cite_text: entry.getIn(['data', 'mission', 'cite_text'])
+        quote: entry.getIn(['data', 'quote', 'quote']),
+        cite_logo: entry.getIn(['data', 'quote', 'cite_logo']),
+        cite_name: entry.getIn(['data', 'quote', 'cite_name']),
+        cite_text: entry.getIn(['data', 'quote', 'cite_text'])
       }}
       benefit_analysis={{
         title: entry.getIn(['data', 'benefit_analysis', 'title']),
