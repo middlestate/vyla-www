@@ -1,30 +1,42 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Plx from 'react-plx';
 
-const Story = ({
-  image,
-  title,
-  heading,
-  content
-}) => (
-    <section className="whatwedo parallax-section">
-	    <div className="container">
-		    <div className="particle-bg"></div>
-		    <div className="image-block rounded-bottomright">
-          <img src={image} alt="hero-image-brainstorm" />
-		    </div>
-		    <div className="text-block white-bg">
-			  <p className="tagline">{title}</p>
-			  <h2>{heading}</h2>
-          <div className="text-content">
-            {content.map((data, i) => (
-              <p key={i}>{data.text}</p>
-            ))}
-          </div>
+const parallaxData = [
+  {
+    start: '.particle-bg',
+    end: 1500,
+    properties: [
+      {
+        startValue: 70,
+        endValue: -30,
+        property: 'translateY'
+      }
+    ]
+  }
+];
+
+const Story = ({ image, title, heading, content }) => (
+  <section className="whatwedo parallax-section">
+    <div className="container">
+      <Plx className='particle-bg' parallaxData={parallaxData}>
+        <div />
+      </Plx>
+      <div className="image-block rounded-bottomright">
+        <img src={image} alt="hero-image-brainstorm" />
+      </div>
+      <div className="start-element text-block white-bg">
+        <p className="tagline">{title}</p>
+        <h2>{heading}</h2>
+        <div className="text-content">
+          {content.map((data, i) => (
+            <p key={i}>{data.text}</p>
+          ))}
         </div>
       </div>
-    </section>
-  )
+    </div>
+  </section>
+);
 
 Story.propTypes = {
   image: PropTypes.string,
@@ -35,6 +47,6 @@ Story.propTypes = {
       text: PropTypes.string
     })
   )
-}
+};
 
-export default Story
+export default Story;

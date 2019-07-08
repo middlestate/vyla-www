@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import Hero from '../Hero';
-import Story from '../Story';
+import WhatWeDo from '../WhatWeDo';
 import BenefitAnalysis from '../BenefitAnalysis';
 
 const FarmPageTemplate = ({
@@ -24,7 +24,7 @@ const FarmPageTemplate = ({
       heading={hero.heading}
       description={hero.description}
     />
-    <Story
+    <WhatWeDo
       image={story.image}
       title={story.title}
       heading={story.heading}
