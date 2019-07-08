@@ -30,7 +30,7 @@ FarmPage.propTypes = {
 
 export default FarmPage;
 
-export const FarmPageQuery = graphql`
+export const farmPageQuery = graphql`
   query FarmPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
