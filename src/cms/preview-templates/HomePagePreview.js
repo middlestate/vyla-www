@@ -41,6 +41,10 @@ const HomePagePreview = ({ entry, getAsset }) => {
       mission={{
         title: entry.getIn(['data', 'mission', 'title']),
         heading: entry.getIn(['data', 'mission', 'heading']),
+        quote: entry.getIn(['data', 'mission', 'quote']),
+        cite_logo: entry.getIn(['data', 'mission', 'cite_logo']),
+        cite_name: entry.getIn(['data', 'mission', 'cite_name']),
+        cite_text: entry.getIn(['data', 'mission', 'cite_text']),
         cards: missionCards
       }}
       quote={{

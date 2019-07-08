@@ -44,6 +44,7 @@ const Hero = ({
         <h1>{heading}</h1>
           <p className="intro">{description}</p>
           {content ? <Content text={content} /> : ''}
+        <p className="intro">{description}</p>
         <div className="button-c2a">
           <VylaButton
             url="https://mdst.typeform.com/to/VTG8Y7"
