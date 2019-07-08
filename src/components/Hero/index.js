@@ -12,11 +12,22 @@ import Image from '../Image';
 //   </Parallax>
 // )
 
+const Content = props => (
+  <div className='text-content'>
+    {console.log('>>>>>',props.text)}
+    {props.text.map((text, i) =>
+      <p>{text.text}</p>
+      )}
+  </div>
+)
+
+
 const Hero = ({
   image,
   background_color,
   heading,
-  description
+  description,
+  content
 }) => (
   <section className="hero">
       <div className="highlight" style={{backgroundColor: background_color}}/>
@@ -31,7 +42,8 @@ const Hero = ({
       {/* </Parallax> */}
       <div className="text-block rounded-topleft white-bg">
         <h1>{heading}</h1>
-        <p className="intro">{description}</p>
+          <p className="intro">{description}</p>
+          {content ? <Content text={content} /> : ''}
         <div className="button-c2a">
           <VylaButton
             url="https://mdst.typeform.com/to/VTG8Y7"
@@ -48,7 +60,12 @@ Hero.propTypes = {
   image: PropTypes.string,
   background_color: PropTypes.string,
   heading: PropTypes.string,
-  description: PropTypes.string
+  description: PropTypes.string,
+  content: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.array
+    })
+  )
 }
 
 export default Hero;

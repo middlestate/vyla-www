@@ -13,10 +13,10 @@ const Story = ({
 		    <div className="image-block rounded-bottomright">
           <img src={image} alt="hero-image-brainstorm" />
 		    </div>
-		    <div class="text-block white-bg">
-			  <p class="tagline">{title}</p>
+		    <div className="text-block white-bg">
+			  <p className="tagline">{title}</p>
 			  <h2>{heading}</h2>
-          <div class="text-content">
+          <div className="text-content">
             {content.map((data, i) => (
               <p key={i}>{data.text}</p>
             ))}
@@ -26,7 +26,7 @@ const Story = ({
     </section>
   )
 
-Story.PropTypes = {
+Story.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
   heading: PropTypes.string,
