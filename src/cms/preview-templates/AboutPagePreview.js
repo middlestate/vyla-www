@@ -20,7 +20,10 @@ const AboutPagePreview = ({ entry, getAsset }) => {
         heading: entry.getIn(['data', 'hero', 'heading']),
         description: entry.getIn(['data', 'hero', 'description']),
         content: heroContent,
-        button: entry.getIn(['data','hero','button'])
+        button: {
+          classes: entry.getIn(['data', 'hero', 'button', 'classes']),
+          text: entry.getIn(['data', 'hero', 'button', 'text'])
+        }
       }}
       story={{
         image: entry.getIn(['data', 'story', 'image']),

@@ -30,7 +30,10 @@ const HomePagePreview = ({ entry, getAsset }) => {
         background_color: entry.getIn(['data', 'hero', 'background_color']),
         heading: entry.getIn(['data', 'hero', 'heading']),
         description: entry.getIn(['data', 'hero', 'description']),
-        button: entry.getIn(['data', 'hero', 'button'])
+        button: {
+          classes: entry.getIn(['data', 'hero', 'button', 'classes']),
+          text: entry.getIn(['data', 'hero', 'button', 'text'])
+        }
       }}
       what_we_do={{
         image: entry.getIn(['data', 'what_we_do', 'image']),
