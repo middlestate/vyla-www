@@ -14,7 +14,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
       }
     `}
     render={data => (
-      <Fragment>
+      <div className={`${isActive ?  'is-showNav' : ''}`}>
         <div className="header-left">
           <Link to="/" className="logo">
             <img src={Logo} />
@@ -44,7 +44,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
             />
             <div className="mobile-button">
               <button
-                className={`menuButton ${isActive ? 'is-showNav' : ''}`}
+                className={`menuButton ${isActive ? 'js-toggleNav' : ''}`}
                 data-target="navMenu"
                 onClick={toggleNavbar}>
                 <div className="icon">
@@ -54,7 +54,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
               </button>
             </div>
           </div>
-          <div className={`navigation-mobile ${isActive ? 'is-showNav' : ''} `}>
+          <div className={`navigation-mobile ${isActive ? 'js-toggleNav' : ''} `}>
             <div className="container">
               <nav className="mobile">
                 <ul>
@@ -72,7 +72,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
             </div>
           </div>
         </div>
-      </Fragment>
+      </div>
     )}
   />
 );
