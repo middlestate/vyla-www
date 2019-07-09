@@ -45,6 +45,7 @@ export const farmPageQuery = graphql`
           button {
             classes
             text
+            link
           }
         }
         story {

@@ -46,6 +46,7 @@ export const contactPageQuery = graphql`
           button {
             classes
             text
+            link
           }
         }
         email {

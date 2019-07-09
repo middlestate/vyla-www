@@ -60,7 +60,7 @@ const Hero = ({
         {email ? <Email heading={email.heading} mail={email.mail} /> : ''}
         <div className="button-c2a">
           <VylaButton
-            url="https://mdst.typeform.com/to/VTG8Y7"
+            url={button.link}
             classes={button.classes}
             text={button.text}
           />
@@ -82,7 +82,8 @@ Hero.propTypes = {
   ),
   button: PropTypes.shape({
     classes: PropTypes.string,
-    text: PropTypes.string
+    text: PropTypes.string,
+    link: PropTypes.string
   }),
   email: PropTypes.shape({
     heading: PropTypes.string,

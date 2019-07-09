@@ -17,7 +17,8 @@ hero:
   image: /img/hero-image-consumers.jpg
   button:
     classes: button button-blue
-    text: Join Us
+    text: Join Us Now!
+    link: https://mdst.typeform.com/to/VTG8Y7
 story:
   image: /img/hero-image-brainstorm.jpg
   title: THE STORY OF VYLA

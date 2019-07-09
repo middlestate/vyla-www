@@ -12,7 +12,8 @@ hero:
   image: /img/hero-image-cows.jpg
   button:
     classes: button button-blue
-    text: Join Us
+    text: Join Us Now!
+    link: https://mdst.typeform.com/to/VTG8Y7
 what_we_do:
   image: /img/vyla-dashboard-ipad.png
   alt: vyla-dashboard-ipad

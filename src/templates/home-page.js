@@ -48,6 +48,7 @@ export const pageQuery = graphql`
           button {
             classes
             text
+            link
           }
         }
         what_we_do {

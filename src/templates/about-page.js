@@ -51,6 +51,7 @@ export const aboutPageQuery = graphql`
           button {
             classes
             text
+            link
           }
         }
         story {

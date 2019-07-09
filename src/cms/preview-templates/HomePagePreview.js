@@ -32,7 +32,8 @@ const HomePagePreview = ({ entry, getAsset }) => {
         description: entry.getIn(['data', 'hero', 'description']),
         button: {
           classes: entry.getIn(['data', 'hero', 'button', 'classes']),
-          text: entry.getIn(['data', 'hero', 'button', 'text'])
+          text: entry.getIn(['data', 'hero', 'button', 'text']),
+          link: entry.getIn(['data', 'hero', 'button', 'link'])
         }
       }}
       what_we_do={{

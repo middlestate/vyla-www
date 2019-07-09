@@ -17,12 +17,13 @@ const ContactPagePreview = ({ entry, getAsset }) => {
         content: heroContent,
         button: {
           classes: entry.getIn(['data', 'hero', 'button', 'classes']),
-          text: entry.getIn(['data','hero','button','text'])
+          text: entry.getIn(['data', 'hero', 'button', 'text']),
+          link: entry.getIn(['data', 'hero', 'button', 'link'])
         }
       }}
       email={{
         heading: entry.getIn(['data', 'email', 'heading']),
-        mail: entry.getIn(['data','email', 'mail'])
+        mail: entry.getIn(['data', 'email', 'mail'])
       }}
       meta_title={entry.getIn(['data', 'meta_title'])}
       meta_description={entry.getIn(['data', 'meta_description'])}

@@ -13,6 +13,7 @@ hero:
   button:
     classes: button button-blue
     text: Contact Us
+    link: https://mdst.typeform.com/to/VTG8Y7
 email:
   heading: Contact us directly
   mail: "Send an email: info@vyla.com"

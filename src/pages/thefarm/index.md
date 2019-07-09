@@ -12,7 +12,8 @@ hero:
   image: /img/hero-image-farm.jpg
   button:
     classes: button button-blue
-    text: Join Us
+    text: Join Us Now!
+    link: https://mdst.typeform.com/to/VTG8Y7
 story:
   image: /img/vyla-dashboard-ipad.png
   title: THE STORY OF VYLA
