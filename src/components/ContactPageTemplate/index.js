@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Hero from '../Hero';
-import VylaButton from '../VylaButton';
 
 const ContactPageTemplate = ({ title, meta_title, hero, email }) => (
   <Fragment>
@@ -12,6 +11,7 @@ const ContactPageTemplate = ({ title, meta_title, hero, email }) => (
       content={hero.content}
       image={hero.image}
       button={hero.button}
+      email={email}
     />
   </Fragment>
 );
@@ -27,10 +27,7 @@ ContactPageTemplate.propTypes = {
     image: PropTypes.string,
     button: PropTypes.object
   }),
-  email: PropTypes.shape({
-    heading: PropTypes.string,
-    mail: PropTypes.string
-  })
+  email: PropTypes.object
 };
 
 export default ContactPageTemplate;

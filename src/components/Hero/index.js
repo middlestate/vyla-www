@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import VylaButton from '../VylaButton';
 import Plx from 'react-plx';
@@ -9,6 +9,17 @@ const Content = props => (
       <p key={i}>{text.text}</p>
     ))}
   </div>
+);
+
+const Email = props => (
+  <Fragment>
+    <div className="footer-links">
+      <ul>
+        <li>{props.heading}</li>
+      </ul>
+      </div>
+    <p>{props.mail}</p>
+  </Fragment>
 );
 
 const parallaxData = [
@@ -31,7 +42,8 @@ const Hero = ({
   heading,
   description,
   button,
-  content
+  content,
+  email
 }) => (
   <section className="hero">
     <div className="highlight" style={{ backgroundColor: background_color }} />
@@ -45,6 +57,7 @@ const Hero = ({
         <h1>{heading}</h1>
         <p className="intro">{description}</p>
         {content ? <Content text={content} /> : ''}
+        {email ? <Email heading={email.heading} mail={email.mail} /> : ''}
         <div className="button-c2a">
           <VylaButton
             url="https://mdst.typeform.com/to/VTG8Y7"
@@ -70,6 +83,10 @@ Hero.propTypes = {
   button: PropTypes.shape({
     classes: PropTypes.string,
     text: PropTypes.string
+  }),
+  email: PropTypes.shape({
+    heading: PropTypes.string,
+    mail: PropTypes.string
   })
 };
 

@@ -28,6 +28,7 @@ const FarmPagePreview = ({ entry, getAsset }) => {
         background_color: entry.getIn(['data', 'hero', 'background_color']),
         heading: entry.getIn(['data', 'hero', 'heading']),
         description: entry.getIn(['data', 'hero', 'description']),
+        button: entry.getIn(['data', 'hero', 'button'])
       }}
       story={{
         image: entry.getIn(['data', 'story', 'image']),
@@ -51,4 +52,4 @@ FarmPagePreview.propTypes = {
   getAsset: PropTypes.func
 };
 
-export default FarmPagePreview
+export default FarmPagePreview;

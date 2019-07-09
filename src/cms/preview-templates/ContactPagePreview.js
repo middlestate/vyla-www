@@ -1,25 +1,34 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import ContactPageTemplate from '../../components/ContactPageTemplate'
+import React from 'react';
+import PropTypes from 'prop-types';
+import ContactPageTemplate from '../../components/ContactPageTemplate';
 
 const ContactPagePreview = ({ entry, getAsset }) => {
+  const entryHeroContent = entry.getIn(['data', 'hero', 'content']);
+  const heroContent = entryHeroContent ? entryHeroContent.toJS() : [];
+
   return (
     <ContactPageTemplate
       title={entry.getIn(['data', 'title'])}
-      image={entry.getIn(['data', 'image'])}
-      background_color={entry.getIn(['data','background_color'])}
-      subtitle={entry.getIn(['data', 'subtitle'])}
+      hero={{
+        image: entry.getIn(['data', 'hero', 'image']),
+        background_color: entry.getIn(['data', 'hero', 'background_color']),
+        heading: entry.getIn(['data', 'hero', 'heading']),
+        description: entry.getIn(['data', 'hero', 'description']),
+        content: heroContent,
+        button: entry.getIn(['data', 'hero', 'button'])
+      }}
+      email={entry.getIn(['data', 'email'])}
       meta_title={entry.getIn(['data', 'meta_title'])}
       meta_description={entry.getIn(['data', 'meta_description'])}
     />
-  )
-}
+  );
+};
 
 ContactPagePreview.propTypes = {
   entry: PropTypes.shape({
-    getIn: PropTypes.func,
+    getIn: PropTypes.func
   }),
-  getAsset: PropTypes.func,
-}
+  getAsset: PropTypes.func
+};
 
-export default ContactPagePreview
+export default ContactPagePreview;
