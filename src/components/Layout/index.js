@@ -24,7 +24,7 @@ class Layout extends Component {
           <title>{config.siteTitle}</title>
           <meta name="description" content={config.siteDescription} />
         </Helmet>
-        <div className="main">
+        <div className={`main is-loaded ${this.state.isActive ? 'is-showNav' : ''}`}>
           <NavBar
             isActive={this.state.isActive}
             toggleNavbar={() => this.toggleNavbar()}

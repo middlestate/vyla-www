@@ -11,7 +11,7 @@ export default class HTML extends Component {
           {this.props.headComponents}
           <link rel='shortcut icon' href={favicon} />
         </head>
-        <body>
+        <body className='is-loaded is-showNav'>
           <div
             id='___gatsby'
             dangerouslySetInnerHTML={{__html: this.props.body}}
