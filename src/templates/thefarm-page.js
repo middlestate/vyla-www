@@ -42,6 +42,10 @@ export const farmPageQuery = graphql`
           image
           heading
           description
+          button {
+            classes
+            text
+          }
         }
         story {
           image

@@ -15,6 +15,9 @@ hero:
     - text: >
         The end result will be improvement in sustainability, processing, product innovations and new value for everyone.
   image: /img/hero-image-consumers.jpg
+  button:
+    classes: button button-blue
+    text: Join Us
 story:
   image: /img/hero-image-brainstorm.jpg
   title: THE STORY OF VYLA

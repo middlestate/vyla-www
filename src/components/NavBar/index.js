@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import { Link, graphql, StaticQuery } from 'gatsby';
 // import SearchBox from '../SearchBox'
 import VylaButton from '../VylaButton';
-// import {ReactComponent as Icon} from '../../assets/img/vyla-logo.svg'
 import Logo from '../../assets/img/vyla-logo.svg';
 
 const NavBar = ({ toggleNavbar, isActive }) => (

@@ -45,6 +45,10 @@ export const pageQuery = graphql`
           image
           heading
           description
+          button {
+            classes
+            text
+          }
         }
         what_we_do {
           image

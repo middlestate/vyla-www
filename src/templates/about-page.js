@@ -48,6 +48,10 @@ export const aboutPageQuery = graphql`
           content {
             text
           }
+          button {
+            classes
+            text
+          }
         }
         story {
           image

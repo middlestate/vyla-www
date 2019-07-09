@@ -10,6 +10,9 @@ hero:
   description: >-
     We are lifting ourselves to a new standard of integration to bring new value to our farms, to our industry, and to the world’s table.
   image: /img/hero-image-cows.jpg
+  button:
+    classes: button button-blue
+    text: Join Us
 what_we_do:
   image: /img/vyla-dashboard-ipad.png
   alt: vyla-dashboard-ipad

@@ -24,6 +24,7 @@ const AboutPageTemplate = ({
       heading={hero.heading}
       description={hero.description}
       content={hero.content}
+      button={hero.button}
     />
     <Story
       image={story.image}
@@ -48,7 +49,8 @@ AboutPageTemplate.propTypes = {
     image: PropTypes.string,
     heading: PropTypes.string,
     description: PropTypes.string,
-    content: PropTypes.array
+    content: PropTypes.array,
+    button: PropTypes.object
   }),
   story: PropTypes.shape({
     image: PropTypes.string,

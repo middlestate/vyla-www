@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import VylaButton from '../VylaButton';
 import Plx from 'react-plx';
-import Image from '../Image';
 
 const Content = props => (
   <div className="text-content">
@@ -26,7 +25,14 @@ const parallaxData = [
   }
 ];
 
-const Hero = ({ image, background_color, heading, description, content }) => (
+const Hero = ({
+  image,
+  background_color,
+  heading,
+  description,
+  button,
+  content
+}) => (
   <section className="hero">
     <div className="highlight" style={{ backgroundColor: background_color }} />
     <div className="container">
@@ -35,9 +41,6 @@ const Hero = ({ image, background_color, heading, description, content }) => (
         parallaxData={parallaxData}>
         <img src={image} />
       </Plx>
-      {/* <div className="image-block rounded-bottomright">
-        <img src={image} />
-      </div> */}
       <div className="text-block rounded-topleft white-bg">
         <h1>{heading}</h1>
         <p className="intro">{description}</p>
@@ -45,8 +48,8 @@ const Hero = ({ image, background_color, heading, description, content }) => (
         <div className="button-c2a">
           <VylaButton
             url="https://mdst.typeform.com/to/VTG8Y7"
-            classes="button button-blue"
-            text="Join Us"
+            classes={button.classes}
+            text={button.text}
           />
         </div>
       </div>
@@ -63,7 +66,11 @@ Hero.propTypes = {
     PropTypes.shape({
       text: PropTypes.string
     })
-  )
+  ),
+  button: PropTypes.shape({
+    classes: PropTypes.string,
+    text: PropTypes.string
+  })
 };
 
 export default Hero;
