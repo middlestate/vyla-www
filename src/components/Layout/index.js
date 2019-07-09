@@ -25,17 +25,13 @@ class Layout extends Component {
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         <div className="main">
-          <header>
-            <div className="container header-top">
-              <NavBar
-                isActive={this.state.isActive}
-                toggleNavbar={() => this.toggleNavbar()}
-              />
-            </div>
-          </header>
+          <NavBar
+            isActive={this.state.isActive}
+            toggleNavbar={() => this.toggleNavbar()}
+          />
         </div>
-          <Fragment>{this.props.children}</Fragment>
-          <Footer />
+        <Fragment>{this.props.children}</Fragment>
+        <Footer />
       </Fragment>
     );
   }
