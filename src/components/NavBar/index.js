@@ -47,7 +47,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
             </div>
             <div className="mobile-button">
               <button
-                className={`menuButton ${isActive ? 'is-showNav' : ''}`}
+                className={`menuButton ${isActive ? 'js-toggleNav is-showNav' : ''}`}
                 data-target="navMenu"
                 onClick={toggleNavbar}>
                 <div className="icon">
@@ -58,7 +58,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
             </div>
           </div>
         </div>
-        <div className='navigation-mobile'>
+        <div className="navigation-mobile">
           <div className="container">
             <nav className="mobile">
               <ul>
