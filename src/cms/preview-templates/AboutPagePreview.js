@@ -12,8 +12,8 @@ const AboutPagePreview = ({ entry, getAsset }) => {
   const entryMissionCards = entry.getIn(['data', 'mission', 'cards'])
   const missionCards = entryMissionCards ? entryMissionCards.toJS() : []
 
-  // const entryFounders = entry.getIn(['data', 'team', 'founders'])
-  // const founderCards = entryFounders ? entryFounders.toJS() : []
+  const entryFounders = entry.getIn(['data', 'team', 'founders'])
+  const founders = entryFounders ? entryFounders.toJS() : []
 
   return (
     <AboutPageTemplate
@@ -44,9 +44,7 @@ const AboutPagePreview = ({ entry, getAsset }) => {
         cite_text: entry.getIn(['data', 'mission', 'cite_text']),
         cards: missionCards,
       }}
-      team={{
-        founders: entry.getIn(['data', 'team', 'founders']),
-      }}
+      team={{ founders }}
     />
   )
 }
