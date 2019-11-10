@@ -28,18 +28,19 @@ const Team = ({ founders }) => (
       </div>
       <div className="mission-cards">
         {founders.map(({ name, title, image, content }) => (
-          <div key={name} className="card-container" style={{ width: 472 }}>
+          <div key={name} className="card-container">
             <div className="card-content">
               <div className="card-header">
                 <div
                   className="card-icon"
-                  style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    width: '22em',
-                    marginBottom: 20,
-                  }}>
+                  // style={{
+                  //   display: 'flex',
+                  //   justifyContent: 'center',
+                  //   alignItems: 'center',
+                  //   width: '22em',
+                  //   marginBottom: 20,
+                  // }}
+                >
                   <figure>
                     <img src={image} alt={name} />
                   </figure>
