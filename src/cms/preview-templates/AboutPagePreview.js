@@ -12,7 +12,7 @@ const AboutPagePreview = ({ entry, getAsset }) => {
   const entryMissionCards = entry.getIn(['data', 'mission', 'cards'])
   const missionCards = entryMissionCards ? entryMissionCards.toJS() : []
 
-  const entryFounders = entry.getIn(['data', 'founders'])
+  const entryFounders = entry.getIn(['data', 'team', 'founders'])
   const founders = entryFounders ? entryFounders.toJS() : []
 
   return (
