@@ -44,7 +44,7 @@ const AboutPagePreview = ({ entry, getAsset }) => {
         cite_text: entry.getIn(['data', 'mission', 'cite_text']),
         cards: missionCards,
       }}
-      founders={{
+      team={{
         founders,
       }}
     />
