@@ -22,7 +22,7 @@ const AboutPageTemplate = ({ title, meta_title, meta_description, hero, story, m
     />
     <Story image={story.image} title={story.title} heading={story.heading} content={story.content} />
     <Mission title={mission.title} heading={mission.heading} cards={mission.cards} />
-    {/* <Team founders={team.founders} /> */}
+    <Team founders={team.founders} />
   </div>
 )
 
