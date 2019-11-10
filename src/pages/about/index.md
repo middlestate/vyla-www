@@ -96,20 +96,19 @@ team:
       name: Tim Taylor
       title: CEO
     - content:
-        - text: >
+        - text: >+
             Yoav is the Asia regional president of the AllFlex group, an US
             based company. AllFlex group is the world leading company for animal
-            identification and animal monitoring.
-        - text: >
-            Mr. Levsky has substantial commercial and strategic innovation
-            experience with over 15 years in the dairy industry and precise
-            farming business.
+            identification and animal monitoring. He has substantial commercial
+            and strategic innovation experience with over 15 years in the dairy
+            industry and precise farming business.
+
         - text: >-
-            As the AllFlex Asia regional president, Mr Levsky is operating out
-            of Beijing, China. Asia is today a market consisting of 70% of the
+            As the AllFlex Asia regional president, Yoav is operating out of
+            Beijing, China. Asia is today a market consisting of 70% of the
             global animal population and the fastest growing animal
-            identification and monitoring market. Mr Levsky is also a board
-            member of Artex Barn Solutions.
+            identification and monitoring market. He is also a board member of
+            Artex Barn Solutions.
       image: /img/bio-yoav.png
       name: Yoav Levsky
       title: PRESIDENT
