@@ -1,12 +1,11 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import PropTypes from 'prop-types';
-import Hero from '../Hero';
-import WhatWeDo from '../WhatWeDo';
-import Mission from '../Mission';
-import BenefitAnalysis from '../BenefitAnalysis';
-import Quote from '../Quote';
-import { warnOnceInDevelopment } from 'apollo-utilities';
+import React from 'react'
+import Helmet from 'react-helmet'
+import PropTypes from 'prop-types'
+import Hero from '../Hero'
+import WhatWeDo from '../WhatWeDo'
+import Mission from '../Mission'
+import BenefitAnalysis from '../BenefitAnalysis'
+import Quote from '../Quote'
 
 const HomePageTemplate = ({
   title,
@@ -16,7 +15,7 @@ const HomePageTemplate = ({
   what_we_do,
   mission,
   quote,
-  benefit_analysis
+  benefit_analysis,
 }) => (
   <div>
     <Helmet>
@@ -37,24 +36,11 @@ const HomePageTemplate = ({
       heading={what_we_do.heading}
       content={what_we_do.content}
     />
-    <Mission
-      title={mission.title}
-      heading={mission.heading}
-      cards={mission.cards}
-    />
-    <Quote
-      quote={quote.quote}
-      cite_logo={quote.cite_logo}
-      cite_name={quote.cite_name}
-      cite_text={quote.cite_text}
-    />
-    <BenefitAnalysis
-      title={benefit_analysis.title}
-      heading={benefit_analysis.heading}
-      cards={benefit_analysis.cards}
-    />
+    <Mission title={mission.title} heading={mission.heading} cards={mission.cards} />
+    <Quote quote={quote.quote} cite_logo={quote.cite_logo} cite_name={quote.cite_name} cite_text={quote.cite_text} />
+    <BenefitAnalysis title={benefit_analysis.title} heading={benefit_analysis.heading} cards={benefit_analysis.cards} />
   </div>
-);
+)
 
 HomePageTemplate.propTypes = {
   title: PropTypes.string,
@@ -65,31 +51,31 @@ HomePageTemplate.propTypes = {
     background_color: PropTypes.string,
     heading: PropTypes.string,
     description: PropTypes.string,
-    button: PropTypes.object
+    button: PropTypes.object,
   }),
   what_we_do: PropTypes.shape({
     image: PropTypes.string,
     alt: PropTypes.string,
     tagline: PropTypes.string,
     heading: PropTypes.string,
-    content: PropTypes.array
+    content: PropTypes.array,
   }),
   mission: PropTypes.shape({
     title: PropTypes.string,
     heading: PropTypes.string,
-    cards: PropTypes.array
+    cards: PropTypes.array,
   }),
   quote: PropTypes.shape({
     quote: PropTypes.string,
     cite_logo: PropTypes.string,
     cite_name: PropTypes.string,
-    cite_text: PropTypes.string
+    cite_text: PropTypes.string,
   }),
   benefit_analysis: PropTypes.shape({
     title: PropTypes.string,
     heading: PropTypes.string,
-    cards: PropTypes.array
-  })
-};
+    cards: PropTypes.array,
+  }),
+}
 
-export default HomePageTemplate;
+export default HomePageTemplate

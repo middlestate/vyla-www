@@ -1,13 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="500px" height="311px" viewBox="0 0 500 311" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
-    <title>partner-logos-lely</title>
-    <desc>Created with Sketch.</desc>
-    <g id="partner-logos-lely" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M249.827815,309.592715 C111.847682,309.592715 0,240.283664 0,154.798013 C0,69.3101545 111.847682,0 249.827815,0 C387.798013,0 499.645695,69.3101545 499.645695,154.798013 C499.645695,240.283664 387.798013,309.592715 249.827815,309.592715" id="Fill-6" fill="#00519B"></path>
-        <polygon id="Fill-8" fill="#FEFEFE" points="323.828808 225.213797 262.099227 197.845143 262.125717 110.991943 291.260375 98.5316777 291.260375 185.965453 323.805629 198.75574"></polygon>
-        <polygon id="Fill-10" fill="#FEFEFE" points="234.756843 132.582671 213.792163 125.911589 213.829691 144.425938 234.583554 148.063907 234.576932 161.950221 213.829691 165.549558 213.780022 182.219536 234.756843 174.370751 234.753532 196.30894 190.381567 216.371854 190.40585 92.0009934 234.756843 111.020861"></polygon>
-        <polygon id="Fill-12" fill="#FEFEFE" points="174.594812 223.507506 104.486645 255.133333 104.486645 55.1796909 136.674283 69.0571744 136.709603 211.020751 174.594812 196.910375"></polygon>
-        <polygon id="Fill-14" fill="#FEFEFE" points="375.94989 248.324724 344.23245 234.275055 344.23245 164.369978 308.490728 91.2209713 330.394702 81.7960265 354.673951 131.516777 370.60883 64.606181 399.886976 52.1503311 375.960927 157.525607"></polygon>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 311" style="enable-background:new 0 0 500 311;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#C30A14;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FEFEFE;}
+</style>
+<title>partner-logos-lely</title>
+<desc>Created with Sketch.</desc>
+<g id="partner-logos-lely">
+	<path id="Fill-6" class="st0" d="M249.8,309.6C111.8,309.6,0,240.3,0,154.8C0,69.3,111.8,0,249.8,0c138,0,249.8,69.3,249.8,154.8
+		C499.6,240.3,387.8,309.6,249.8,309.6"/>
+	<polygon id="Fill-8" class="st1" points="323.8,225.2 262.1,197.8 262.1,111 291.3,98.5 291.3,186 323.8,198.8 	"/>
+	<polygon id="Fill-10" class="st1" points="234.8,132.6 213.8,125.9 213.8,144.4 234.6,148.1 234.6,162 213.8,165.5 213.8,182.2 
+		234.8,174.4 234.8,196.3 190.4,216.4 190.4,92 234.8,111 	"/>
+	<polygon id="Fill-12" class="st1" points="174.6,223.5 104.5,255.1 104.5,55.2 136.7,69.1 136.7,211 174.6,196.9 	"/>
+	<polygon id="Fill-14" class="st1" points="375.9,248.3 344.2,234.3 344.2,164.4 308.5,91.2 330.4,81.8 354.7,131.5 370.6,64.6 
+		399.9,52.2 376,157.5 	"/>
+</g>
 </svg>

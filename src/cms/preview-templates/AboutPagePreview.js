@@ -1,16 +1,19 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import AboutPageTemplate from '../../components/AboutPageTemplate';
+import React from 'react'
+import PropTypes from 'prop-types'
+import AboutPageTemplate from '../../components/AboutPageTemplate'
 
 const AboutPagePreview = ({ entry, getAsset }) => {
-  const entryHeroContent = entry.getIn(['data', 'hero', 'content']);
-  const heroContent = entryHeroContent ? entryHeroContent.toJS() : [];
+  const entryHeroContent = entry.getIn(['data', 'hero', 'content'])
+  const heroContent = entryHeroContent ? entryHeroContent.toJS() : []
 
-  const entryStoryContent = entry.getIn(['data', 'story', 'content']);
-  const storyContent = entryStoryContent ? entryStoryContent.toJS() : [];
+  const entryStoryContent = entry.getIn(['data', 'story', 'content'])
+  const storyContent = entryStoryContent ? entryStoryContent.toJS() : []
 
-  const entryMissionCards = entry.getIn(['data', 'mission', 'cards']);
-  const missionCards = entryMissionCards ? entryMissionCards.toJS() : [];
+  const entryMissionCards = entry.getIn(['data', 'mission', 'cards'])
+  const missionCards = entryMissionCards ? entryMissionCards.toJS() : []
+
+  const entryFounders = entry.getIn(['data', 'founders'])
+  const founders = entryFounders ? entryFounders.toJS() : []
 
   return (
     <AboutPageTemplate
@@ -23,14 +26,14 @@ const AboutPagePreview = ({ entry, getAsset }) => {
         button: {
           classes: entry.getIn(['data', 'hero', 'button', 'classes']),
           text: entry.getIn(['data', 'hero', 'button', 'text']),
-          link: entry.getIn(['data','hero','button','link'])
-        }
+          link: entry.getIn(['data', 'hero', 'button', 'link']),
+        },
       }}
       story={{
         image: entry.getIn(['data', 'story', 'image']),
         title: entry.getIn(['data', 'story', 'title']),
         heading: entry.getIn(['data', 'story', 'heading']),
-        content: storyContent
+        content: storyContent,
       }}
       mission={{
         title: entry.getIn(['data', 'mission', 'title']),
@@ -39,17 +42,20 @@ const AboutPagePreview = ({ entry, getAsset }) => {
         cite_logo: entry.getIn(['data', 'mission', 'cite_logo']),
         cite_name: entry.getIn(['data', 'mission', 'cite_name']),
         cite_text: entry.getIn(['data', 'mission', 'cite_text']),
-        cards: missionCards
+        cards: missionCards,
+      }}
+      founders={{
+        founders,
       }}
     />
-  );
-};
+  )
+}
 
 AboutPagePreview.propTypes = {
   entry: PropTypes.shape({
-    getIn: PropTypes.func
+    getIn: PropTypes.func,
   }),
-  widgetFor: PropTypes.func
-};
+  widgetFor: PropTypes.func,
+}
 
-export default AboutPagePreview;
+export default AboutPagePreview

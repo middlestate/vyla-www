@@ -4,8 +4,8 @@ import { graphql } from 'gatsby'
 import AboutPageTemplate from '../components/AboutPageTemplate'
 import Layout from '../components/Layout'
 
-const AboutPage = ({data}) => {
-  const {frontmatter} = data.markdownRemark
+const AboutPage = ({ data }) => {
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
@@ -18,6 +18,7 @@ const AboutPage = ({data}) => {
         image={frontmatter.image}
         story={frontmatter.story}
         mission={frontmatter.mission}
+        team={frontmatter.team}
       />
     </Layout>
   )
@@ -26,8 +27,8 @@ const AboutPage = ({data}) => {
 AboutPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object
-    })
+      frontmatter: PropTypes.object,
+    }),
   }),
 }
 
@@ -69,6 +70,16 @@ export const aboutPageQuery = graphql`
             image
             heading
             list_items
+          }
+        }
+        team {
+          founders {
+            name
+            image
+            title
+            content {
+              text
+            }
           }
         }
       }

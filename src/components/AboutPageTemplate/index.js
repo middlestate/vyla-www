@@ -1,18 +1,12 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import PropTypes from 'prop-types';
-import Hero from '../Hero';
-import Mission from '../Mission';
-import Story from '../Story';
+import React from 'react'
+import Helmet from 'react-helmet'
+import PropTypes from 'prop-types'
+import Hero from '../Hero'
+import Mission from '../Mission'
+import Story from '../Story'
+import Team from '../Team'
 
-const AboutPageTemplate = ({
-  title,
-  meta_title,
-  meta_description,
-  hero,
-  story,
-  mission
-}) => (
+const AboutPageTemplate = ({ title, meta_title, meta_description, hero, story, mission, team }) => (
   <div>
     <Helmet>
       <title>{meta_title}</title>
@@ -26,19 +20,11 @@ const AboutPageTemplate = ({
       content={hero.content}
       button={hero.button}
     />
-    <Story
-      image={story.image}
-      title={story.title}
-      heading={story.heading}
-      content={story.content}
-    />
-    <Mission
-      title={mission.title}
-      heading={mission.heading}
-      cards={mission.cards}
-    />
+    <Story image={story.image} title={story.title} heading={story.heading} content={story.content} />
+    <Mission title={mission.title} heading={mission.heading} cards={mission.cards} />
+    <Team founders={team.founders} />
   </div>
-);
+)
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string,
@@ -50,19 +36,22 @@ AboutPageTemplate.propTypes = {
     heading: PropTypes.string,
     description: PropTypes.string,
     content: PropTypes.array,
-    button: PropTypes.object
+    button: PropTypes.object,
   }),
   story: PropTypes.shape({
     image: PropTypes.string,
     title: PropTypes.string,
     heading: PropTypes.string,
-    content: PropTypes.array
+    content: PropTypes.array,
   }),
   mission: PropTypes.shape({
     title: PropTypes.string,
     heading: PropTypes.string,
-    cards: PropTypes.array
-  })
-};
+    cards: PropTypes.array,
+  }),
+  team: PropTypes.shape({
+    founders: PropTypes.array,
+  }),
+}
 
-export default AboutPageTemplate;
+export default AboutPageTemplate
