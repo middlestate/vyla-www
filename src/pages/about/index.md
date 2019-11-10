@@ -109,7 +109,7 @@ team:
             of Beijing, China. Asia is today a market consisting of 70% of the
             global animal population and the fastest growing animal
             identification and monitoring market. Mr Levsky is also a board
-            member of Artex Barn Solution which is a Canadian based company. 
+            member of Artex Barn Solutions.
       image: /img/bio-yoav.png
       name: Yoav Levsky
       title: PRESIDENT
