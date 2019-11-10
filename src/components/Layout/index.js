@@ -1,11 +1,32 @@
 import React, { Component, Fragment } from 'react'
-// import { ParallaxProvider } from 'react-scroll-parallax';
 import Helmet from 'react-helmet'
+import { graphql, useStaticQuery } from 'gatsby'
 import '../../assets/sass/styles.scss'
-// import '../../assets/sass/styles.sass'
 import config from '../../../config'
 import NavBar from '../NavBar'
 import Footer from '../Footer'
+
+const Partners = () => {
+  const data = useStaticQuery(
+    graphql`
+      query PartnerData {
+        allMarkdownRemark(filter: { frontmatter: { footer: { partners: { elemMatch: { image: { ne: null } } } } } }) {
+          nodes {
+            frontmatter {
+              footer {
+                partners {
+                  image
+                  link
+                }
+              }
+            }
+          }
+        }
+      }
+    `
+  )
+  return data.allMarkdownRemark.nodes[0].frontmatter.footer
+}
 
 class Layout extends Component {
   constructor(props) {
@@ -29,7 +50,7 @@ class Layout extends Component {
           <NavBar isActive={this.state.isActive} toggleNavbar={() => this.toggleNavbar()} />
         </div>
         <Fragment>{this.props.children}</Fragment>
-        <Footer />
+        <Footer Partners={Partners} />
       </Fragment>
     )
   }
