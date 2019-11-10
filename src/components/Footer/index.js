@@ -1,27 +1,4 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-
-// const Partners = () => {
-//   const data = useStaticQuery(
-//     graphql`
-//       query PartnerData {
-//         allMarkdownRemark(filter: { frontmatter: { footer: { partners: { elemMatch: { image: { ne: null } } } } } }) {
-//           nodes {
-//             frontmatter {
-//               footer {
-//                 partners {
-//                   image
-//                   link
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     `
-//   )
-//   return data.allMarkdownRemark.nodes[0].frontmatter.footer
-// }
 
 const Footer = ({ Partners }) => {
   const { partners } = Partners()
