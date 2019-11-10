@@ -13,7 +13,7 @@ const AboutPagePreview = ({ entry, getAsset }) => {
   const missionCards = entryMissionCards ? entryMissionCards.toJS() : []
 
   const entryFounders = entry.getIn(['data', 'team', 'founders'])
-  const founders = entryFounders ? entryFounders.toJS() : []
+  const founderCards = entryFounders ? entryFounders.toJS() : []
 
   return (
     <AboutPageTemplate
@@ -45,7 +45,7 @@ const AboutPagePreview = ({ entry, getAsset }) => {
         cards: missionCards,
       }}
       team={{
-        founders,
+        founders: founderCards,
       }}
     />
   )
