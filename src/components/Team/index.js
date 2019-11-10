@@ -26,13 +26,13 @@ const Team = ({ founders }) => (
         <p className="tagline">THE TEAM</p>
         <h2>Meet the Founders</h2>
       </div>
-      <div className="mission-cards">
+      <div className="founder-cards">
         {founders.map(({ name, title, image, content }) => (
-          <div key={name} className="card-container">
+          <div key={name} className="card-container founder-card-container">
             <div className="card-content">
-              <div className="card-header">
+              <div className="card-header founder-card-header">
                 <div
-                  className="card-icon"
+                  className="card-icon founder-card-icon"
                   // style={{
                   //   display: 'flex',
                   //   justifyContent: 'center',
@@ -46,8 +46,9 @@ const Team = ({ founders }) => (
                   </figure>
                 </div>
                 <div className="card-title">
-                  <h1 style={{ fontWeight: 300 }}>{name}</h1>
+                  <h1 className="founder-name" style={{ fontWeight: 300 }}>{name}</h1>
                   <h2
+                    className="founder-title" 
                     style={{ textAlign: 'center', fontSize: '2em', fontWeight: 300, transform: 'translate(0,-20px)' }}>
                     {title}
                   </h2>

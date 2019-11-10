@@ -1108,6 +1108,52 @@ header .menuButton:hover .bar2 {
 
 */
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .founder-cards {
+    display: block !important;
+  }
+  
+  .founder-card-container {
+    width: 100% !important;
+  }
+
+  .founder-card-header {
+    display: block !important;
+  }
+
+  .founder-card-icon {
+    width: 17rem !important;
+  }
+
+}
+
+// @media (min-width: 426px) and (max-width: 749px) {
+//   .founder-cards {
+//     display: flex !important;
+//   }
+  
+//   .founder-card-container {
+//     width: calc(40% - 1.5em);
+//   }
+// }
+
+.founder-cards {
+  display: flex;
+}
+
+.founder-card-container {
+  width: calc(40% - 1.5em);
+  margin-right: 10px;
+}
+
+.founder-name {
+  font-size: 43px;
+}
+
+.founder-title {
+  font-size: 29px !important;
+}
+
 .card-title h3 {
   font-size: 3rem;
   line-height: 1.1;
@@ -1177,6 +1223,12 @@ header .menuButton:hover .bar2 {
     padding: 4rem;
     margin-bottom: 3rem;
   }
+
+  .founder-card-container {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
 }
 
 /*
