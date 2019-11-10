@@ -65,21 +65,21 @@ const Team = ({ founders }) => (
   </section>
 )
 
-Team.propTypes = {
-  team: PropTypes.shape({
-    founders: PropTypes.arrayOf(
-      PropTypes.shape({
-        name: PropTypes.string,
-        title: PropTypes.string,
-        image: PropTypes.string,
-        content: PropTypes.arrayOf(
-          PropTypes.shape({
-            text: PropTypes.string,
-          })
-        ),
-      })
-    ),
-  }),
-}
+// Team.propTypes = {
+//   team: PropTypes.shape({
+//     founders: PropTypes.arrayOf(
+//       PropTypes.shape({
+//         name: PropTypes.string,
+//         title: PropTypes.string,
+//         image: PropTypes.string,
+//         content: PropTypes.arrayOf(
+//           PropTypes.shape({
+//             text: PropTypes.string,
+//           })
+//         ),
+//       })
+//     ),
+//   }),
+// }
 
 export default Team
