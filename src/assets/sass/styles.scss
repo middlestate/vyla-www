@@ -953,6 +953,8 @@ header .menuButton:hover .bar2 {
   .title-block {
     padding: 4rem;
     padding-top: 4.5rem;
+    padding-left: 0;
+    margin-top: 30%;
   }
 
   .image-block {
@@ -1229,10 +1231,16 @@ header .menuButton:hover .bar2 {
     margin-bottom: 3rem;
   }
 
-  .founder-card-container {
-    margin-left: auto;
-    margin-right: 0;
+  .meet {
+    width: max-content;
+    font-weight: 158;
+    font-size: 30px;
   }
+
+  // .founder-card-container {
+  //   margin-left: auto;
+  //   margin-right: 0;
+  // }
 
 }
 
