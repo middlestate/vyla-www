@@ -111,6 +111,6 @@ team:
             Artex Barn Solutions.
       image: /img/bio-yoav.png
       name: Yoav Levsky
-      title: PRESIDENT
+      title: Chairman
 ---
 
