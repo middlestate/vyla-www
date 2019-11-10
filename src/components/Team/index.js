@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react'
-import PropTypes, { shape } from 'prop-types'
+import React from 'react'
+import PropTypes from 'prop-types'
 import Plx from 'react-plx'
 
 const parallaxData = [
