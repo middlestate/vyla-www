@@ -1110,6 +1110,19 @@ header .menuButton:hover .bar2 {
 
 */
 
+.green-vertical-particle-bg {
+  z-index: 0;
+  content: '';
+  height: 50rem;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  top: 30rem;
+  background: url('../../../static/img/green-shape-bg.png') no-repeat 0 0;
+  background-size: 60rem;
+  background-position: center center;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .founder-cards {
     display: block !important;
@@ -1133,16 +1146,6 @@ header .menuButton:hover .bar2 {
   }
 
 }
-
-// @media (min-width: 426px) and (max-width: 749px) {
-//   .founder-cards {
-//     display: flex !important;
-//   }
-  
-//   .founder-card-container {
-//     width: calc(40% - 1.5em);
-//   }
-// }
 
 .founder-cards {
   display: flex;
@@ -1236,11 +1239,6 @@ header .menuButton:hover .bar2 {
     font-weight: 158;
     font-size: 30px;
   }
-
-  // .founder-card-container {
-  //   margin-left: auto;
-  //   margin-right: 0;
-  // }
 
 }
 

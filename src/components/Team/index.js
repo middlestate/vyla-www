@@ -22,7 +22,6 @@ const Team = ({ founders }) => (
       <div></div>
     </Plx>
     <div className="container">
-
       <div className="founder-cards">
         <div className="founder-card-container">
           <div className="title-block">
@@ -30,6 +29,7 @@ const Team = ({ founders }) => (
             <h2 className="meet">Meet the Founders</h2>
           </div>
         </div>
+        <div className="green-vertical-particle-bg"></div>
         {founders.map(({ name, title, image, content }) => (
           <div key={name} className="card-container founder-card-container">
             <div className="card-content">
