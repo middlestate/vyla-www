@@ -1152,12 +1152,12 @@ header .menuButton:hover .bar2 {
 }
 
 .founder-card-container {
-  width: calc(40% - 1.5em);
-  margin-right: 10px;
+  width: calc(36% - 1.5em);
+  margin: 10px 0 10px 20px;
 }
 
 .founder-name {
-  font-size: 43px;
+  font-size: 41px;
 }
 
 .founder-title {
@@ -1221,6 +1221,10 @@ header .menuButton:hover .bar2 {
   top: 0;
   height: 1.5rem;
   width: 1.5rem;
+}
+
+.team {
+  margin-bottom: 3rem;
 }
 
 @media (min-width: 749px) {
