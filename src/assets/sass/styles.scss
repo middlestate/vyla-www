@@ -1116,18 +1116,6 @@ header .menuButton:hover .bar2 {
 
 */
 
-.green-vertical-particle-bg {
-  z-index: 0;
-  content: '';
-  height: 50rem;
-  position: absolute;
-  width: 100%;
-  overflow: hidden;
-  top: 30rem;
-  background: url('../../../static/img/green-shape-bg.png') no-repeat 0 0;
-  background-size: 60rem;
-  background-position: center center;
-}
 
 @media (min-width: 320px) and (max-width: 767px) {
   .story .mission .team {
@@ -1346,7 +1334,44 @@ header .menuButton:hover .bar2 {
     top: 0;
   }
 }
+ /*
 
+  SECTION THE TEAM
+
+*/
+
+.container .team{
+  z-index: 9;
+  position: relative;
+}
+
+.team .particle-bg {
+  z-index: 0;
+  content: '';
+  height: 50rem;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  top: 8rem;
+  background: url('../../../static/img/green-shape-bg.png') no-repeat 0 0;
+  background-size: 70rem;
+  background-position: center center;
+}
+
+/* THIS IS HERE FOR COMPARISON
+.mission .particle-bg {
+  z-index: 0;
+  content: '';
+  height: 50rem;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  top: 30rem;
+  background: url('../img/bgshape-blue.svg') no-repeat 0 0;
+  background-size: 90rem;
+  background-position: center center;
+}
+*/
 
 /*
 

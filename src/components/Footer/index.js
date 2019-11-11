@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from '../../assets/img/vyla-logo.svg'
 
 const Footer = ({ Partners }) => {
   const { partners } = Partners()
@@ -19,7 +20,7 @@ const Footer = ({ Partners }) => {
           <div className="footer-contact rounded-bottomright">
             <div className="footer-logo">
               <div className="logo">
-                <img src={require('../../assets/img/vyla-logo.svg')} />
+                <img src={Logo} />
               </div>
             </div>
             <div className="footer-contact-container">
