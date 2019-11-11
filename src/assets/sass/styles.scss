@@ -1130,6 +1130,7 @@ header .menuButton:hover .bar2 {
   
   .founder-card-container {
     width: 100% !important;
+    margin: 20px 0 !important;
   }
 
   .founder-card-header {
@@ -1145,7 +1146,51 @@ header .menuButton:hover .bar2 {
     text-align: center;
   }
 
+  .founder-title {
+    position: relative;
+    top: 12px;
+  }
+
 }
+
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .meet {
+    width: auto !important;
+  }
+
+  .founder-cards {
+    display: flex !important;
+  }
+  
+  .founder-card-container {
+    width: calc(33.3% - 1.5rem) !important;
+    margin: 10px;
+  }
+
+  .founder-card-header {
+    display: block !important;
+  }
+
+  .founder-card-icon {
+    width: 17rem !important;
+    height: 12rem !important;
+    margin: 0 auto;
+  }
+
+  .founder-name {
+    text-align: center;
+  }
+
+  .founder-title {
+    position: relative;
+    top: 15px;
+  }
+
+}
+
+
+
 
 .founder-cards {
   display: flex;
