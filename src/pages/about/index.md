@@ -80,22 +80,6 @@ mission:
 team:
   founders:
     - content:
-        - text: >
-            Tim has a considerable start-up and growth company leadership
-            experience on an international scale. He has been the founder and
-            CEO of three manufacturing start-ups and from 2017 to 2019 he was
-            the CEO of VAS (Valley Agricultural Software, Tulare CA).
-        - text: >
-            At VAS, he led the transformation of the company from 100%
-            “on-premise” software to being the leading Cloud platform for dairy
-            operations,
-        - text: >
-            While at VAS, Tim collaborated with Nestle, Land O Lakes, Merck
-            Animal Health and Lely to form Vyla.
-      image: /img/bio-tim.png
-      name: Tim Taylor
-      title: CEO
-    - content:
         - text: >+
             Yoav is the Asia regional president of the AllFlex group, an US
             based company. AllFlex group is the world leading company for animal
@@ -112,5 +96,21 @@ team:
       image: /img/bio-yoav.png
       name: Yoav Levsky
       title: Chairman
+    - content:
+        - text: >
+            Tim has a considerable start-up and growth company leadership
+            experience on an international scale. He has been the founder and
+            CEO of three manufacturing start-ups and from 2017 to 2019 he was
+            the CEO of VAS (Valley Agricultural Software, Tulare CA).
+        - text: >
+            At VAS, he led the transformation of the company from 100%
+            “on-premise” software to being the leading Cloud platform for dairy
+            operations,
+        - text: >
+            While at VAS, Tim collaborated with Nestle, Land O Lakes, Merck
+            Animal Health and Lely to form Vyla.
+      image: /img/bio-tim.png
+      name: Tim Taylor
+      title: CEO
 ---
 
