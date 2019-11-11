@@ -954,7 +954,13 @@ header .menuButton:hover .bar2 {
     padding: 4rem;
     padding-top: 4.5rem;
     padding-left: 0;
-    margin-top: 30%;
+    margin-top: 5%;
+  }
+
+  .founder-card-container {
+    .title-block {
+      margin-top: 30% !important;
+    }
   }
 
   .image-block {
@@ -1124,6 +1130,10 @@ header .menuButton:hover .bar2 {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .story .mission .team {
+    margin-top: 40% !important;
+  } 
+
   .founder-cards {
     display: block !important;
   }
@@ -1269,6 +1279,7 @@ header .menuButton:hover .bar2 {
 }
 
 .team {
+  margin-top: 15%;
   margin-bottom: 3rem;
 }
 
