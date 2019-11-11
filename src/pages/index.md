@@ -73,12 +73,12 @@ benefit_analysis:
         Consumers who can see where their food comes from, how it’s been produced, and what impacts its’ having on sustainability and the environment are  more brand loyal.
 footer:
   partners:
-    - image: img/merck-animal-health-vector-logo.svg
+    - image: /img/merck-animal-health-vector-logo.svg
       link: https://www.merck-animal-health-usa.com
-    - image: img/partner-logos-lely.svg
+    - image: /img/partner-logos-lely.svg
       link: https://lely.com
-    - image: img/partner-logos-landolakes.svg
+    - image: /img/partner-logos-landolakes.svg
       link: https://www.landolakes.com
-    - image: img/partner-logos-nestle.svg
+    - image: /img/partner-logos-nestle.svg
       link: https://www.nestle.com
 ---
