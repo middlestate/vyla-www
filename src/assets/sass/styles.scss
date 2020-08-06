@@ -1646,12 +1646,18 @@ header .menuButton:hover .bar2 {
   // border: dashed black 1px;
 }
 
-.partner-logo {
-  width: 20%;
+.partner-logo > a {
+  display: inline-block;
+  width: 100%;
+  height: auto;
   // min-width: 20%;
   margin-right: 2rem;
   margin-bottom: 2rem;
   padding: 2rem;
+}
+
+.partner-logo > a img {
+  max-height: 80px;
 }
 
 .footer-contact {
@@ -1783,7 +1789,7 @@ header .menuButton:hover .bar2 {
   }
 
   .partner-logo {
-    min-width: 20%;
+    width: 100%;
     // margin-right: 3rem;
     // margin-bottom: 3rem;
   }
@@ -1809,7 +1815,7 @@ header .menuButton:hover .bar2 {
 
 @media (min-width: 1001px) {
   .partner-logo {
-    width: 30%;
+    width: 100%;
     // margin-right: 3rem;
     margin-bottom: 3rem;
   }
