@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: dev
+  branch: refactor-design
 
 publish_mode: editorial_workflow
 media_folder: static/img
