@@ -1175,7 +1175,7 @@ header .menuButton:hover .bar2 {
   display: flex;
   // flex-flow: row wrap;
   justify-content: space-evenly;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .founder-card-container {
