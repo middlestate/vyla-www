@@ -89,8 +89,8 @@ footer:
   partners:
     - image: /img/partner-logos-nestle.svg
       link: 'https://www.nestle.com'
-    - image: /img/merck-animal-health-vector-logo.svg
-      link: 'https://www.merck-animal-health-usa.com'
+    # - image: /img/merck-animal-health-vector-logo.svg
+    #     link: 'https://www.merck-animal-health-usa.com'
     - image: /img/partner-logos-lely.svg
       link: 'https://lely.com'
     - image: /img/partner-logos-landolakes.svg
@@ -100,4 +100,3 @@ meta_description: >-
   We are lifting ourselves to a new standard of integration to bring new value
   to our farms, to our industry, and to the world’s table.
 ---
-
