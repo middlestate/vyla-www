@@ -8,8 +8,7 @@ hero:
     link: 'https://mdst.typeform.com/to/VTG8Y7'
     text: Join Us Now!
   description: >-
-    We are lifting ourselves to a new standard of integration to bring new value
-    to our farms, to our industry, and to the world’s table.
+    Vyla is an open global technology platform, providing data, information, knowledge and insight in a way that connects entities and stakeholders in the global supply chain with each other.
   heading: 'Dairy has a story to tell, and a new way to tell it.'
   image: /img/vyla-dashboard-ipad.png
 what_we_do:
@@ -32,18 +31,6 @@ what_we_do:
   tagline: What we do
 mission:
   cards:
-    - heading: Transform
-      image: /img/particle-icon-transform.svg
-      list_items:
-        - Dairy efficiency
-        - Sustainability Metrics
-        - The consumer perception
-    - heading: Build
-      image: /img/particle-icon-build.svg
-      list_items:
-        - The Story - yours and the industry with metrics
-        - The Trust - based on fact not emotion
-        - The forward movement - our industry moving
     - heading: Connect
       image: /img/particle-icon-create.svg
       list_items:
@@ -51,6 +38,19 @@ mission:
         - With control
         - With collaboration
         - With transparency
+    - heading: Build
+      image: /img/particle-icon-build.svg
+      list_items:
+        - The Story - yours and the industry with metrics
+        - The Trust - based on fact not emotion
+        - The forward movement - our industry moving
+
+    - heading: Transform
+      image: /img/particle-icon-transform.svg
+      list_items:
+        - Dairy efficiency
+        - Sustainability Metrics
+        - The consumer perception
   heading: Objectives and Outcomes
   title: MISSION
 quote:
@@ -83,6 +83,12 @@ benefit_analysis:
         produced, and what impacts its’ having on sustainability and the
         environment are  more brand loyal.
       heading: Consumers
+    - content: >
+        Education and research institutions get
+        more readily accessible data and information
+        to help unlock progress and innovation in the
+        industry.
+      heading: Other Stakeholders
   heading: A transparent supply chain to give everyone a better view.
   title: Benefit Analysis
 footer:
@@ -98,4 +104,3 @@ meta_description: >-
   We are lifting ourselves to a new standard of integration to bring new value
   to our farms, to our industry, and to the world’s table.
 ---
-

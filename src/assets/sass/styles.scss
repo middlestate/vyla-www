@@ -891,7 +891,7 @@ header .menuButton:hover .bar2 {
   z-index: 2;
   background: transparent;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
-  max-height: 500px;
+  max-height: 200px;
   overflow: hidden;
   padding-bottom: 0;
   position: absolute;
@@ -910,10 +910,10 @@ header .menuButton:hover .bar2 {
 }
 
 .image-block img {
-  -o-object-fit: contain;
-  object-fit: contain;
-  -o-object-position: top right;
-  object-position: top right;
+  -o-object-fit: fill;
+  object-fit: fill;
+  -o-object-position: top left;
+  object-position: top left;
   position: relative;
   width: 100%;
 }
@@ -966,8 +966,8 @@ header .menuButton:hover .bar2 {
   }
 
   .image-block img {
-    -o-object-fit: cover;
-    object-fit: cover;
+    -o-object-fit: fill;
+    object-fit: fill;
     -o-object-position: top right;
     object-position: top right;
     height: 100%;
@@ -983,6 +983,13 @@ header .menuButton:hover .bar2 {
     border-radius: 0 0 40px 0;
   }
 }
+
+// @media (min-width: 320px) and (max-width: 748px) {
+//   .image-block {
+//     max-height: 600px;
+//     margin: auto;
+//   }
+// }
 
 @media (min-width: 749px) and (max-width: 1000px) {
   .image-block {
@@ -1123,7 +1130,7 @@ header .menuButton:hover .bar2 {
   }
 
   .founder-card-icon {
-    width: 17rem !important;
+    width: 19rem !important;
     margin: 0 auto;
   }
 
@@ -1156,7 +1163,7 @@ header .menuButton:hover .bar2 {
   }
 
   .founder-card-icon {
-    width: 17rem !important;
+    width: 20rem !important;
     height: 12rem !important;
     margin: 0 auto;
   }
@@ -1168,6 +1175,12 @@ header .menuButton:hover .bar2 {
   .founder-title {
     position: relative;
     top: 15px;
+  }
+}
+
+@media (min-width: 1001px) {
+  .founder-card-icon {
+    width: 25rem !important;
   }
 }
 
@@ -1273,6 +1286,37 @@ header .menuButton:hover .bar2 {
     width: max-content;
     font-weight: 158;
     font-size: 30px;
+  }
+}
+
+/*
+
+  Leader Cards
+
+*/
+
+.leader-cards-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  padding: 10px;
+}
+
+.leader-card {
+  background-color: #ffffff;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .leader-cards-grid {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+  .leader-cards-grid {
+    grid-template-columns: auto;
   }
 }
 
@@ -1414,6 +1458,109 @@ header .menuButton:hover .bar2 {
     background-size: 65rem;
     height: 65rem;
     top: 0;
+  }
+}
+
+/*
+
+  SECTION INVESTORS
+
+*/
+
+.investors .particle-bg {
+  z-index: 0;
+  content: '';
+  height: 80rem;
+  position: absolute;
+  width: 100%;
+  overflow: visible;
+  background: url('../img/bgshape-lightgreen.svg') no-repeat 0 0;
+  background-size: 30rem;
+  background-position: center center;
+}
+
+.investors {
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+.investors .card-container {
+  padding-top: 1rem;
+}
+
+.investors .card-header {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.investors > .card-header > .card-title > h3 {
+  margin-bottom: 0;
+}
+
+.investors .card-icon {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.investors-cards {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+@media (min-width: 749px) {
+  .investors .particle-bg {
+    background-size: 60rem;
+    overflow: visible;
+    top: 4rem;
+  }
+
+  .investors .card-icon {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  .investors .card-container {
+    padding-bottom: 3rem;
+    width: calc(33.33% - 1.5rem);
+  }
+
+  .investors .card-header {
+    flex-direction: column;
+  }
+
+  .investors > .card-header > .card-title > h3 {
+    margin-bottom: 1rem;
+  }
+
+  .investors-cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* .mission .card-container:first-child {
+
+	} */
+}
+
+@media (min-width: 1001px) {
+  .investors .particle-bg {
+    background-size: 70rem;
+    top: 0rem;
+  }
+
+  .investors .card-icon {
+    width: 100%;
+    height: 15rem;
+    padding: 5rem;
+    margin: auto;
   }
 }
 
@@ -1638,7 +1785,7 @@ header .menuButton:hover .bar2 {
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
-  width: 50%;
+  // width: 50%;
   // min-width: 50%;
   // min-height: 80%;
   // align-items: center;
@@ -1647,7 +1794,9 @@ header .menuButton:hover .bar2 {
 }
 
 .partner-logo > a {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
   // min-width: 20%;
@@ -1665,7 +1814,7 @@ header .menuButton:hover .bar2 {
   bottom: 0;
   height: 300px;
   padding: 2rem;
-  min-width: 200px;
+  width: 250px;
   z-index: 2;
   background-color: #ffffff;
   margin-bottom: 4rem;
@@ -1768,19 +1917,22 @@ header .menuButton:hover .bar2 {
   text-decoration: none;
   color: #58b0e3;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .footer-partners {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: space-evenly;
     align-items: center;
-    min-width: 100%;
+    min-width: 90%;
   }
   .partner-logo {
     min-width: 40%;
   }
   .footer-container {
     margin-top: 3rem;
+  }
+  .footer-contact {
+    width: 350px;
   }
 }
 @media (min-width: 749px) {
@@ -1803,7 +1955,7 @@ header .menuButton:hover .bar2 {
   }
 
   .footer-contact {
-    width: 60%;
+    width: 300px;
     padding: 4rem;
     margin-top: 13rem;
   }
@@ -1820,7 +1972,12 @@ header .menuButton:hover .bar2 {
     margin-bottom: 3rem;
   }
 
+  .footer-partners {
+    min-width: 600px;
+  }
+
   .footer-contact {
+    width: 600px;
     margin-top: 23rem;
   }
 }

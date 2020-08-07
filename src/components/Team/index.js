@@ -25,13 +25,13 @@ const Team = ({ founders }) => (
     <div className='container'>
       <div className='title-block'>
         <p className='tagline'>THE TEAM</p>
-        <h2>Meet the Founders</h2>
+        <h2>Meet the Leaders</h2>
       </div>
-      <div className='founder-cards'>
+      <div className='leader-cards-grid'>
         {/* <div className='founder-card-container'> */}
         {/* <div className="green-vertical-particle-bg"></div> */}
         {founders.map(({ name, title, image, content }) => (
-          <div key={name} className='founder-card-container '>
+          <div key={name} className='leader-card'>
             <div className='card-content'>
               <div className='card-header founder-card-header'>
                 <div className='card-icon founder-card-icon'>
@@ -40,7 +40,12 @@ const Team = ({ founders }) => (
                   </figure>
                 </div>
                 <div className='card-title'>
-                  <h1 className='founder-name' style={{ fontWeight: 300 }}>
+                  <h1
+                    className='founder-name'
+                    style={{
+                      fontWeight: 300,
+                      textAlign: 'center',
+                    }}>
                     {name}
                   </h1>
                   <h2

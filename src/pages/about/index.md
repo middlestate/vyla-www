@@ -56,18 +56,6 @@ story:
   title: THE STORY OF VYLA
 mission:
   cards:
-    - heading: Transform
-      image: /img/particle-icon-transform.svg
-      list_items:
-        - Dairy efficiency
-        - Sustainability Metrics
-        - The consumer perception
-    - heading: Build
-      image: /img/particle-icon-build.svg
-      list_items:
-        - The Story - yours and the industry with metrics
-        - The Trust - based on fact not emotion
-        - The forward movement - our industry moving
     - heading: Connect
       image: /img/particle-icon-create.svg
       list_items:
@@ -75,42 +63,64 @@ mission:
         - With control
         - With collaboration
         - With transparency
+    - heading: Build
+      image: /img/particle-icon-build.svg
+      list_items:
+        - The Story - yours and the industry with metrics
+        - The Trust - based on fact not emotion
+        - The forward movement - our industry moving
+    - heading: Transform
+      image: /img/particle-icon-transform.svg
+      list_items:
+        - Dairy efficiency
+        - Sustainability Metrics
+        - The consumer perception
+
   heading: Objectives and Outcomes
   title: MISSION
+investors:
+  - logo: /img/partner-logos-nestle.svg
+    text: >
+      Nestlé is the world's largest food & beverage company. We unlock the power of food to
+      enhance quality of life for everyone, today and for generations to come.
+  - logo: /img/partner-logos-landolakes.svg
+    text: >
+      Land O'Lakes, Inc., one of America's premier agribusiness and food companies, is a 
+      member-owned cooperative with industry-leading operations.
+  - logo: /img/partner-logos-lely.svg
+    text: >
+      International family business making producers’ lives easier with innovative solutions and
+      tailored services. Lely helps dairy farms operate smartly with the use of management systems.
 team:
   founders:
     - content:
-        - text: >+
-            Yoav is the Asia regional president of the AllFlex group, an US
-            based company. AllFlex group is the world leading company for animal
-            identification and animal monitoring. He has substantial commercial
-            and strategic innovation experience with over 15 years in the dairy
-            industry and precise farming business.
-
-        - text: >-
-            As the AllFlex Asia regional president, Yoav is operating out of
-            Beijing, China. Asia is today a market consisting of 70% of the
-            global animal population and the fastest growing animal
-            identification and monitoring market. He is also a board member of
-            Artex Barn Solutions.
-      image: /img/bio-yoav.png
+        - text: >
+            Yoav  has substantial commercial and strategic innovation experience with over 20 years in the dairy industry and precise farming business. In recent years, Mr. Levsky dedicate much of his time to lead an industry wide effort to  address some of the main challenges our food eco system is facing. He has a substantial network within the food ecosystem, which he is bringing together to collectively resolve these challenges.
+      image: /img/Yoavlogos.svg
       name: Yoav Levsky
-      title: Chairman
+      title: Chairman of the Board
     - content:
         - text: >
-            Tim has a considerable start-up and growth company leadership
-            experience on an international scale. He has been the founder and
-            CEO of three manufacturing start-ups and from 2017 to 2019 he was
-            the CEO of VAS (Valley Agricultural Software, Tulare CA).
-        - text: >
-            At VAS, he led the transformation of the company from 100%
-            “on-premise” software to being the leading Cloud platform for dairy
-            operations,
-        - text: >
-            While at VAS, Tim collaborated with Nestle, Land O Lakes, Merck
-            Animal Health and Lely to form Vyla.
-      image: /img/bio-tim.png
+            Tim has a considerable start-up and growth company leadership experience on an international scale. He has been the founder and CEO of three manufacturing start-ups, including Tycom, a manufacture of ultra-precision cutting tools (Irvine CA) now part of Kyocera Corporation, Tycom Dental, a manufacturer of endodontic instruments (Irvine CA) now owned by Sybron Dental Specialties (a Danaher company), and Liquidmetal Saga Italy, a producer of molded amorphous alloys (Padova, Italy).
+      image: /img/TimTaylorlogos.svg
       name: Tim Taylor
       title: CEO
+    - content:
+        - text: >
+            Experienced software development manager and software engineer with passion for software development and empowering teams to solve real world problems delivering solutions that work and perform well. With 30 years experience working with numerous database technologies have a strong data metric driven approach to problem solving and increasingly looking to leverage technology to provide better solutions, more reliably and quickly in today’s big data environments.
+      image: /img/Marklogos.svg
+      name: William Elliot
+      title: Chief Technology Officer
+    - content:
+        - text: >
+            Mark has deep knowledge of dairy farm operations, animal husbandry, farm management & dairy industry ecosystem. He has a proven ability to adapt and implement technology that improves dairy farm efficiency & profitability. With decades of practical experience in support, planning & design of cloud-based software solutions, Mark is recognized for leading product and development teams to transition from on-premise licensed software to SaaS revenue, cloud-based applications.
+      image: /img/Williamlogos.svg
+      name: Mark Doornink
+      title: VP of Product
+    - content:
+        - text: >
+            Agriculture has been the basis of Jackie’s life since childhood. Growing up in the hills amongst beef cattle sent her to pursue a degree in Animal Science from California Polytechnic University on the central coast of California. Through a journey that involved entrepreneurship, Jackie fit well into a Project Manager role at VAS and grew into an Integration Product Manager. In this role she has managed over 230 projects to meet both short-term and long-term company goals. Jackie understands the identification, organization, and progression to launch a successful product on time and with purpose.
+      image: /img/Jackielogos.svg
+      name: Jackie Valenzuela
+      title: Project Manager
 ---
-
