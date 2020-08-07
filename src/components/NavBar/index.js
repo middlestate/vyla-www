@@ -13,63 +13,69 @@ const NavBar = ({ toggleNavbar, isActive }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <header className={`${isActive ? 'is-showNav' : ''}`}>
         <div className={`container header-top `}>
           {/* <div className="container header-top"> */}
-          <div className="header-left">
-            <Link to="/" className="logo">
+          <div className='header-left'>
+            <Link to='/' className='logo'>
               <img src={Logo} />
             </Link>
           </div>
-          <div className="header-right">
-            <div className="navigation">
-              <nav className="main">
+          <div className='header-right'>
+            <div className='navigation'>
+              <nav className='main'>
                 <ul>
                   <li>
-                    <Link to="/about">About</Link>
+                    <Link to='/'>Home</Link>
                   </li>
                   <li>
-                    <Link to="/thefarm">The Farm</Link>
+                    <Link to='/about'>About</Link>
                   </li>
                   <li>
-                    <Link to="/contact">Contact</Link>
+                    <Link to='/thefarm'>The Farm</Link>
+                  </li>
+                  <li>
+                    <Link to='/contact'>Contact</Link>
                   </li>
                 </ul>
               </nav>
             </div>
-            <div className="navigation-c2a">
+            <div className='navigation-c2a'>
               <VylaButton
-                url="https://mdst.typeform.com/to/VTG8Y7"
-                classes="button button-small button-blue"
-                text="Join Us"
+                url='https://mdst.typeform.com/to/VTG8Y7'
+                classes='button button-small button-blue'
+                text='Join Us'
               />
             </div>
-            <div className="mobile-button">
+            <div className='mobile-button'>
               <button
                 className={`menuButton ${isActive ? 'is-showNav' : ''}`}
-                data-target="navMenu"
+                data-target='navMenu'
                 onClick={toggleNavbar}>
-                <div className="icon">
-                  <div className="bar bar1" />
-                  <div className="bar bar2" />
+                <div className='icon'>
+                  <div className='bar bar1' />
+                  <div className='bar bar2' />
                 </div>
               </button>
             </div>
           </div>
         </div>
-        <div className="navigation-mobile">
-          <div className="container">
-            <nav className="mobile">
+        <div className='navigation-mobile'>
+          <div className='container'>
+            <nav className='mobile'>
               <ul>
                 <li>
-                  <Link to="/about">About</Link>
+                  <Link to='/'>Home</Link>
                 </li>
                 <li>
-                  <Link to="/thefarm">The Farm</Link>
+                  <Link to='/about'>About</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <Link to='/thefarm'>The Farm</Link>
+                </li>
+                <li>
+                  <Link to='/contact'>Contact</Link>
                 </li>
               </ul>
             </nav>

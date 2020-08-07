@@ -1,16 +1,26 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import PropTypes from 'prop-types'
-import Hero from '../Hero'
-import Mission from '../Mission'
-import Story from '../Story'
-import Team from '../Team'
+import React from 'react';
+import Helmet from 'react-helmet';
+import PropTypes from 'prop-types';
+import Hero from '../Hero';
+import Mission from '../Mission';
+import Story from '../Story';
+import Investors from '../Investors';
+import Team from '../Team';
 
-const AboutPageTemplate = ({ title, meta_title, meta_description, hero, story, mission, team }) => (
+const AboutPageTemplate = ({
+  title,
+  meta_title,
+  meta_description,
+  hero,
+  story,
+  mission,
+  team,
+  investors,
+}) => (
   <div>
     <Helmet>
       <title>{meta_title}</title>
-      <meta name="description" content={meta_description} />
+      <meta name='description' content={meta_description} />
     </Helmet>
     <Hero
       background_color={hero.background_color}
@@ -20,11 +30,21 @@ const AboutPageTemplate = ({ title, meta_title, meta_description, hero, story, m
       content={hero.content}
       button={hero.button}
     />
-    <Story image={story.image} title={story.title} heading={story.heading} content={story.content} />
-    <Mission title={mission.title} heading={mission.heading} cards={mission.cards} />
+    <Story
+      image={story.image}
+      title={story.title}
+      heading={story.heading}
+      content={story.content}
+    />
+    <Mission
+      title={mission.title}
+      heading={mission.heading}
+      cards={mission.cards}
+    />
+    <Investors investors={investors} />
     <Team founders={team.founders} />
   </div>
-)
+);
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string,
@@ -52,6 +72,12 @@ AboutPageTemplate.propTypes = {
   team: PropTypes.shape({
     founders: PropTypes.array,
   }),
-}
+  investors: PropTypes.arrayOf(
+    PropTypes.shape({
+      logo: PropTypes.string,
+      text: PropTypes.string,
+    })
+  ),
+};
 
-export default AboutPageTemplate
+export default AboutPageTemplate;

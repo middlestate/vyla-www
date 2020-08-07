@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Plx from 'react-plx'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Plx from 'react-plx';
 
 const parallaxData = [
   {
@@ -14,43 +14,53 @@ const parallaxData = [
       },
     ],
   },
-]
+];
 
 const Team = ({ founders }) => (
-  <section className="team parallax-section">
-    <div className="container">
-      <Plx className="particle-bg" parallaxData={parallaxData}>
-        <div></div>
-      </Plx>
-      <div className="founder-cards">
-        <div className="founder-card-container">
-          <div className="title-block">
-            <p className="tagline">THE TEAM</p>
-            <h2>Meet the Founders</h2>
-          </div>
-        </div>
+  <section className='team'>
+    <Plx className='particle-bg' parallaxData={parallaxData}>
+      <div></div>
+    </Plx>
+
+    <div className='container'>
+      <div className='title-block'>
+        <p className='tagline'>THE TEAM</p>
+        <h2>Meet the Leaders</h2>
+      </div>
+      <div className='leader-cards-grid'>
+        {/* <div className='founder-card-container'> */}
         {/* <div className="green-vertical-particle-bg"></div> */}
         {founders.map(({ name, title, image, content }) => (
-          <div key={name} className="card-container founder-card-container">
-            <div className="card-content">
-              <div className="card-header founder-card-header">
-                <div className="card-icon founder-card-icon">
+          <div key={name} className='leader-card'>
+            <div className='card-content'>
+              <div className='card-header founder-card-header'>
+                <div className='card-icon founder-card-icon'>
                   <figure>
                     <img src={image} alt={name} />
                   </figure>
                 </div>
-                <div className="card-title">
-                  <h1 className="founder-name" style={{ fontWeight: 300 }}>
+                <div className='card-title'>
+                  <h1
+                    className='founder-name'
+                    style={{
+                      fontWeight: 300,
+                      textAlign: 'center',
+                    }}>
                     {name}
                   </h1>
                   <h2
-                    className="founder-title"
-                    style={{ textAlign: 'center', fontSize: '2em', fontWeight: 300, transform: 'translate(0,-20px)' }}>
+                    className='founder-title'
+                    style={{
+                      textAlign: 'center',
+                      fontSize: '2em',
+                      fontWeight: 300,
+                      transform: 'translate(0,-20px)',
+                    }}>
                     {title}
                   </h2>
                 </div>
               </div>
-              <div className="card-list">
+              <div className='card-list'>
                 {content.map(({ text }) => (
                   <p>{text}</p>
                 ))}
@@ -58,10 +68,11 @@ const Team = ({ founders }) => (
             </div>
           </div>
         ))}
+        {/* </div> */}
       </div>
     </div>
   </section>
-)
+);
 
 // Team.propTypes = {
 //   team: PropTypes.shape({
@@ -80,4 +91,4 @@ const Team = ({ founders }) => (
 //   }),
 // }
 
-export default Team
+export default Team;
