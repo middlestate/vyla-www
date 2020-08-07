@@ -95,11 +95,6 @@ footer:
   partners:
     - image: /img/partner-logos-nestle.svg
       link: 'https://www.nestle.com'
-<<<<<<< HEAD
-    - image: /img/partner-logos-lely.svg
-      link: 'https://lely.com'
-=======
->>>>>>> refactor-design
     - image: /img/partner-logos-landolakes.svg
       link: 'https://www.landolakes.com'
     - image: /img/partner-logos-lely.svg
