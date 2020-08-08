@@ -36,13 +36,13 @@ const AboutPageTemplate = ({
       heading={story.heading}
       content={story.content}
     />
+    <Investors investors={investors} />
+    <Team founders={team.founders} />
     <Mission
       title={mission.title}
       heading={mission.heading}
       cards={mission.cards}
     />
-    <Investors investors={investors} />
-    <Team founders={team.founders} />
   </div>
 );
 

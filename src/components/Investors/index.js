@@ -4,7 +4,7 @@ import Plx from 'react-plx';
 const parallaxData = [
   {
     start: '.particle-bg',
-    end: 3000,
+    end: 3500,
     properties: [
       {
         startValue: 250,

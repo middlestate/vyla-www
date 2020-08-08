@@ -10,7 +10,7 @@ hero:
   description: >-
     Vyla is an open global technology platform, providing data, information, knowledge and insight in a way that connects entities and stakeholders in the global supply chain with each other.
   heading: 'Dairy has a story to tell, and a new way to tell it.'
-  image: /img/vyla-dashboard-ipad.png
+  image: /img/vyla-dashboard-ipad-1.png
 what_we_do:
   alt: vyla-dashboard-ipad
   content:

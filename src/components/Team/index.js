@@ -5,7 +5,7 @@ import Plx from 'react-plx';
 const parallaxData = [
   {
     start: '.particle-bg',
-    end: 4000,
+    end: 4500,
     properties: [
       {
         startValue: 70,
@@ -62,7 +62,7 @@ const Team = ({ founders }) => (
               </div>
               <div className='card-list'>
                 {content.map(({ text }) => (
-                  <p>{text}</p>
+                  <p style={{ padding: 10 }}>{text}</p>
                 ))}
               </div>
             </div>

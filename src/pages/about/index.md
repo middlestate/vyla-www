@@ -108,13 +108,13 @@ team:
     - content:
         - text: >
             Experienced software development manager and software engineer with passion for software development and empowering teams to solve real world problems delivering solutions that work and perform well. With 30 years experience working with numerous database technologies have a strong data metric driven approach to problem solving and increasingly looking to leverage technology to provide better solutions, more reliably and quickly in today’s big data environments.
-      image: /img/Marklogos.svg
+      image: /img/Williamlogos.svg
       name: William Elliot
-      title: Chief Technology Officer
+      title: CTO
     - content:
         - text: >
             Mark has deep knowledge of dairy farm operations, animal husbandry, farm management & dairy industry ecosystem. He has a proven ability to adapt and implement technology that improves dairy farm efficiency & profitability. With decades of practical experience in support, planning & design of cloud-based software solutions, Mark is recognized for leading product and development teams to transition from on-premise licensed software to SaaS revenue, cloud-based applications.
-      image: /img/Williamlogos.svg
+      image: /img/Marklogos.svg
       name: Mark Doornink
       title: VP of Product
     - content:
