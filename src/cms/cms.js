@@ -6,7 +6,7 @@ import FarmPagePreview from './preview-templates/FarmPagePreview';
 import ArticlePreview from './preview-templates/ArticlePreview';
 import ContactPagePreview from './preview-templates/ContactPagePreview';
 
-CMS.registerPreviewStyle(styles.toString(), { raw: false });
+CMS.registerPreviewStyle(styles.toString(), { raw: true });
 CMS.registerPreviewTemplate('home', HomePagePreview);
 CMS.registerPreviewTemplate('about', AboutPagePreview);
 CMS.registerPreviewTemplate('thefarm', FarmPagePreview);
