@@ -16,7 +16,7 @@ hero:
   image: /img/hero-image-cows.jpg
 email:
   heading: Contact us directly
-  mail: 'Send an email: info@vyla.org'
+  mail: 'Send an email: jackie.valenzuela@vyla.com'
 meta_title: Contact Us
 ---
 
