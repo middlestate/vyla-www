@@ -2,15 +2,14 @@
 templateKey: about-page
 title: About Us
 meta_title: About Vyla | Dairy has a story to tell
-meta_description: >-
-  At the heart of VYLA is a love we all share for dairy. Our goal is simple: to
-  gather the data and perspectives of the industry as a whole, free from any one
-  participating company’s perceived bias.
+meta_description: "At the heart of VYLA is a love we all share for dairy. Our
+  goal is simple: to gather the data and perspectives of the industry as a
+  whole, free from any one participating company’s perceived bias."
 hero:
-  background_color: '#00529c'
+  background_color: "#00529c"
   button:
     classes: button button-blue
-    link: 'https://mdst.typeform.com/to/VTG8Y7'
+    link: https://mdst.typeform.com/to/VTG8Y7
     text: Join Us Now!
   content:
     - text: >
@@ -20,10 +19,9 @@ hero:
     - text: >
         The end result will be improvement in sustainability, processing,
         product innovations and new value for everyone.
-  description: >-
-    At the heart of VYLA is a love we all share for dairy. Our goal is simple:
-    to gather the data and perspectives of the industry as a whole, free from
-    any one participating company’s perceived bias.
+  description: "At the heart of VYLA is a love we all share for dairy. Our goal is
+    simple: to gather the data and perspectives of the industry as a whole, free
+    from any one participating company’s perceived bias."
   heading: Motivated by good.
   image: /img/hero-image-consumers.jpg
 story:
@@ -75,51 +73,89 @@ mission:
         - Dairy efficiency
         - Sustainability Metrics
         - The consumer perception
-
   heading: Objectives and Outcomes
   title: MISSION
 investors:
   - logo: /img/partner-logos-nestle.svg
     text: >
-      Nestlé is the world's largest food & beverage company. We unlock the power of food to
-      enhance quality of life for everyone, today and for generations to come.
+      Nestlé is the world's largest food & beverage company. We unlock the power
+      of food to enhance quality of life for everyone, today and for generations
+      to come. Yummy STUFF!!!
   - logo: /img/partner-logos-landolakes.svg
     text: >
-      Land O'Lakes, Inc., one of America's premier agribusiness and food companies, is a 
-      member-owned cooperative with industry-leading operations.
+      Land O'Lakes, Inc., one of America's premier agribusiness and food
+      companies, is a  member-owned cooperative with industry-leading
+      operations.
   - logo: /img/partner-logos-lely.svg
     text: >
-      International family business making producers’ lives easier with innovative solutions and
-      tailored services. Lely helps dairy farms operate smartly with the use of management systems.
+      International family business making producers’ lives easier with
+      innovative solutions and tailored services. Lely helps dairy farms operate
+      smartly with the use of management systems.
 team:
   founders:
     - content:
         - text: >
-            Yoav  has substantial commercial and strategic innovation experience with over 20 years in the dairy industry and precise farming business. In recent years, Mr. Levsky dedicate much of his time to lead an industry wide effort to  address some of the main challenges our food eco system is facing. He has a substantial network within the food ecosystem, which he is bringing together to collectively resolve these challenges.
+            Yoav  has substantial commercial and strategic innovation experience
+            with over 20 years in the dairy industry and precise farming
+            business. In recent years, Mr. Levsky dedicate much of his time to
+            lead an industry wide effort to  address some of the main challenges
+            our food eco system is facing. He has a substantial network within
+            the food ecosystem, which he is bringing together to collectively
+            resolve these challenges.
       image: /img/Yoavlogos.svg
       name: Yoav Levsky
       title: Chairman of the Board
     - content:
         - text: >
-            Tim has a considerable start-up and growth company leadership experience on an international scale. He has been the founder and CEO of three manufacturing start-ups, including Tycom, a manufacture of ultra-precision cutting tools (Irvine CA) now part of Kyocera Corporation, Tycom Dental, a manufacturer of endodontic instruments (Irvine CA) now owned by Sybron Dental Specialties (a Danaher company), and Liquidmetal Saga Italy, a producer of molded amorphous alloys (Padova, Italy).
+            Tim has a considerable start-up and growth company leadership
+            experience on an international scale. He has been the founder and
+            CEO of three manufacturing start-ups, including Tycom, a manufacture
+            of ultra-precision cutting tools (Irvine CA) now part of Kyocera
+            Corporation, Tycom Dental, a manufacturer of endodontic instruments
+            (Irvine CA) now owned by Sybron Dental Specialties (a Danaher
+            company), and Liquidmetal Saga Italy, a producer of molded amorphous
+            alloys (Padova, Italy).
       image: /img/TimTaylorlogos.svg
       name: Tim Taylor
       title: CEO
     - content:
         - text: >
-            Experienced software development manager and software engineer with passion for software development and empowering teams to solve real world problems delivering solutions that work and perform well. With 30 years experience working with numerous database technologies have a strong data metric driven approach to problem solving and increasingly looking to leverage technology to provide better solutions, more reliably and quickly in today’s big data environments.
+            Experienced software development manager and software engineer with
+            passion for software development and empowering teams to solve real
+            world problems delivering solutions that work and perform well. With
+            30 years experience working with numerous database technologies have
+            a strong data metric driven approach to problem solving and
+            increasingly looking to leverage technology to provide better
+            solutions, more reliably and quickly in today’s big data
+            environments.
       image: /img/Williamlogos.svg
       name: William Elliot
       title: CTO
     - content:
         - text: >
-            Mark has deep knowledge of dairy farm operations, animal husbandry, farm management & dairy industry ecosystem. He has a proven ability to adapt and implement technology that improves dairy farm efficiency & profitability. With decades of practical experience in support, planning & design of cloud-based software solutions, Mark is recognized for leading product and development teams to transition from on-premise licensed software to SaaS revenue, cloud-based applications.
+            Mark has deep knowledge of dairy farm operations, animal husbandry,
+            farm management & dairy industry ecosystem. He has a proven ability
+            to adapt and implement technology that improves dairy farm
+            efficiency & profitability. With decades of practical experience in
+            support, planning & design of cloud-based software solutions, Mark
+            is recognized for leading product and development teams to
+            transition from on-premise licensed software to SaaS revenue,
+            cloud-based applications.
       image: /img/Marklogos.svg
       name: Mark Doornink
       title: VP of Product
     - content:
         - text: >
-            Agriculture has been the basis of Jackie’s life since childhood. Growing up in the hills amongst beef cattle sent her to pursue a degree in Animal Science from California Polytechnic University on the central coast of California. Through a journey that involved entrepreneurship, Jackie fit well into a Project Manager role at VAS and grew into an Integration Product Manager. In this role she has managed over 230 projects to meet both short-term and long-term company goals. Jackie understands the identification, organization, and progression to launch a successful product on time and with purpose.
+            Agriculture has been the basis of Jackie’s life since childhood.
+            Growing up in the hills amongst beef cattle sent her to pursue a
+            degree in Animal Science from California Polytechnic University on
+            the central coast of California. Through a journey that involved
+            entrepreneurship, Jackie fit well into a Project Manager role at VAS
+            and grew into an Integration Product Manager. In this role she has
+            managed over 230 projects to meet both short-term and long-term
+            company goals. Jackie understands the identification, organization,
+            and progression to launch a successful product on time and with
+            purpose.
       image: /img/Jackielogos.svg
       name: Jackie Valenzuela
       title: Project Manager
