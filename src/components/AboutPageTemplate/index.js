@@ -72,12 +72,7 @@ AboutPageTemplate.propTypes = {
   team: PropTypes.shape({
     founders: PropTypes.array,
   }),
-  investors: PropTypes.arrayOf(
-    PropTypes.shape({
-      logo: PropTypes.string,
-      text: PropTypes.string,
-    })
-  ),
+  investors: PropTypes.array,
 };
 
 export default AboutPageTemplate;
