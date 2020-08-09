@@ -43,7 +43,7 @@ collections:
                       [
                         { label: Classes, name: classes, widget: string },
                         { label: Text, name: text, widget: string },
-                        { label: Link, name: link, widget.string },
+                        { label: Link, name: link, widget: string },
                       ],
                   },
                 ],
@@ -73,7 +73,7 @@ collections:
               fields:
                 [
                   { label: Title, name: title, widget: string },
-                  { label: Heading, name: heading, widget:string },
+                  { label: Heading, name: heading, widget: string },
                   {
                     label: Cards,
                     name: cards,
@@ -221,7 +221,7 @@ collections:
               fields:
                 [
                   { label: Title, name: title, widget: string },
-                  { label: Heading, name: heading, widget:string },
+                  { label: Heading, name: heading, widget: string },
                   {
                     label: Cards,
                     name: cards,
@@ -313,7 +313,7 @@ collections:
                       [
                         { label: Classes, name: classes, widget: string },
                         { label: Text, name: text, widget: string },
-                        { label: Link, name: link, widget.string },
+                        { label: Link, name: link, widget: string },
                       ],
                   },
                 ],
@@ -400,7 +400,7 @@ collections:
                       [
                         { label: Classes, name: classes, widget: string },
                         { label: Text, name: text, widget: string },
-                        { label: Link, name: link, widget.string },
+                        { label: Link, name: link, widget: string },
                       ],
                   },
                 ],
@@ -416,23 +416,3 @@ collections:
                 ],
             }
           - { label: 'Meta Title', name: 'meta_title', widget: 'string' }
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'src/pages/blog'
-    create: true
-    slug: '{{slug}}'
-    fields:
-      - {
-          label: 'Template Key',
-          name: 'templateKey',
-          widget: 'hidden',
-          default: 'article-page',
-        }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Slug', name: 'slug', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Cover', name: 'cover', widget: 'image' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Tags', name: 'tags', widget: 'list' }
-      - { label: 'Meta Title', name: 'meta_title', widget: 'string' }
-      - { label: 'Meta Description', name: 'meta_description', widget: 'text' }
