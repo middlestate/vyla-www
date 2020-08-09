@@ -6,26 +6,26 @@ import Plx from 'react-plx';
 const parallaxData = [
   {
     start: '.particle-bg',
-    end: 2000,
+    end: 6200,
     properties: [
       {
-        startValue: 150,
-        endValue: -20,
-        property: 'translateY'
-      }
-    ]
-  }
+        startValue: 250,
+        endValue: -70,
+        property: 'translateY',
+      },
+    ],
+  },
 ];
 
 const Mission = ({ title, heading, cards }) => (
-  <section className="mission">
-    <Plx className="particle-bg" parallaxData={parallaxData} >
+  <section className='mission'>
+    <Plx className='particle-bg' parallaxData={parallaxData}>
       <div></div>
     </Plx>
     {/* <div className='particle-bg'></div> */}
-    <div className="container">
-      <div className="title-block">
-        <p className="tagline">{title}</p>
+    <div className='container'>
+      <div className='title-block'>
+        <p className='tagline'>{title}</p>
         <h2>{heading}</h2>
       </div>
       <Cards data={cards} />
@@ -36,7 +36,7 @@ const Mission = ({ title, heading, cards }) => (
 Mission.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
-  cards: PropTypes.array
+  cards: PropTypes.array,
 };
 
 export default Mission;

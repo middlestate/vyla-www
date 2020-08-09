@@ -1,11 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import AboutPageTemplate from '../components/AboutPageTemplate'
-import Layout from '../components/Layout'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import AboutPageTemplate from '../components/AboutPageTemplate';
+import Layout from '../components/Layout';
 
 const AboutPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
@@ -18,11 +18,12 @@ const AboutPage = ({ data }) => {
         image={frontmatter.image}
         story={frontmatter.story}
         mission={frontmatter.mission}
+        investors={frontmatter.investors}
         team={frontmatter.team}
       />
     </Layout>
-  )
-}
+  );
+};
 
 AboutPage.propTypes = {
   data: PropTypes.shape({
@@ -30,9 +31,9 @@ AboutPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-}
+};
 
-export default AboutPage
+export default AboutPage;
 
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
@@ -72,6 +73,10 @@ export const aboutPageQuery = graphql`
             list_items
           }
         }
+        investors {
+          logo
+          text
+        }
         team {
           founders {
             name
@@ -85,4 +90,4 @@ export const aboutPageQuery = graphql`
       }
     }
   }
-`
+`;
