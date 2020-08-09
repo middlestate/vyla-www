@@ -47,7 +47,7 @@ const AboutPagePreview = ({ entry, getAsset }) => {
         cards: missionCards,
       }}
       team={{
-        founders: founders,
+        team: entry.getIn(['data', 'team']),
       }}
     />
   );
