@@ -40,12 +40,6 @@ class Share extends Component {
         <TwitterShareButton url={url} title={title}>
           <TwitterIcon round size={iconSize} />
         </TwitterShareButton>
-        <GooglePlusShareButton url={url}>
-          <GooglePlusIcon round size={iconSize} />
-          <GooglePlusShareCount url={url}>
-            {count => <div className='share-count'>{filter(count)}</div>}
-          </GooglePlusShareCount>
-        </GooglePlusShareButton>
         <FacebookShareButton url={url} quote={excerpt}>
           <FacebookIcon round size={iconSize} />
           <FacebookShareCount url={url}>
@@ -58,9 +52,6 @@ class Share extends Component {
           description={excerpt}
         >
           <LinkedinIcon round size={iconSize} />
-          <LinkedinShareCount url={url}>
-            {count => <div className='share-count'>{filter(count)}</div>}
-          </LinkedinShareCount>
         </LinkedinShareButton>
         <TelegramShareButton url={url}>
           <TelegramIcon round size={iconSize} />
