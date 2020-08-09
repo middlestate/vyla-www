@@ -25,7 +25,7 @@ const AboutPagePreview = ({ entry, getAsset }) => {
         background_color: entry.getIn(['data', 'hero', 'background_color']),
         heading: entry.getIn(['data', 'hero', 'heading']),
         description: entry.getIn(['data', 'hero', 'description']),
-        content: { heroContent },
+        content: heroContent,
         button: {
           classes: entry.getIn(['data', 'hero', 'button', 'classes']),
           text: entry.getIn(['data', 'hero', 'button', 'text']),
@@ -36,10 +36,10 @@ const AboutPagePreview = ({ entry, getAsset }) => {
         image: entry.getIn(['data', 'story', 'image']),
         title: entry.getIn(['data', 'story', 'title']),
         heading: entry.getIn(['data', 'story', 'heading']),
-        content: { storyContent },
+        content: storyContent,
       }}
       investors={{
-        investors: { investorContent },
+        investors: investorContent,
       }}
       mission={{
         title: entry.getIn(['data', 'mission', 'title']),
@@ -51,7 +51,7 @@ const AboutPagePreview = ({ entry, getAsset }) => {
         cards: { missionCards },
       }}
       team={{
-        content: { content },
+        content: content,
         name: entry.getIn(['data', 'team', 'founders', 'name']),
         image: entry.getIn(['data', 'team', 'founders', 'image']),
         title: entry.getIn(['data', 'team', 'founders', 'title']),

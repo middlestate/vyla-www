@@ -242,7 +242,7 @@ collections:
           - {
               label: Investors,
               name: investors,
-              widget: object,
+              widget: list,
               fields:
                 [
                   { label: Logo, name: logo, widget: image },
