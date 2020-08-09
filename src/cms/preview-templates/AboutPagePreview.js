@@ -48,7 +48,7 @@ const AboutPagePreview = ({ entry, getAsset }) => {
         cite_logo: entry.getIn(['data', 'mission', 'cite_logo']),
         cite_name: entry.getIn(['data', 'mission', 'cite_name']),
         cite_text: entry.getIn(['data', 'mission', 'cite_text']),
-        cards: { missionCards },
+        cards: missionCards,
       }}
       team={{
         content: content,
