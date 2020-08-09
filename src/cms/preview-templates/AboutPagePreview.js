@@ -40,6 +40,8 @@ const AboutPagePreview = ({ entry, getAsset }) => {
       }}
       investors={{
         investors: investors,
+        logo: entry.getIn(['data', 'investors', 'logo']),
+        text: entry.getIn(['data', 'investors', 'text']),
       }}
       mission={{
         title: entry.getIn(['data', 'mission', 'title']),
