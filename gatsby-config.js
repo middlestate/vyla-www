@@ -154,14 +154,12 @@ module.exports = {
               const rssMetadata = ctx.query.site.siteMetadata.rssMetadata;
               return ctx.query.allMarkdownRemark.edges
                 .filter(
-                  (edge) => edge.node.frontmatter.templateKey === 'article-page'
+                  (edge) => edge.node.frontmatter.templateKey === 'home-page'
                 )
                 .map((edge) => ({
                   categories: edge.node.frontmatter.tags,
-                  date: edge.node.frontmatter.date,
                   title: edge.node.frontmatter.title,
                   description: edge.node.excerpt,
-                  author: rssMetadata.author,
                   url: rssMetadata.site_url + edge.node.fields.slug,
                   guid: rssMetadata.site_url + edge.node.fields.slug,
                   custom_elements: [{ 'content:encoded': edge.node.html }],
@@ -171,7 +169,7 @@ module.exports = {
                     {
                       allMarkdownRemark(
                         limit: 1000,
-                        sort: { order: DESC, fields: [frontmatter___date] },
+                        sort: { order: DESC, fields: [frontmatter___templateKey] },
                       ) {
                         edges {
                           node {
@@ -182,9 +180,6 @@ module.exports = {
                             frontmatter {
                               title
                               templateKey
-                              cover
-                              date(formatString: "MMMM DD, YYYY")
-                              tags
                             }
                           }
                         }
@@ -200,14 +195,13 @@ module.exports = {
       resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
       options: {
         // Fields to index
-        fields: [`title`, `tags`],
+        fields: [`title`, `templateKey`],
         // How to resolve each field`s value for a supported node type
         resolvers: {
           // For any node of type MarkdownRemark, list how to resolve the fields` values
           MarkdownRemark: {
             title: (node) => node.frontmatter.title,
-            tags: (node) => node.frontmatter.tags,
-            slug: (node) => node.fields.slug,
+            slug: (node) => node.fields.templateKey,
           },
         },
       },
