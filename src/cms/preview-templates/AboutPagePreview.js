@@ -46,9 +46,6 @@ const AboutPagePreview = ({ entry, getAsset }) => {
         heading: entry.getIn(['data', 'mission', 'heading']),
         cards: missionCards,
       }}
-      team={{
-        team: entry.getIn(['data', 'team']),
-      }}
     />
   );
 };
