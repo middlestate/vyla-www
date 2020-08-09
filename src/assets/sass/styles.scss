@@ -1335,6 +1335,10 @@ header .menuButton:hover .bar2 {
     width: 40%;
     vertical-align: middle;
     
+    .founder-name {
+      font-size: 36px;
+    }
+    
     .card-icon {
       margin: 0 auto;
     }
@@ -1657,8 +1661,9 @@ header .menuButton:hover .bar2 {
       box-shadow: none;
       display: flex;
       align-items: center;
-      padding-left: 50px;
+      padding-left: 10%;
       overflow: visible;
+      width: 90%;
       
       img {
         height: auto;
