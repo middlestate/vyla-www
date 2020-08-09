@@ -245,7 +245,7 @@ collections:
               widget: object,
               fields:
                 [
-                  { label: Logo, name: image, widget: image },
+                  { label: Logo, name: logo, widget: image },
                   { label: Text, name: text, widget: string },
                 ],
             }
