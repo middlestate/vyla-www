@@ -49,7 +49,7 @@ const Hero = ({
     <div className="highlight" style={{ backgroundColor: background_color }} />
     <div className="container">
       <Plx
-        className="image-block rounded-bottomright"
+        className="image-block rounded-bottomright image-reset"
         parallaxData={parallaxData}>
         <img src={image} />
       </Plx>

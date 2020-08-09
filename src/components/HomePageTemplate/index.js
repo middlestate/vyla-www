@@ -17,7 +17,7 @@ const HomePageTemplate = ({
   quote,
   benefit_analysis,
 }) => (
-  <div>
+  <div class="home-page">
     <Helmet>
       <title>{meta_title}</title>
       <meta name="description" content={meta_description} />
