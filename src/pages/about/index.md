@@ -35,8 +35,8 @@ story:
         food. And those who supply it have a message - Doing dairy means doing
         good.'
     - text: >
-        That’s why four of the world’s leading and forward-thinking dairy
-        companies - Land O’ Lakes, Lely Group, Nestlé and Merck Animal Health -
+        That’s why three of the world’s leading and forward-thinking dairy
+        companies - Nestle, Land O’ Lakes and Lely Group -
         have partnered to raise the standard for the industry. Together with
         launch partner Nestlé, they bring their individual strengths to the
         creation of a new and entirely different technology company.
