@@ -16,7 +16,7 @@ const AboutPagePreview = ({ entry, getAsset }) => {
   const content = entryContent ? entryContent.toJS() : [];
 
   const entryInvestors = entry.getIn(['data', 'investors']);
-  const investors = entryInvestors ? entryInvestors.toJS() : [];
+  const investorContent = entryInvestors ? entryInvestors.toJS() : [];
 
   return (
     <AboutPageTemplate
@@ -39,9 +39,7 @@ const AboutPagePreview = ({ entry, getAsset }) => {
         content: storyContent,
       }}
       investors={{
-        investors: { investors },
-        logo: entry.getIn(['data', 'investors', 'logo']),
-        text: entry.getIn(['data', 'investors', 'text']),
+        investors: { investorContent },
       }}
       mission={{
         title: entry.getIn(['data', 'mission', 'title']),
