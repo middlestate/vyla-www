@@ -210,7 +210,7 @@ collections:
                     label: Content,
                     name: content,
                     widget: list,
-                    fields: [{ label: Text, name: text, widget: text }],
+                    field: [{ label: Text, name: text, widget: text }],
                   },
                 ],
             }
@@ -268,7 +268,7 @@ collections:
                           label: Content,
                           name: content,
                           widget: list,
-                          fields: [{ label: Text, name: text, widget: text }],
+                          field: [{ label: Text, name: text, widget: text }],
                         },
                       ],
                   },
@@ -303,7 +303,7 @@ collections:
                     label: Content,
                     name: content,
                     widget: list,
-                    fields: [{ label: Text, name: text, widget: text }],
+                    field: [{ label: Text, name: text, widget: text }],
                   },
                   {
                     label: 'Button',
@@ -390,7 +390,7 @@ collections:
                     label: Content,
                     name: content,
                     widget: list,
-                    fields: [{ label: Text, name: text, widget: text }],
+                    field: [{ label: Text, name: text, widget: text }],
                   },
                   {
                     label: 'Button',
