@@ -39,7 +39,7 @@ const AboutPagePreview = ({ entry, getAsset }) => {
         content: storyContent,
       }}
       investors={{
-        investors: investors,
+        investors: { investors },
         logo: entry.getIn(['data', 'investors', 'logo']),
         text: entry.getIn(['data', 'investors', 'text']),
       }}
