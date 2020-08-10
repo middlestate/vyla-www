@@ -101,7 +101,9 @@ team:
       title: Chairman of the Board
     - content:
         - text: >
-            Tim has a considerable start-up and growth company leadership experience on an international scale. He has been the founder and CEO of three manufacturing start-ups, including Tycom, a manufacture of ultra-precision cutting tools (Irvine CA) now part of Kyocera Corporation, Tycom Dental, a manufacturer of endodontic instruments (Irvine CA) now owned by Sybron Dental Specialties (a Danaher company), and Liquidmetal Saga Italy, a producer of molded amorphous alloys (Padova, Italy).
+             Tim has considerable start-up and growth company leadership experience on an international scale. He has been the founder and CEO of three manufactguring start-ups and he was the COO and Client Success Officer of Telogis, Inc. (now owned by Verizon), a provider of cloud-based software in the mobile resource management and fleet optimization space. 
+        - text: >
+            From 2017-2019, Tim was CEO at VAS (Valley Agricultural Software). At VAS, he led the transformation of the company from 100% “on-premise” software to being the leading Cloud platform for dairy operations.
       image: /img/TimTaylorlogos.svg
       name: Tim Taylor
       title: CEO
