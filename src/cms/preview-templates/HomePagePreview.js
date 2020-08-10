@@ -14,7 +14,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
   const entryBenefitAnalysisCards = entry.getIn([
     'data',
     'benefit_analysis',
-    'cards'
+    'cards',
   ]);
   const benefitAnalysisCards = entryBenefitAnalysisCards
     ? entryBenefitAnalysisCards.toJS()
@@ -33,35 +33,32 @@ const HomePagePreview = ({ entry, getAsset }) => {
         button: {
           classes: entry.getIn(['data', 'hero', 'button', 'classes']),
           text: entry.getIn(['data', 'hero', 'button', 'text']),
-          link: entry.getIn(['data', 'hero', 'button', 'link'])
-        }
+          link: entry.getIn(['data', 'hero', 'button', 'link']),
+        },
       }}
       what_we_do={{
         image: entry.getIn(['data', 'what_we_do', 'image']),
         alt: entry.getIn(['data', 'what_we_do', 'alt']),
         tagline: entry.getIn(['data', 'what_we_do', 'tagline']),
         heading: entry.getIn(['data', 'what_we_do', 'heading']),
-        content: what_we_do_content
+        content: what_we_do_content,
       }}
       mission={{
         title: entry.getIn(['data', 'mission', 'title']),
         heading: entry.getIn(['data', 'mission', 'heading']),
         quote: entry.getIn(['data', 'mission', 'quote']),
-        cite_logo: entry.getIn(['data', 'mission', 'cite_logo']),
-        cite_name: entry.getIn(['data', 'mission', 'cite_name']),
-        cite_text: entry.getIn(['data', 'mission', 'cite_text']),
-        cards: missionCards
+        cards: missionCards,
       }}
       quote={{
         quote: entry.getIn(['data', 'quote', 'quote']),
         cite_logo: entry.getIn(['data', 'quote', 'cite_logo']),
         cite_name: entry.getIn(['data', 'quote', 'cite_name']),
-        cite_text: entry.getIn(['data', 'quote', 'cite_text'])
+        cite_text: entry.getIn(['data', 'quote', 'cite_text']),
       }}
       benefit_analysis={{
         title: entry.getIn(['data', 'benefit_analysis', 'title']),
         heading: entry.getIn(['data', 'benefit_analysis', 'heading']),
-        cards: benefitAnalysisCards
+        cards: benefitAnalysisCards,
       }}
     />
   );
@@ -69,9 +66,9 @@ const HomePagePreview = ({ entry, getAsset }) => {
 
 HomePagePreview.propTypes = {
   entry: PropTypes.shape({
-    getIn: PropTypes.func
+    getIn: PropTypes.func,
   }),
-  getAsset: PropTypes.func
+  getAsset: PropTypes.func,
 };
 
 export default HomePagePreview;
