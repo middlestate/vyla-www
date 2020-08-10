@@ -157,13 +157,6 @@ collections:
               widget: 'hidden',
               default: 'about-page',
             }
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Meta Title', name: 'meta_title', widget: 'string' }
-          - {
-              label: 'Meta Description',
-              name: 'meta_description',
-              widget: 'text',
-            }
           - {
               label: 'Hero Section',
               name: hero,
@@ -265,6 +258,13 @@ collections:
                       ],
                   },
                 ],
+            }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Meta Title', name: 'meta_title', widget: 'string' }
+          - {
+              label: 'Meta Description',
+              name: 'meta_description',
+              widget: 'text',
             }
       - file: 'src/pages/thefarm/index.md'
         label: 'The Farm Page'

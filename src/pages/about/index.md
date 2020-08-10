@@ -1,11 +1,5 @@
 ---
 templateKey: about-page
-title: About Us
-meta_title: About Vyla | Dairy has a story to tell
-meta_description: >-
-  At the heart of VYLA is a love we all share for dairy. Our goal is simple: to
-  gather the data and perspectives of the industry as a whole, free from any one
-  participating company’s perceived bias.
 hero:
   background_color: '#00529c'
   button:
@@ -100,7 +94,6 @@ team:
     blurb:
       - text: >
           Agriculture has been the basis of Jackie’s life since childhood. Growing up in the hills amongst beef cattle sent her to pursue a degree in Animal Science from California Polytechnic University on the central coast of California. Through a journey that involved entrepreneurship, Jackie fit well into a Project Manager role at VAS and grew into an Integration Product Manager. In this role she has managed over 230 projects to meet both short-term and long-term company goals. Jackie understands the identification, organization, and progression to launch a successful product on time and with purpose.
-
 mission:
   heading: Objectives and Outcomes
   title: MISSION
@@ -124,4 +117,10 @@ mission:
         - Dairy efficiency
         - Sustainability Metrics
         - The consumer perception
+title: About Us
+meta_title: About Vyla | Dairy has a story to tell
+meta_description: >-
+  At the heart of VYLA is a love we all share for dairy. Our goal is simple: to
+  gather the data and perspectives of the industry as a whole, free from any one
+  participating company’s perceived bias.
 ---
