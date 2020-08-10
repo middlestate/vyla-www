@@ -51,8 +51,10 @@ story:
         farm? How were the cows treated? How was this milk processed? Has
         anything been added? Were sustainable practices used? How did it get to
         my store?
-    - text: |
+    - text: >
         With VYLA, answers to these questions are just the start.
+    - text: >
+        Just a little test text!
 mission:
   cards:
     - heading: Connect
