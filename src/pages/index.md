@@ -69,12 +69,12 @@ benefit_analysis:
       heading: Farmers
     - content: >
         Retailers can offer radical transparency from soil to shelf and
-        everywhere in between, so customers know every product’story,and have
+        everywhere in between, so customers know every product's story, and have
         new reason to be loyal shoppers.
       heading: Retailers
     - content: >
         Processors get a competitive advantage by seeing the origins behind
-        their ingredients, so they can improve mix ratiosefficiencies and create
+        their ingredients, so they can improve mix ratios efficiencies and create
         products that are better suited to consumer tastes.
       heading: Processors
     - content: >

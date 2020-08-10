@@ -34,13 +34,13 @@ benefit_analysis:
   cards:
     - heading: Farmers
       content: >
-        Farmers get more meaningful ideas and answers because the data that inspires those ideas are industry-wide, whichtakerisk out of changing farming practices.
+        Farmers get more meaningful ideas and answers because the data that inspires those ideas are industry-wide, which take risk out of changing farming practices.
     - heading: Retailers
       content: >
-        Retailers can offer radical transparency from soil to shelf and everywhere in between, so customers know every product’story,and have new reason to be loyal shoppers.
+        Retailers can offer radical transparency from soil to shelf and everywhere in between, so customers know every product’s story, and have new reason to be loyal shoppers.
     - heading: Processors
       content: >
-        Processors get a competitive advantage by seeing the origins behind their ingredients, so they can improve mix ratiosefficiencies and create products that are better suited to consumer tastes.
+        Processors get a competitive advantage by seeing the origins behind their ingredients, so they can improve mix ratios efficiencies and create products that are better suited to consumer tastes.
     - heading: Consumers
       content: >
         Consumers who can see where their food comes from, how it’s been produced, and what impacts its’ having on sustainability and the environment are  more brand loyal.
