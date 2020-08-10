@@ -7,7 +7,7 @@ const AboutPagePreview = ({ entry, getAsset }) => {
   const heroContent = entryHeroContent ? entryHeroContent.toJS() : [];
 
   const entryStoryContent = entry.getIn(['data', 'story', 'content']);
-  const storyContent = entryStoryContent ? entryStoryContent.toJS() : [];
+  const content = entryStoryContent ? entryStoryContent.toJS() : [];
 
   const entryMissionCards = entry.getIn(['data', 'mission', 'cards']);
   const missionCards = entryMissionCards ? entryMissionCards.toJS() : [];
@@ -20,6 +20,9 @@ const AboutPagePreview = ({ entry, getAsset }) => {
 
   return (
     <AboutPageTemplate
+      title={entry.getIn(['data', 'title'])}
+      meta_title={entry.getIn(['data', 'meta_title'])}
+      meta_description={entry.getIn(['data', 'meta_description'])}
       hero={{
         image: entry.getIn(['data', 'hero', 'image']),
         background_color: entry.getIn(['data', 'hero', 'background_color']),
@@ -36,7 +39,7 @@ const AboutPagePreview = ({ entry, getAsset }) => {
         image: entry.getIn(['data', 'story', 'image']),
         title: entry.getIn(['data', 'story', 'title']),
         heading: entry.getIn(['data', 'story', 'heading']),
-        content: storyContent,
+        content: content,
       }}
       investors={{
         investors: investors,
