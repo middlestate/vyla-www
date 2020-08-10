@@ -56,7 +56,7 @@ const Hero = ({
       <div className='text-block rounded-topleft white-bg'>
         <h1>{heading}</h1>
         <p className='intro'>{description}</p>
-        {content.length ? <Content text={content} /> : ''}
+        {content.length === undefined ? <Content text={content} /> : ''}
         {email ? <Email heading={email.heading} mail={email.mail} /> : ''}
         <div className='button-c2a'>
           <VylaButton
