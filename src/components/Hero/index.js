@@ -3,21 +3,21 @@ import PropTypes from 'prop-types';
 import VylaButton from '../VylaButton';
 import Plx from 'react-plx';
 
-const Content = props => (
-  <div className="text-content">
+const Content = (props) => (
+  <div className='text-content'>
     {props.text.map((text, i) => (
       <p key={i}>{text.text}</p>
     ))}
   </div>
 );
 
-const Email = props => (
+const Email = (props) => (
   <Fragment>
-    <div className="footer-links">
+    <div className='footer-links'>
       <ul>
         <li>{props.heading}</li>
       </ul>
-      </div>
+    </div>
     <p>{props.mail}</p>
   </Fragment>
 );
@@ -30,10 +30,10 @@ const parallaxData = [
       {
         startValue: 0,
         endValue: -100,
-        property: 'translateY'
-      }
-    ]
-  }
+        property: 'translateY',
+      },
+    ],
+  },
 ];
 
 const Hero = ({
@@ -43,22 +43,22 @@ const Hero = ({
   description,
   button,
   content,
-  email
+  email,
 }) => (
-  <section className="hero">
-    <div className="highlight" style={{ backgroundColor: background_color }} />
-    <div className="container">
+  <section className='hero'>
+    <div className='highlight' style={{ backgroundColor: background_color }} />
+    <div className='container'>
       <Plx
-        className="image-block rounded-bottomright"
+        className='image-block rounded-bottomright'
         parallaxData={parallaxData}>
         <img src={image} />
       </Plx>
-      <div className="text-block rounded-topleft white-bg">
+      <div className='text-block rounded-topleft white-bg'>
         <h1>{heading}</h1>
-        <p className="intro">{description}</p>
-        {content ? <Content text={content} /> : ''}
+        <p className='intro'>{description}</p>
+        {content.length ? <Content text={content} /> : ''}
         {email ? <Email heading={email.heading} mail={email.mail} /> : ''}
-        <div className="button-c2a">
+        <div className='button-c2a'>
           <VylaButton
             url={button.link}
             classes={button.classes}
@@ -77,18 +77,18 @@ Hero.propTypes = {
   description: PropTypes.string,
   content: PropTypes.arrayOf(
     PropTypes.shape({
-      text: PropTypes.string
+      text: PropTypes.string,
     })
   ),
   button: PropTypes.shape({
     classes: PropTypes.string,
     text: PropTypes.string,
-    link: PropTypes.string
+    link: PropTypes.string,
   }),
   email: PropTypes.shape({
     heading: PropTypes.string,
-    mail: PropTypes.string
-  })
+    mail: PropTypes.string,
+  }),
 };
 
 export default Hero;

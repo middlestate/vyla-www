@@ -6,6 +6,12 @@ meta_description: 'At the heart of VYLA is a love we all share for dairy. Our
   goal is simple: to gather the data and perspectives of the industry as a
   whole, free from any one participating company’s perceived bias.'
 hero:
+  heading: Motivated by good.
+  image: /img/hero-image-consumers.jpg
+  description:
+    'At the heart of VYLA is a love we all share for dairy. Our goal is
+    simple: to gather the data and perspectives of the industry as a whole, free
+    from any one participating company’s perceived bias.'
   background_color: '#00529c'
   button:
     classes: button button-blue
@@ -19,13 +25,12 @@ hero:
     - text: >
         The end result will be improvement in sustainability, processing,
         product innovations and new value for everyone.
-  description:
-    'At the heart of VYLA is a love we all share for dairy. Our goal is
-    simple: to gather the data and perspectives of the industry as a whole, free
-    from any one participating company’s perceived bias.'
-  heading: Motivated by good.
-  image: /img/hero-image-consumers.jpg
 story:
+  title: THE STORY OF VYLA
+  heading: >
+    Connecting the farmer and the consumer by making the supply chain completely
+    transparent.
+  image: /img/hero-image-brainstorm.jpg
   content:
     - text: >
         'For generations, children have asked that same question: “where does
@@ -47,12 +52,7 @@ story:
         anything been added? Were sustainable practices used? How did it get to
         my store?
     - text: |
-        With VYLA, answers to these questions is just the start.
-  heading: >
-    Connecting the farmer and the consumer by making the supply chain completely
-    transparent.
-  image: /img/hero-image-brainstorm.jpg
-  title: THE STORY OF VYLA
+        With VYLA, answers to these questions are just the start.
 mission:
   cards:
     - heading: Connect
