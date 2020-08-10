@@ -53,15 +53,13 @@ story:
         my store?
     - text: >
         With VYLA, answers to these questions are just the start.
-    - text: >
-        Just a little test text!
 mission:
   cards:
     - heading: Connect
       image: /img/particle-icon-create.svg
       list_items:
-        - With data
-        - With control
+        # - With data
+        # - With control
         - With collaboration
         - With transparency
     - heading: Build
