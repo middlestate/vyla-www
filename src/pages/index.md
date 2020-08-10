@@ -44,7 +44,6 @@ mission:
         - The Story - yours and the industry with metrics
         - The Trust - based on fact not emotion
         - The forward movement - our industry moving
-
     - heading: Transform
       image: /img/particle-icon-transform.svg
       list_items:

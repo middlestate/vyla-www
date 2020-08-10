@@ -58,8 +58,8 @@ mission:
     - heading: Connect
       image: /img/particle-icon-create.svg
       list_items:
-        # - With data
-        # - With control
+        - With data
+        - With control
         - With collaboration
         - With transparency
     - heading: Build
