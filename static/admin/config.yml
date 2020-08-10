@@ -252,26 +252,13 @@ collections:
           - {
               label: Team,
               name: team,
-              widget: object,
+              widget: list,
               fields:
                 [
-                  {
-                    label: Founders,
-                    name: founders,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Name, name: name, widget: string },
-                        { label: Title, name: title, widget: string },
-                        { label: Image, name: image, widget: image },
-                        {
-                          label: Content,
-                          name: content,
-                          widget: list,
-                          fields: [{ label: Text, name: text, widget: text }],
-                        },
-                      ],
-                  },
+                  { label: Name, name: name, widget: string },
+                  { label: Title, name: title, widget: string },
+                  { label: Image, name: image, widget: image },
+                  { label: Text, name: text, widget: text },
                 ],
             }
       - file: 'src/pages/thefarm/index.md'

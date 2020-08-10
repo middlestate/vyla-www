@@ -12,8 +12,8 @@ const AboutPagePreview = ({ entry, getAsset }) => {
   const entryMissionCards = entry.getIn(['data', 'mission', 'cards']);
   const missionCards = entryMissionCards ? entryMissionCards.toJS() : [];
 
-  const entryFounders = entry.getIn(['data', 'team', 'founders']);
-  const founders = entryFounders ? entryFounders.toJS() : [];
+  const entryTeam = entry.getIn(['data', 'team']);
+  const team = entryTeam ? entryTeam.toJS() : [];
 
   const entryInvestors = entry.getIn(['data', 'investors']);
   const investors = entryInvestors ? entryInvestors.toJS() : [];
@@ -46,9 +46,7 @@ const AboutPagePreview = ({ entry, getAsset }) => {
         heading: entry.getIn(['data', 'mission', 'heading']),
         cards: missionCards,
       }}
-      team={{
-        team: entry.getIn(['data', 'team']),
-      }}
+      team={{ team: team }}
     />
   );
 };

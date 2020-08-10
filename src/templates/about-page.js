@@ -78,14 +78,10 @@ export const aboutPageQuery = graphql`
           text
         }
         team {
-          founders {
-            name
-            image
-            title
-            content {
-              text
-            }
-          }
+          name
+          image
+          title
+          text
         }
       }
     }

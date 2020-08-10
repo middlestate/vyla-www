@@ -90,37 +90,29 @@ investors:
       International family business making producers’ lives easier with
       innovative solutions and tailored services. Lely helps dairy farms operate smartly with the use of management systems.
 team:
-  founders:
-    - content:
-        - text: >
-            Yoav  has substantial commercial and strategic innovation experience with over 20 years in the dairy industry and precise farming business. In recent years, Mr. Levsky dedicate much of his time to lead an industry wide effort to  address some of the main challenges our food eco system is facing. He has a substantial network within the food ecosystem, which he is bringing together to collectively resolve these challenges.
-      image: /img/Yoavlogos.svg
-      name: Yoav Levsky
-      title: Chairman of the Board
-    - content:
-        - text: >
-            Tim has a considerable start-up and growth company leadership
-            experience on an international scale. He has been the founder and CEO of three manufacturing start-ups, including Tycom, a manufacture of ultra-precision cutting tools (Irvine CA) now part of Kyocera Corporation, Tycom Dental, a manufacturer of endodontic instruments (Irvine CA) now owned by Sybron Dental Specialties (a Danaher company), and Liquidmetal Saga Italy, a producer of molded amorphous alloys (Padova, Italy).
-      image: /img/TimTaylorlogos.svg
-      name: Tim Taylor
-      title: CEO
-    - content:
-        - text: >
-            Experienced software development manager and software engineer with passion for software development and empowering teams to solve real world problems delivering solutions that work and perform well. With 30 years experience working with numerous database technologies have a strong data metric driven approach to problem solving and increasingly looking to leverage technology to provide better
-            solutions, more reliably and quickly in today’s big data environments.
-      image: /img/Williamlogos.svg
-      name: William Elliot
-      title: CTO
-    - content:
-        - text: >
-            Mark has deep knowledge of dairy farm operations, animal husbandry, farm management & dairy industry ecosystem. He has a proven ability to adapt and implement technology that improves dairy farm efficiency & profitability. With decades of practical experience in support, planning & design of cloud-based software solutions, Mark is recognized for leading product and development teams to transition from on-premise licensed software to SaaS revenue, cloud-based applications.
-      image: /img/Marklogos.svg
-      name: Mark Doornink
-      title: VP of Product
-    - content:
-        - text: >
-            Agriculture has been the basis of Jackie’s life since childhood. Growing up in the hills amongst beef cattle sent her to pursue a degree in Animal Science from California Polytechnic University on the central coast of California. Through a journey that involved entrepreneurship, Jackie fit well into a Project Manager role at VAS and grew into an Integration Product Manager. In this role she has managed over 230 projects to meet both short-term and long-term company goals. Jackie understands the identification, organization, and progression to launch a successful product on time and with purpose.
-      image: /img/Jackielogos.svg
-      name: Jackie Valenzuela
-      title: Project Manager
+  - text: >
+      Yoav  has substantial commercial and strategicinnovation experience with over 20 years in thedairy industry and precise farming business. Inrecent years, Mr. Levsky dedicate much of his timeto lead an industry wide effort to  address some ofthe main challenges our food eco system is facing.He has a substantial network within the foodecosystem, which he is bringing together tocollectively resolve these challenges.
+    image: /img/Yoavlogos.svg
+    name: Yoav Levsky
+    title: Chairman of the Board
+  - text: >
+      Tim has a considerable start-up and growth companyleadership experience on an international scale. He has beenthe founder and CEO of three manufacturingstart-ups, including Tycom, a manufacture ofultra-precision cutting tools (Irvine CA) now partof Kyocera Corporation, Tycom Dental, amanufacturer of endodontic instruments (Irvine CA)now owned by Sybron Dental Specialties (a Danahercompany), and Liquidmetal Saga Italy, a producer ofmolded amorphous alloys (Padova, Italy).
+    image: /img/TimTaylorlogos.svg
+    name: Tim Taylor
+    title: CEO
+  - text: >
+      Experienced software development manager andsoftware engineer with passion for softwaredevelopment and empowering teams to solve realworld problems delivering solutions that work andperform well. With 30 years experience working withnumerous database technologies have a strong datametric driven approach to problem solving andincreasingly looking to leverage technology toprovide better solutions, more reliably and quickly in today’s bigdata environments.
+    image: /img/Williamlogos.svg
+    name: William Elliot
+    title: CTO
+  - text: >
+      Mark has deep knowledge of dairy farm operations,animal husbandry, farm management & dairy industryecosystem. He has a proven ability to adapt andimplement technology that improves dairy farmefficiency & profitability. With decades ofpractical experience in support, planning & designof cloud-based software solutions, Mark isrecognized for leading product and developmentteams to transition from on-premise licensedsoftware to SaaS revenue, cloud-based applications.
+    image: /img/Marklogos.svg
+    name: Mark Doornink
+    title: VP of Product
+  - text: >
+      Agriculture has been the basis of Jackie’s lifesince childhood. Growing up in the hills amongstbeef cattle sent her to pursue a degree in AnimalScience from California Polytechnic University onthe central coast of California. Through a journeythat involved entrepreneurship, Jackie fit wellinto a Project Manager role at VAS and grew into anIntegration Product Manager. In this role she hasmanaged over 230 projects to meet both short-termand long-term company goals. Jackie understands theidentification, organization, and progression tolaunch a successful product on time and withpurpose.
+    image: /img/Jackielogos.svg
+    name: Jackie Valenzuela
+    title: Project Manager
 ---
