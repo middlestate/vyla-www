@@ -44,4 +44,7 @@ benefit_analysis:
     - heading: Consumers
       content: >
         Consumers who can see where their food comes from, how it’s been produced, and what impacts its’ having on sustainability and the environment are  more brand loyal.
+    - heading: Other Stakeholder
+      content: >
+        Education and research institutions get more readily accessible data and information to help unlock progress and innovation in the industry.
 ---
