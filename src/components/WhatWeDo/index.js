@@ -11,35 +11,35 @@ const parallaxData = [
       {
         startValue: 70,
         endValue: -30,
-        property: 'translateY'
-      }
-    ]
-  }
+        property: 'translateY',
+      },
+    ],
+  },
 ];
 
 const WhatWeDo = ({ image, alt, tagline, heading, content }) => {
   return (
-    <section className="whatwedo">
-      <div className="container">
+    <section className='whatwedo'>
+      <div className='container'>
         <Plx className='particle-bg' parallaxData={parallaxData}>
-          <div/>
+          <div />
         </Plx>
-        <div className="image-block-fixed rounded-all">
+        <div className='image-block-fixed rounded-all'>
           <img src={image} alt={alt} />
         </div>
-        <div className="text-block white-bg">
-          <p className="tagline">{tagline}</p>
+        <div className='text-block white-bg'>
+          <p className='tagline'>{tagline}</p>
           <h2>{heading}</h2>
-          <div className="text-content" />
+          <div className='text-content' />
           {content.map((paragraph, i) => (
             <p key={i}>{paragraph.text}</p>
           ))}
         </div>
-        <div className="button-c2a">
+        <div className='button-c2a'>
           <VylaButton
-            classes="button button-green"
-            url="/thefarm"
-            text="Learn more"
+            classes='button button-green'
+            url='/thefarm'
+            text='Learn more'
           />
         </div>
       </div>
@@ -53,7 +53,7 @@ WhatWeDo.propTypes = {
     alt: PropTypes.string,
     tagline: PropTypes.string,
     heading: PropTypes.string,
-    content: PropTypes.array
-  })
+    content: PropTypes.array,
+  }),
 };
 export default WhatWeDo;

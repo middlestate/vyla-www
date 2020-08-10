@@ -8,9 +8,9 @@ hero:
     link: 'https://mdst.typeform.com/to/VTG8Y7'
     text: Join Us Now!
   description: >-
-    Vyla is an open global technology platform, providing data, information, knowledge and insight in a way that connects entities and stakeholders in the global supply chain with each other.
+    Vyla is an open global technology platform, providing data, information, knowledge and insight in a way that connects stakeholders in the global supply chain with each other.
   heading: 'Dairy has a story to tell, and a new way to tell it.'
-  image: /img/vyla-dashboard-ipad-1.png
+  image: /img/dashboard.png
 what_we_do:
   alt: vyla-dashboard-ipad
   content:

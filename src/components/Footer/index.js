@@ -31,7 +31,7 @@ const Footer = ({ Partners }) => {
                 <div className='footer-links'>
                   <ul>
                     <li>
-                      <a href='mailto:info@vyla.org'>info@vyla.org</a>
+                      <a href='mailto:jackie.valenzuela@vyla.com'>jackie.valenzuela@vyla.com</a>
                     </li>
                   </ul>
                 </div>

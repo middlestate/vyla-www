@@ -5,7 +5,7 @@ meta_title: 'Vyla | Dairy has a story to tell'
 meta_description: >-
   Right now, our team is building a suite of tools to capture data from the farm out with a strategy to remove silos and scale so all participants along the dairy chain get new value, insight and efficiency.
 hero:
-  background_color: "#00529c"
+  background_color: '#00529c'
   heading: It all starts here.
   description: >-
     Right now, our team is building a suite of tools to capture data from the farm out with a strategy to remove silos and scale so all participants along the dairy chain get new value, insight and efficiency.
@@ -15,10 +15,10 @@ hero:
     text: Join Us Now!
     link: https://mdst.typeform.com/to/VTG8Y7
 story:
-  image: /img/vyla-dashboard-ipad.png
+  image: /img/dashboard.png
   title: THE STORY OF VYLA
   heading: >
-   Connecting the farmer and the consumer by making the supply chain completely transparent.
+    Connecting the farmer and the consumer by making the supply chain completely transparent.
   content:
     - text: >
         'For generations, children have asked that same question: “where does milk come from?” One answer has always sufficed: “from cows.” But that’s not enough anymore. Consumers want to know the real origins of their food. And those who supply it have a message - Doing dairy means doing good.'
@@ -44,4 +44,7 @@ benefit_analysis:
     - heading: Consumers
       content: >
         Consumers who can see where their food comes from, how it’s been produced, and what impacts its’ having on sustainability and the environment are  more brand loyal.
+    - heading: Other Stakeholder
+      content: >
+        Education and research institutions get more readily accessible data and information to help unlock progress and innovation in the industry.
 ---
