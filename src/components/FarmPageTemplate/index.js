@@ -13,7 +13,7 @@ const FarmPageTemplate = ({
   story,
   benefit_analysis
 }) => (
-  <div className="home-page">
+  <div className="farm-page">
     <Helmet>
       <title>{meta_title}</title>
       <meta name="description" content={meta_description} />

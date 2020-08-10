@@ -24,7 +24,7 @@ const WhatWeDo = ({ image, alt, tagline, heading, content }) => {
         <Plx className='particle-bg' parallaxData={parallaxData}>
           <div/>
         </Plx>
-        <div className="image-block-fixed rounded-all">
+        <div className="image-block-fixed rounded-all image-reset">
           <img src={image} alt={alt} />
         </div>
         <div className="text-block white-bg">

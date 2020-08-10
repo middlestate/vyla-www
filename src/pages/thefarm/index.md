@@ -9,13 +9,13 @@ hero:
   heading: It all starts here.
   description: >-
     Right now, our team is building a suite of tools to capture data from the farm out with a strategy to remove silos and scale so all participants along the dairy chain get new value, insight and efficiency.
-  image: /img/dashboard.png
+  image: /img/hero-image-farm.jpg
   button:
     classes: button button-blue
     text: Join Us Now!
     link: https://mdst.typeform.com/to/VTG8Y7
 story:
-  image: /img/vyla-dashboard-ipad.png
+  image: /img/dashboard.png
   title: THE STORY OF VYLA
   heading: >
    Connecting the farmer and the consumer by making the supply chain completely transparent.
