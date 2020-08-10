@@ -258,7 +258,12 @@ collections:
                   { label: Name, name: name, widget: string },
                   { label: Title, name: title, widget: string },
                   { label: Image, name: image, widget: image },
-                  { label: Text, name: text, widget: text },
+                  {
+                    label: Blurb,
+                    name: blurb,
+                    widget: list,
+                    fields: [{ label: Text, name: text, widget: text }],
+                  },
                 ],
             }
       - file: 'src/pages/thefarm/index.md'

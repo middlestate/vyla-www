@@ -78,10 +78,12 @@ export const aboutPageQuery = graphql`
           text
         }
         team {
-          name
           image
+          name
           title
-          text
+          blurb {
+            text
+          }
         }
       }
     }

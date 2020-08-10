@@ -30,7 +30,7 @@ const Team = ({ team }) => (
       <div className='leader-cards-grid'>
         {/* <div className='founder-card-container'> */}
         {/* <div className="green-vertical-particle-bg"></div> */}
-        {team.map(({ name, title, image, text }) => (
+        {team.map(({ name, title, image, blurb }) => (
           <div key={name} className='leader-card'>
             <div className='card-content'>
               <div className='card-header founder-card-header'>
@@ -61,7 +61,11 @@ const Team = ({ team }) => (
                 </div>
               </div>
               <div className='card-list'>
-                <p style={{ padding: 10 }}>{text}</p>
+                {blurb.map(({ text }, i) => (
+                  <p key={i} style={{ padding: 10 }}>
+                    {text}
+                  </p>
+                ))}
               </div>
             </div>
           </div>
@@ -72,21 +76,15 @@ const Team = ({ team }) => (
   </section>
 );
 
-// Team.propTypes = {
-//   team: PropTypes.shape({
-//     founders: PropTypes.arrayOf(
-//       PropTypes.shape({
-//         name: PropTypes.string,
-//         title: PropTypes.string,
-//         image: PropTypes.string,
-//         content: PropTypes.arrayOf(
-//           PropTypes.shape({
-//             text: PropTypes.string,
-//           })
-//         ),
-//       })
-//     ),
-//   }),
-// }
+Team.propTypes = {
+  team: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string,
+      name: PropTypes.string,
+      title: PropTypes.string,
+      blurb: PropTypes.array,
+    })
+  ),
+};
 
 export default Team;

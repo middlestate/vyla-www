@@ -69,6 +69,7 @@ AboutPageTemplate.propTypes = {
     heading: PropTypes.string,
     cards: PropTypes.array,
   }),
+  investors: PropTypes.array,
   team: PropTypes.array,
 };
 

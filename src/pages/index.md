@@ -64,7 +64,7 @@ benefit_analysis:
   cards:
     - content: >
         Farmers get more meaningful ideas and answers because the data that
-        inspires those ideas are industry-wide, whichtakerisk out of changing
+        inspires those ideas are industry-wide, which take risk out of changing
         farming practices.
       heading: Farmers
     - content: >
