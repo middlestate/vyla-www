@@ -96,28 +96,28 @@ team:
       - text: >
           Agriculture has been the basis of Jackie’s life since childhood. Growing up in the hills amongst beef cattle sent her to pursue a degree in Animal Science from California Polytechnic University on the central coast of California. Through a journey that involved entrepreneurship, Jackie fit well into a Project Manager role at VAS and grew into an Integration Product Manager. In this role she has managed over 230 projects to meet both short-term and long-term company goals. Jackie understands the identification, organization, and progression to launch a successful product on time and with purpose.
 mission:
-  title: MISSION
-  heading: Objectives and Outcomes
   cards:
-    - image: /img/particle-icon-create.svg
-      heading: Connect
+    - heading: Connect
+      image: /img/particle-icon-create.svg
       list_items:
         - With data
         - With control
         - With collaboration
         - With transparency
-    - image: /img/particle-icon-build.svg
-      heading: Build
+    - heading: Build
+      image: /img/particle-icon-build.svg
       list_items:
         - The Story - yours and the industry with metrics
         - The Trust - based on fact not emotion
         - The forward movement - our industry moving
-    - image: /img/particle-icon-transform.svg
-      heading: Transform
+    - heading: Transform
+      image: /img/particle-icon-transform.svg
       list_items:
         - Dairy efficiency
         - Sustainability Metrics
         - The consumer perception
+  heading: Objectives and Outcomes
+  title: MISSION
 meta_title: About Vyla | Dairy has a story to tell
 meta_description: >-
   At the heart of VYLA is a love we all share for dairy. Our goal is simple: to
