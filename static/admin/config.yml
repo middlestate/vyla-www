@@ -211,27 +211,43 @@ collections:
           - {
               label: Investors,
               name: investors,
-              widget: list,
+              widget: object,
               fields:
                 [
-                  { label: Logo, name: logo, widget: image },
-                  { label: Text, name: text, widget: text },
+                  {
+                    label: Cards,
+                    name: cards,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Logo, name: logo, widget: image },
+                        { label: Text, name: text, widget: text },
+                      ],
+                  },
                 ],
             }
           - {
               label: Team,
               name: team,
-              widget: list,
+              widget: object,
               fields:
                 [
-                  { label: Name, name: name, widget: string },
-                  { label: Title, name: title, widget: string },
-                  { label: Image, name: image, widget: image },
                   {
-                    label: Blurb,
-                    name: blurb,
+                    label: Cards,
+                    name: cards,
                     widget: list,
-                    fields: [{ label: Text, name: text, widget: text }],
+                    fields:
+                      [
+                        { label: Name, name: name, widget: string },
+                        { label: Title, name: title, widget: string },
+                        { label: Image, name: image, widget: image },
+                        {
+                          label: Blurb,
+                          name: blurb,
+                          widget: list,
+                          fields: [{ label: Text, name: text, widget: text }],
+                        },
+                      ],
                   },
                 ],
             }

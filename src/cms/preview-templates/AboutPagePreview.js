@@ -12,11 +12,11 @@ const AboutPagePreview = ({ entry, getAsset }) => {
   const entryMissionCards = entry.getIn(['data', 'mission', 'cards']);
   const missionCards = entryMissionCards ? entryMissionCards.toJS() : [];
 
-  const entryTeam = entry.getIn(['data', 'team']);
-  const team = entryTeam ? entryTeam.toJS() : [];
+  const entryTeamCards = entry.getIn(['data', 'team', 'cards']);
+  const teamCards = entryTeamCards ? entryTeamCards.toJS() : [];
 
-  const entryInvestors = entry.getIn(['data', 'investors']);
-  const investors = entryInvestors ? entryInvestors.toJS() : [];
+  const entryInvestorCards = entry.getIn(['data', 'investors', 'cards']);
+  const investorCards = entryInvestorCards ? entryInvestorCards.toJS() : [];
 
   return (
     <AboutPageTemplate
@@ -42,14 +42,16 @@ const AboutPagePreview = ({ entry, getAsset }) => {
         content: content,
       }}
       investors={{
-        investors: investors,
+        cards: investorCards,
       }}
       mission={{
         title: entry.getIn(['data', 'mission', 'title']),
         heading: entry.getIn(['data', 'mission', 'heading']),
         cards: missionCards,
       }}
-      team={{ team: team }}
+      team={{
+        cards: teamCards,
+      }}
     />
   );
 };
