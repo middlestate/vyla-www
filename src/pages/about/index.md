@@ -74,7 +74,7 @@ team:
     title: CEO
     blurb:
       - text: >
-          Tim has considerable start-up and growth company leadership experience on an international scale. He has been the founder and CEO of three manufactguring start-ups and he was the COO and Client Success Officer of Telogis, Inc. (now owned by Verizon), a provider of cloud-based software in the mobile resource management and fleet optimization space.
+          Tim has considerable start-up and growth company leadership experience on an international scale. He has been the founder and CEO of three manufacturing start-ups in the electronics and dental markets. In 2007 Tim joined Telogis, Inc. (now Verizon Connect) as COO. The company is a provider of cloud-based software in the mobile resource management and fleet optimization space. 
       - text: >
           From 2017-2019, Tim was CEO at VAS (Valley Agricultural Software). At VAS, he led the transformation of the company from 100% “on-premise” software to being the leading Cloud platform for dairy operations.
   - image: /img/Williamlogos.svg
