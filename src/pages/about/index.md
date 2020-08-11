@@ -1,11 +1,14 @@
 ---
 templateKey: about-page
+title: About Us
 hero:
   background_color: '#00529c'
-  button:
-    classes: button button-blue
-    link: 'https://mdst.typeform.com/to/VTG8Y7'
-    text: Join Us Now!
+  image: /img/hero-image-consumers.jpg
+  heading: Motivated by good.
+  description: >-
+    At the heart of VYLA is a love we all share for dairy. Our goal is simple:
+    to gather the data and perspectives of the industry as a whole, free from
+    any one participating company’s perceived bias.
   content:
     - text: >
         'To achieve this, participation from every corner of the industry is
@@ -14,13 +17,16 @@ hero:
     - text: >
         The end result will be improvement in sustainability, processing,
         product innovations and new value for everyone.
-  description: >-
-    At the heart of VYLA is a love we all share for dairy. Our goal is simple:
-    to gather the data and perspectives of the industry as a whole, free from
-    any one participating company’s perceived bias.
-  heading: Motivated by good.
-  image: /img/hero-image-consumers.jpg
+  button:
+    classes: button button-blue
+    link: 'https://mdst.typeform.com/to/VTG8Y7'
+    text: Join Us Now!
 story:
+  title: THE STORY OF VYLA
+  heading: >
+    Connecting the farmer and the consumer by making the supply chain completely
+    transparent.
+  image: /img/hero-image-brainstorm.jpg
   content:
     - text: >
         'For generations, children have asked that same question: “where does
@@ -43,11 +49,6 @@ story:
         my store?
     - text: >
         With VYLA, answers to these questions are just the start.
-  heading: >
-    Connecting the farmer and the consumer by making the supply chain completely
-    transparent.
-  image: /img/hero-image-brainstorm.jpg
-  title: THE STORY OF VYLA
 investors:
   - logo: /img/partner-logos-nestle.svg
     text: >
@@ -95,29 +96,28 @@ team:
       - text: >
           Agriculture has been the basis of Jackie’s life since childhood. Growing up in the hills amongst beef cattle sent her to pursue a degree in Animal Science from California Polytechnic University on the central coast of California. Through a journey that involved entrepreneurship, Jackie fit well into a Project Manager role at VAS and grew into an Integration Product Manager. In this role she has managed over 230 projects to meet both short-term and long-term company goals. Jackie understands the identification, organization, and progression to launch a successful product on time and with purpose.
 mission:
-  heading: Objectives and Outcomes
   title: MISSION
+  heading: Objectives and Outcomes
   cards:
-    - heading: Connect
-      image: /img/particle-icon-create.svg
+    - image: /img/particle-icon-create.svg
+      heading: Connect
       list_items:
         - With data
         - With control
         - With collaboration
         - With transparency
-    - heading: Build
-      image: /img/particle-icon-build.svg
+    - image: /img/particle-icon-build.svg
+      heading: Build
       list_items:
         - The Story - yours and the industry with metrics
         - The Trust - based on fact not emotion
         - The forward movement - our industry moving
-    - heading: Transform
-      image: /img/particle-icon-transform.svg
+    - image: /img/particle-icon-transform.svg
+      heading: Transform
       list_items:
         - Dairy efficiency
         - Sustainability Metrics
         - The consumer perception
-title: About Us
 meta_title: About Vyla | Dairy has a story to tell
 meta_description: >-
   At the heart of VYLA is a love we all share for dairy. Our goal is simple: to

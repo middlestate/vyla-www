@@ -157,6 +157,7 @@ collections:
               widget: 'hidden',
               default: 'about-page',
             }
+          - { label: Title, name: title, widget: string }
           - {
               label: 'Hero Section',
               name: hero,
