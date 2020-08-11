@@ -1,11 +1,11 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import PropTypes from 'prop-types'
-import Hero from '../Hero'
-import WhatWeDo from '../WhatWeDo'
-import Mission from '../Mission'
-import BenefitAnalysis from '../BenefitAnalysis'
-import Quote from '../Quote'
+import React from 'react';
+import Helmet from 'react-helmet';
+import PropTypes from 'prop-types';
+import Hero from '../Hero';
+import WhatWeDo from '../WhatWeDo';
+import Mission from '../Mission';
+import BenefitAnalysis from '../BenefitAnalysis';
+import Quote from '../Quote';
 
 const HomePageTemplate = ({
   title,
@@ -20,7 +20,7 @@ const HomePageTemplate = ({
   <div>
     <Helmet>
       <title>{meta_title}</title>
-      <meta name="description" content={meta_description} />
+      <meta name='description' content={meta_description} />
     </Helmet>
     <Hero
       image={hero.image}
@@ -36,11 +36,24 @@ const HomePageTemplate = ({
       heading={what_we_do.heading}
       content={what_we_do.content}
     />
-    <Mission title={mission.title} heading={mission.heading} cards={mission.cards} />
-    <Quote quote={quote.quote} cite_logo={quote.cite_logo} cite_name={quote.cite_name} cite_text={quote.cite_text} />
-    <BenefitAnalysis title={benefit_analysis.title} heading={benefit_analysis.heading} cards={benefit_analysis.cards} />
+    <Mission
+      title={mission.title}
+      heading={mission.heading}
+      cards={mission.cards}
+    />
+    <Quote
+      quote={quote.quote}
+      cite_logo={quote.cite_logo}
+      cite_name={quote.cite_name}
+      cite_text={quote.cite_text}
+    />
+    <BenefitAnalysis
+      title={benefit_analysis.title}
+      heading={benefit_analysis.heading}
+      cards={benefit_analysis.cards}
+    />
   </div>
-)
+);
 
 HomePageTemplate.propTypes = {
   title: PropTypes.string,
@@ -76,6 +89,6 @@ HomePageTemplate.propTypes = {
     heading: PropTypes.string,
     cards: PropTypes.array,
   }),
-}
+};
 
-export default HomePageTemplate
+export default HomePageTemplate;

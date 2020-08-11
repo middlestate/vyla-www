@@ -1,73 +1,410 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: dev
 
 publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: 'pages'
+    label: 'Pages'
     files:
-      - file: "src/pages/index.md"
-        label: "Home Page"
-        name: "home"
+      - file: 'src/pages/index.md'
+        label: 'Home Page'
+        name: 'home'
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
-          - {label: "Title", name: title, widget: string}
-          - {label: "Hero Section", name: hero, widget: object, fields: [{label: Image, name: image, widget: image},{label: "Background Color", name: background_color, widget: string},{label: Heading, name: heading, widget: string},{label: Description, name: description, widget: text}, {label: "Button", name: button, widget: object, fields: [{label: Classes, name: classes, widget: string},{label: Text, name: text, widget: string}, {label: Link, name: link, widget.string}]}]}
-          - {label: "What we do", name: "what_we_do", widget: object, fields: [{label: Image, name: image, widget: image},{label: Alt, name: alt, widget: string},{label: Heading, name: heading, widget: string},{label: Tagline, name: tagline, widget: string},{label: Content, name: content, widget: list, fields: [{label: Text, name: text, widget: text}]}]}
-          - {label: "Mission", name: mission, widget: object, fields:[{label: Title, name: title, widget: string}, {label: Heading, name: heading, widget:string}, {label: Cards, name: cards, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Heading, name: heading, widget: string}, {label: "List Items", name: "list_items", widget: list}]}]}
-          - {label: "Quote section", name: quote, widget: object, fields:[{label: Quote, name: quote, widget: text}, {label: "Citation Logo",name: "cite_logo",widget: image}, {label: "Citation Name", name: "cite_name", widget: string}, {label: "Citation Text", name: "cite_text", widget: text},]}
-          - {label: "Benefit Analysis", name: "benefit_analysis", widget: object, fields:[{label: Title, name: title, widget: string},{label: Heading, name: heading, widget: string}, {label: Cards, name: cards, widget: list, fields: [{label: Heading, name: heading, widget: string},{label: Content, name: content, widget: text}]}]}
-          - {label: Footer, name: footer, widget: object, fields: [{label: Partners, name: partners, widget: list, fields: [{label: Image, name: image, widget: image},{label: link, name: link, widget: string}]}]}
-          - {label: "Meta Title", name: "meta_title", widget: "string"}
-          - {label: "Meta Description", name: "meta_description", widget: "text"}
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'home-page',
+            }
+          - { label: 'Title', name: title, widget: string }
+          - {
+              label: 'Hero Section',
+              name: hero,
+              widget: object,
+              fields:
+                [
+                  { label: Image, name: image, widget: image },
+                  {
+                    label: 'Background Color',
+                    name: background_color,
+                    widget: string,
+                  },
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: text },
+                  {
+                    label: 'Button',
+                    name: button,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Classes, name: classes, widget: string },
+                        { label: Text, name: text, widget: string },
+                        { label: Link, name: link, widget: string },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: 'What we do',
+              name: 'what_we_do',
+              widget: object,
+              fields:
+                [
+                  { label: Image, name: image, widget: image },
+                  { label: Alt, name: alt, widget: string },
+                  { label: Heading, name: heading, widget: string },
+                  { label: Tagline, name: tagline, widget: string },
+                  {
+                    label: Content,
+                    name: content,
+                    widget: list,
+                    fields: [{ label: Text, name: text, widget: text }],
+                  },
+                ],
+            }
+          - {
+              label: 'Mission',
+              name: mission,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Heading, name: heading, widget: string },
+                  {
+                    label: Cards,
+                    name: cards,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Heading, name: heading, widget: string },
+                        {
+                          label: 'List Items',
+                          name: 'list_items',
+                          widget: list,
+                        },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: 'Quote section',
+              name: quote,
+              widget: object,
+              fields:
+                [
+                  { label: Quote, name: quote, widget: text },
+                  { label: 'Citation Logo', name: 'cite_logo', widget: image },
+                  { label: 'Citation Name', name: 'cite_name', widget: string },
+                  { label: 'Citation Text', name: 'cite_text', widget: text },
+                ],
+            }
+          - {
+              label: 'Benefit Analysis',
+              name: 'benefit_analysis',
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Heading, name: heading, widget: string },
+                  {
+                    label: Cards,
+                    name: cards,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Heading, name: heading, widget: string },
+                        { label: Content, name: content, widget: text },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Footer,
+              name: footer,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Partners,
+                    name: partners,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: link, name: link, widget: string },
+                      ],
+                  },
+                ],
+            }
+          - { label: 'Meta Title', name: 'meta_title', widget: 'string' }
+          - {
+              label: 'Meta Description',
+              name: 'meta_description',
+              widget: 'text',
+            }
+      - file: 'src/pages/about/index.md'
+        label: 'About'
+        name: 'about'
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Meta Title", name: "meta_title", widget: "string"}
-          - {label: "Meta Description", name: "meta_description", widget: "text"}
-          - {label: "Hero Section", name: hero, widget: object, fields: [{label: "Background Color", name: "background_color", widget: string}, {label: Image, name: image, widget: image},{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Content, name: content, widget: list, fields:[{label: Text, name: text, widget: text}]},{label: "Button", name: button, widget: object, fields: [{label: Classes, name: classes, widget: string},{label: Text, name: text, widget: string}, {label: Link, name: link, widget.string}]}]}
-          - {label: Story, name: story, widget: object, fields: [{label: Title, name: title, widget: string},{label: Heading, name: heading, widget: text},{label: Image, name: image, widget: image},{label: Content, name: content, widget: list, fields: [{label: Text, name: text, widget: text}]}]}
-          - {label: "Mission", name: mission, widget: object, fields:[{label: Title, name: title, widget: string}, {label: Heading, name: heading, widget:string}, {label: Cards, name: cards, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Heading, name: heading, widget: string}, {label: "List Items", name: "list_items", widget: list}]}]}
-          - {label: Team, name: team, widget: object, fields: [{label: Founders, name: founders, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Title, name: title, widget: string}, {label: Image, name: image, widget: image}, {label: Content, name: content, widget: list, fields: [{label: Text, name: text, widget: text}]}]}]}
-      - file: "src/pages/thefarm/index.md"
-        label: "The Farm Page"
-        name: "thefarm"
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'about-page',
+            }
+          - { label: Title, name: title, widget: string }
+          - {
+              label: 'Hero Section',
+              name: hero,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: 'Background Color',
+                    name: 'background_color',
+                    widget: string,
+                  },
+                  { label: Image, name: image, widget: image },
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: text },
+                  {
+                    label: Content,
+                    name: content,
+                    widget: list,
+                    fields: [{ label: Text, name: text, widget: text }],
+                  },
+                  {
+                    label: 'Button',
+                    name: button,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Classes, name: classes, widget: string },
+                        { label: Text, name: text, widget: string },
+                        { label: Link, name: link, widget: string },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Story,
+              name: story,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Heading, name: heading, widget: text },
+                  { label: Image, name: image, widget: image },
+                  {
+                    label: Content,
+                    name: content,
+                    widget: list,
+                    fields: [{ label: Text, name: text, widget: text }],
+                  },
+                ],
+            }
+          - {
+              label: Investors,
+              name: investors,
+              widget: list,
+              fields:
+                [
+                  { label: Logo, name: logo, widget: image },
+                  { label: Text, name: text, widget: text },
+                ],
+            }
+          - {
+              label: Team,
+              name: team,
+              widget: list,
+              fields:
+                [
+                  { label: Name, name: name, widget: string },
+                  { label: Title, name: title, widget: string },
+                  { label: Image, name: image, widget: image },
+                  {
+                    label: Blurb,
+                    name: blurb,
+                    widget: list,
+                    fields: [{ label: Text, name: text, widget: text }],
+                  },
+                ],
+            }
+          - {
+              label: 'Mission',
+              name: mission,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Heading, name: heading, widget: string },
+                  {
+                    label: Cards,
+                    name: cards,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Heading, name: heading, widget: string },
+                        {
+                          label: 'List Items',
+                          name: 'list_items',
+                          widget: list,
+                        },
+                      ],
+                  },
+                ],
+            }
+          - { label: 'Meta Title', name: 'meta_title', widget: 'string' }
+          - {
+              label: 'Meta Description',
+              name: 'meta_description',
+              widget: 'text',
+            }
+      - file: 'src/pages/thefarm/index.md'
+        label: 'The Farm Page'
+        name: 'thefarm'
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "thefarm-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: "Hero Section", name: hero, widget: object, fields: [{label: "Background Color", name: "background_color", widget: string}, {label: Image, name: image, widget: image},{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Content, name: content, widget: list, fields:[{label: Text, name: text, widget: text}]},{label: "Button", name: button, widget: object, fields: [{label: Classes, name: classes, widget: string},{label: Text, name: text, widget: string}, {label: Link, name: link, widget.string}]}]}
-          - {label: Story, name: story, widget: object, fields: [{label: Title, name: title, widget: string},{label: Heading, name: heading, widget: text},{label: Image, name: image, widget: image},{label: Content, name: content, widget: list, fields: [{label: Text, name: text, widget: text}]}]}
-          - {label: "Benefit Analysis", name: "benefit_analysis", widget: object, fields:[{label: Title, name: title, widget: string},{label: Heading, name: heading, widget: string}, {label: Cards, name: cards, widget: list, fields: [{label: Heading, name: heading, widget: string},{label: Content, name: content, widget: text}]}]}
-          - {label: "Meta Title", name: "meta_title", widget: "string"}
-          - {label: "Meta Description", name: "meta_description", widget: "text"}
-      - file: "src/pages/contact/index.md"
-        label: "Contact Page"
-        name: "contact"
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'thefarm-page',
+            }
+          - { label: Title, name: title, widget: string }
+          - {
+              label: 'Hero Section',
+              name: hero,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: 'Background Color',
+                    name: 'background_color',
+                    widget: string,
+                  },
+                  { label: Image, name: image, widget: image },
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: text },
+                  {
+                    label: Content,
+                    name: content,
+                    widget: list,
+                    fields: [{ label: Text, name: text, widget: text }],
+                  },
+                  {
+                    label: 'Button',
+                    name: button,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Classes, name: classes, widget: string },
+                        { label: Text, name: text, widget: string },
+                        { label: Link, name: link, widget: string },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Story,
+              name: story,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Heading, name: heading, widget: text },
+                  { label: Image, name: image, widget: image },
+                  {
+                    label: Content,
+                    name: content,
+                    widget: list,
+                    fields: [{ label: Text, name: text, widget: text }],
+                  },
+                ],
+            }
+          - {
+              label: 'Benefit Analysis',
+              name: 'benefit_analysis',
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Heading, name: heading, widget: string },
+                  {
+                    label: Cards,
+                    name: cards,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Heading, name: heading, widget: string },
+                        { label: Content, name: content, widget: text },
+                      ],
+                  },
+                ],
+            }
+          - { label: 'Meta Title', name: 'meta_title', widget: 'string' }
+          - {
+              label: 'Meta Description',
+              name: 'meta_description',
+              widget: 'text',
+            }
+      - file: 'src/pages/contact/index.md'
+        label: 'Contact Page'
+        name: 'contact'
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: "Hero Section", name: hero, widget: object, fields: [{label: "Background Color", name: "background_color", widget: string}, {label: Image, name: image, widget: image},{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Content, name: content, widget: list, fields:[{label: Text, name: text, widget: text}]}, {label: "Button", name: button, widget: object, fields: [{label: Classes, name: classes, widget: string},{label: Text, name: text, widget: string}, {label: Link, name: link, widget.string}]}]}
-          - {label: "Email", name: "email", widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Mail, name: mail, widget: string}]}
-          - {label: "Meta Title", name: "meta_title", widget: "string"}
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "article-page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Slug", name: "slug", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Cover", name: "cover", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Meta Title", name: "meta_title", widget: "string"}
-      - {label: "Meta Description", name: "meta_description", widget: "text"}
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'contact-page',
+            }
+          - { label: Title, name: title, widget: string }
+          - {
+              label: 'Hero Section',
+              name: hero,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: 'Background Color',
+                    name: 'background_color',
+                    widget: string,
+                  },
+                  { label: Image, name: image, widget: image },
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: text },
+                  {
+                    label: Content,
+                    name: content,
+                    widget: list,
+                    fields: [{ label: Text, name: text, widget: text }],
+                  },
+                  {
+                    label: 'Button',
+                    name: button,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Classes, name: classes, widget: string },
+                        { label: Text, name: text, widget: string },
+                        { label: Link, name: link, widget: string },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: 'Email',
+              name: 'email',
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Mail, name: mail, widget: string },
+                ],
+            }
+          - { label: 'Meta Title', name: 'meta_title', widget: 'string' }

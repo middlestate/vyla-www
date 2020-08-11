@@ -1,24 +1,24 @@
 import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import VylaButton from '../VylaButton';
 import Plx from 'react-plx';
 
-const Content = props => (
-  <div className="text-content">
-    {props.text.map((text, i) => (
+const Content = ({ text }) => (
+  <div className='text-content'>
+    {text.map((text, i) => (
       <p key={i}>{text.text}</p>
     ))}
   </div>
 );
 
-const Email = props => (
+const Email = ({ heading, mail }) => (
   <Fragment>
-    <div className="footer-links">
+    <div className='footer-links'>
       <ul>
-        <li>{props.heading}</li>
+        <li>{heading}</li>
       </ul>
-      </div>
-    <p>{props.mail}</p>
+    </div>
+    <p>{mail}</p>
   </Fragment>
 );
 
@@ -30,10 +30,10 @@ const parallaxData = [
       {
         startValue: 0,
         endValue: -100,
-        property: 'translateY'
-      }
-    ]
-  }
+        property: 'translateY',
+      },
+    ],
+  },
 ];
 
 const Hero = ({
@@ -43,22 +43,22 @@ const Hero = ({
   description,
   button,
   content,
-  email
+  email,
 }) => (
-  <section className="hero">
-    <div className="highlight" style={{ backgroundColor: background_color }} />
-    <div className="container">
+  <section className='hero'>
+    <div className='highlight' style={{ backgroundColor: background_color }} />
+    <div className='container'>
       <Plx
-        className="image-block rounded-bottomright"
+        className='image-block rounded-bottomright'
         parallaxData={parallaxData}>
         <img src={image} />
       </Plx>
-      <div className="text-block rounded-topleft white-bg">
+      <div className='text-block rounded-topleft white-bg'>
         <h1>{heading}</h1>
-        <p className="intro">{description}</p>
-        {content ? <Content text={content} /> : ''}
-        {email ? <Email heading={email.heading} mail={email.mail} /> : ''}
-        <div className="button-c2a">
+        <p className='intro'>{description}</p>
+        {!content || <Content text={content} />}
+        {!email || <Email heading={email.heading} mail={email.mail} />}
+        <div className='button-c2a'>
           <VylaButton
             url={button.link}
             classes={button.classes}
@@ -70,25 +70,25 @@ const Hero = ({
   </section>
 );
 
-Hero.propTypes = {
-  image: PropTypes.string,
-  background_color: PropTypes.string,
-  heading: PropTypes.string,
-  description: PropTypes.string,
-  content: PropTypes.arrayOf(
-    PropTypes.shape({
-      text: PropTypes.string
-    })
-  ),
-  button: PropTypes.shape({
-    classes: PropTypes.string,
-    text: PropTypes.string,
-    link: PropTypes.string
-  }),
-  email: PropTypes.shape({
-    heading: PropTypes.string,
-    mail: PropTypes.string
-  })
-};
+// Hero.propTypes = {
+//   image: PropTypes.string,
+//   background_color: PropTypes.string,
+//   heading: PropTypes.string,
+//   description: PropTypes.string,
+//   content: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       text: PropTypes.string,
+//     })
+//   ),
+//   button: PropTypes.shape({
+//     classes: PropTypes.string,
+//     text: PropTypes.string,
+//     link: PropTypes.string,
+//   }),
+//   email: PropTypes.shape({
+//     heading: PropTypes.string,
+//     mail: PropTypes.string,
+//   }),
+// };
 
 export default Hero;

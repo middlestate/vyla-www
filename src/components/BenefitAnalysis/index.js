@@ -1,21 +1,21 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import BenefitCards from '../BenefitCards';
-import Plx from 'react-plx';
+import React from 'react'
+import PropTypes from 'prop-types'
+import BenefitCards from '../BenefitCards'
+import Plx from 'react-plx'
 
 const parallaxData = [
   {
-    start: '.start-element',
-    end: 3000,
+    start: '.particle-bg',
+    end: 4000,
     properties: [
       {
-        startValue: 100,
-        endValue: -50,
-        property: 'translateY'
-      }
-    ]
-  }
-];
+        startValue: 200,
+        endValue: -130,
+        property: 'translateY',
+      },
+    ],
+  },
+]
 
 const BenefitAnalysis = ({ title, heading, cards }) => (
   <section className="benefits parallax-section">
@@ -27,16 +27,16 @@ const BenefitAnalysis = ({ title, heading, cards }) => (
         <p className="tagline">{title}</p>
         <h2>{heading}</h2>
       </div>
-      <div className='.start-element'/>
+      <div className=".start-element" />
       <BenefitCards data={cards} />
     </div>
   </section>
-);
+)
 
 BenefitAnalysis.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
-  cards: PropTypes.array
-};
+  cards: PropTypes.array,
+}
 
-export default BenefitAnalysis;
+export default BenefitAnalysis
