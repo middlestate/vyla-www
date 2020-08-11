@@ -36,8 +36,8 @@ const AboutPageTemplate = ({
       heading={story.heading}
       content={story.content}
     />
-    <Investors investors={investors.cards} />
-    <Team team={team.cards} />
+    <Investors cards={investors.cards} />
+    <Team cards={team.cards} />
     <Mission
       title={mission.title}
       heading={mission.heading}
