@@ -16,7 +16,7 @@ const parallaxData = [
   },
 ];
 
-const Team = ({ team }) => (
+const Team = ({ cards }) => (
   <section className='team'>
     <Plx className='particle-bg' parallaxData={parallaxData}>
       <div></div>
@@ -30,7 +30,7 @@ const Team = ({ team }) => (
       <div className='leader-cards-grid'>
         {/* <div className='founder-card-container'> */}
         {/* <div className="green-vertical-particle-bg"></div> */}
-        {team.map(({ name, title, image, blurb }) => (
+        {cards.map(({ name, title, image, blurb }) => (
           <div key={name} className='leader-card'>
             <div className='card-content'>
               <div className='card-header founder-card-header'>

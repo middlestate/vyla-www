@@ -36,8 +36,8 @@ const AboutPageTemplate = ({
       heading={story.heading}
       content={story.content}
     />
-    <Investors investors={investors} />
-    <Team team={team} />
+    <Investors cards={investors.cards} />
+    <Team cards={team.cards} />
     <Mission
       title={mission.title}
       heading={mission.heading}
@@ -69,8 +69,12 @@ AboutPageTemplate.propTypes = {
     heading: PropTypes.string,
     cards: PropTypes.array,
   }),
-  investors: PropTypes.array,
-  team: PropTypes.array,
+  investors: PropTypes.shape({
+    cards: PropTypes.array,
+  }),
+  team: PropTypes.shape({
+    cards: PropTypes.array,
+  }),
 };
 
 export default AboutPageTemplate;

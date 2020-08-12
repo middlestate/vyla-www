@@ -74,15 +74,19 @@ export const aboutPageQuery = graphql`
           }
         }
         investors {
-          logo
-          text
+          cards {
+            logo
+            text
+          }
         }
         team {
-          image
-          name
-          title
-          blurb {
-            text
+          cards {
+            image
+            name
+            title
+            blurb {
+              text
+            }
           }
         }
       }

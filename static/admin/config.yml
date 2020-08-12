@@ -157,13 +157,7 @@ collections:
               widget: 'hidden',
               default: 'about-page',
             }
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Meta Title', name: 'meta_title', widget: 'string' }
-          - {
-              label: 'Meta Description',
-              name: 'meta_description',
-              widget: 'text',
-            }
+          - { label: Title, name: title, widget: string }
           - {
               label: 'Hero Section',
               name: hero,
@@ -217,27 +211,43 @@ collections:
           - {
               label: Investors,
               name: investors,
-              widget: list,
+              widget: object,
               fields:
                 [
-                  { label: Logo, name: logo, widget: image },
-                  { label: Text, name: text, widget: text },
+                  {
+                    label: Cards,
+                    name: cards,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Logo, name: logo, widget: image },
+                        { label: Text, name: text, widget: text },
+                      ],
+                  },
                 ],
             }
           - {
               label: Team,
               name: team,
-              widget: list,
+              widget: object,
               fields:
                 [
-                  { label: Name, name: name, widget: string },
-                  { label: Title, name: title, widget: string },
-                  { label: Image, name: image, widget: image },
                   {
-                    label: Blurb,
-                    name: blurb,
+                    label: Cards,
+                    name: cards,
                     widget: list,
-                    fields: [{ label: Text, name: text, widget: text }],
+                    fields:
+                      [
+                        { label: Name, name: name, widget: string },
+                        { label: Title, name: title, widget: string },
+                        { label: Image, name: image, widget: image },
+                        {
+                          label: Blurb,
+                          name: blurb,
+                          widget: list,
+                          fields: [{ label: Text, name: text, widget: text }],
+                        },
+                      ],
                   },
                 ],
             }
@@ -265,6 +275,12 @@ collections:
                       ],
                   },
                 ],
+            }
+          - { label: 'Meta Title', name: 'meta_title', widget: 'string' }
+          - {
+              label: 'Meta Description',
+              name: 'meta_description',
+              widget: 'text',
             }
       - file: 'src/pages/thefarm/index.md'
         label: 'The Farm Page'

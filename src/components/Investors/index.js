@@ -15,7 +15,7 @@ const parallaxData = [
   },
 ];
 
-const Investors = ({ investors }) => (
+const Investors = ({ cards }) => (
   <section className='investors'>
     <Plx className='particle-bg' parallaxData={parallaxData}>
       <div></div>
@@ -26,18 +26,18 @@ const Investors = ({ investors }) => (
         <h2>Meet the Investors</h2>
       </div>
       <div className='investors-cards'>
-        {investors.map((investor) => (
-          <div key={investor.logo} className='card-container'>
+        {cards.map(({ logo, text }) => (
+          <div key={logo} className='card-container'>
             <div className='card-content'>
               <div className='header'>
                 <div className='card-icon'>
-                  <img src={investor.logo} alt={investor.logo} />
+                  <img src={logo} alt={logo} />
                 </div>
                 <div className='card-title'>
                   <h3>&nbsp;</h3>
                 </div>
                 <div className='card-list'>
-                  <p>{investor.text}</p>
+                  <p>{text}</p>
                 </div>
               </div>
             </div>

@@ -73,15 +73,15 @@ module.exports = {
       options: {
         htmlTitle: `Vyla Content Manager`,
         modulePath: `${__dirname}/src/cms/cms.js`,
-        manualInit: false,
+        // manualInit: false,
         enableIdentityWidget: true,
-        customizeWebpackConfig: (config, { plugins }) => {
-          config.plugins.push(
-            plugins.define({
-              __MANIFEST_PLUGIN_HAS_LOCALISATION__: JSON.stringify('false'),
-            })
-          );
-        },
+        // customizeWebpackConfig: (config, { plugins }) => {
+        //   config.plugins.push(
+        //     plugins.define({
+        //       __MANIFEST_PLUGIN_HAS_LOCALISATION__: JSON.stringify('false'),
+        //     })
+        //   );
+        // },
       },
     },
     {
