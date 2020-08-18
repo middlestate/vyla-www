@@ -79,7 +79,7 @@ benefit_analysis:
       heading: Retailers
     - content: >
         Consumers who can see where their food comes from, how it’s been
-        produced, and what impacts it is having on sustainability and the
+        produced, and what impact it is having on sustainability and the
         environment are  more brand loyal.
       heading: Consumers
     - content: >
