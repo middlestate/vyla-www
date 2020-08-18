@@ -32,19 +32,28 @@ benefit_analysis:
   title: 'Benefit Analysis'
   heading: A transparent supply chain to give everyone a better view.
   cards:
-    - heading: Farmers
-      content: >
-        Farmers get more meaningful ideas and answers because the data that inspires those ideas are industry-wide, which take risk out of changing farming practices.
-    - heading: Retailers
-      content: >
-        Retailers can offer radical transparency from soil to shelf and everywhere in between, so customers know every product’s story, and have new reason to be loyal shoppers.
-    - heading: Processors
-      content: >
-        Processors get a competitive advantage by seeing the origins behind their ingredients, so they can improve mix ratios efficiencies and create products that are better suited to consumer tastes.
-    - heading: Consumers
-      content: >
-        Consumers who can see where their food comes from, how it’s been produced, and what impacts its’ having on sustainability and the environment are  more brand loyal.
-    - heading: Other Stakeholder
-      content: >
-        Education and research institutions get more readily accessible data and information to help unlock progress and innovation in the industry.
----
+    - content: >
+        Farmers get more meaningful ideas and answers because the data that
+        inspires those ideas are industry-wide, which take risk out of changing
+        farming practices.
+      heading: Farmers
+    - content: >
+        Processors get a competitive advantage by seeing the origins behind
+        their ingredients, so they can improve mix ratios efficiencies and create
+        products that are better suited to consumer tastes.
+      heading: Processors
+    - content: >
+        Retailers can offer radical transparency from soil to shelf and
+        everywhere in between, so customers know every product's story, and have
+        new reason to be loyal shoppers.
+      heading: Retailers
+    - content: >
+        Consumers who can see where their food comes from, how it’s been
+        produced, and what impacts it is having on sustainability and the
+        environment are  more brand loyal.
+      heading: Consumers
+    - content: >
+        Education and research institutions get
+        more readily accessible data and information
+        to help unlock progress and innovation in the
+        industry.
