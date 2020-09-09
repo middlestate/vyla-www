@@ -93,7 +93,7 @@ team:
             Mark has deep knowledge of dairy farm operations, animal husbandry, farm management & dairy industry ecosystem. He has a proven ability to adapt and implement technology that improves dairy farm efficiency & profitability. With decades of practical experience in support, planning & design of cloud-based software solutions, Mark is recognized for leading product and development teams to transition from on-premise licensed software to SaaS revenue, cloud-based applications.
     - image: /img/Jackielogos.svg
       name: Jackie Valenzuela
-      title: Project Manager
+      title: Program Manager
       blurb:
         - text: >
             Agriculture has been the basis of Jackie’s life since childhood. Growing up in the hills amongst beef cattle sent her to pursue a degree in Animal Science from California Polytechnic University on the central coast of California. Through a journey that involved entrepreneurship, Jackie fit well into a Project Manager role at VAS and grew into an Integration Product Manager. In this role she has managed over 230 projects to meet both short-term and long-term company goals. Jackie understands the identification, organization, and progression to launch a successful product on time and with purpose.
