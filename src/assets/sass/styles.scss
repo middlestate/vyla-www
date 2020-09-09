@@ -1685,7 +1685,16 @@ header .menuButton:hover .bar2 {
       height: auto;
     }
   }
+  
+  .whatwedo {
+    .container {
+      > .button-c2a {
+        display: none;
+      }
+    }
+  }
 }
+
 
 @media (max-width: 749px) {
   .farm-page {
