@@ -3,7 +3,7 @@ templateKey: 'thefarm-page'
 title: Vyla
 meta_title: 'Vyla | Dairy has a story to tell'
 meta_description: >-
-  Right now, our team is building a suite of tools to capture data from the farm out with a strategy to remove silos and scale so all participants along the dairy chain get new value, insight and efficiency.
+  Right now, the Vyla team is building a suite of tools to capture data from the farm out with a strategy to remove silos and scale so all participants along the dairy chain get new value, insight and efficiency.
 hero:
   background_color: "#00529c"
   heading: It all starts here.
