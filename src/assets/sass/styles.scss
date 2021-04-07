@@ -1984,7 +1984,8 @@ header .menuButton:hover .bar2 {
 
 .footer-legal {
   z-index: 1;
-  position: relative;
+  position: absolute;
+  bottom: -10px;
   color: #ffffff;
   padding-bottom: 3rem;
   font-size: 1.4rem;
@@ -2008,10 +2009,11 @@ header .menuButton:hover .bar2 {
 }
 
 .footer-legal ul {
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: auto;
   list-style-type: none;
 }
+
 @media (max-width: 600px) {
   .footer-partners {
     display: flex;
@@ -2057,6 +2059,7 @@ header .menuButton:hover .bar2 {
 
   .footer-contact-details {
     margin-bottom: 0;
+    min-width: 300px;
   }
 }
 
