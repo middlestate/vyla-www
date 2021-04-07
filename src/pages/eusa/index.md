@@ -8,11 +8,6 @@ meta_description: >
   END-USER SUBSCRIPTION AGREEMENT (“EUSA”)
 ---
 
-**Vyla, LLC (“VYLA”)**
-
-
-**END-USER SUBSCRIPTION AGREEMENT (“EUSA”)**
-
 You own your data. 
 
 VYLA creates value for you through its software, services, and products by creating Computational Data, hosting data, formatting data, and providing technology to help you focus on making the best decisions for your business and to deliver you the best results through our products and services. To do that, we need a license to use your data. And you need a license to use our data and technology.
