@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import Logo from '../../assets/img/vyla-logo.svg';
+import {Link} from 'gatsby';
 
 const Footer = ({ Partners }) => {
   const { partners } = Partners();
@@ -50,7 +51,16 @@ const Footer = ({ Partners }) => {
         </div>
       </div>
       <footer className='footer'>
-        <div className='highlight highlight-blue'></div>
+        <div className='highlight highlight-blue'>
+          <div className='footer-legal'>
+            <ul>
+              <li><Link to="/eusa">EUSA</Link></li>
+              <li><Link to="/terms" className='has-text-white'>TERMS</Link></li>
+              <li><Link to="/privacy">PRIVACY</Link></li>
+              <li><Link to="/spa">SUBSCRIPTION PACKAGE AGREEMENT</Link></li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </Fragment>
   );

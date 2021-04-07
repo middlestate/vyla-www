@@ -1996,6 +1996,7 @@ header .menuButton:hover .bar2 {
 }
 
 .footer-legal a {
+  line-height: normal;
   text-decoration: underline;
   color: #ffffff;
   margin-right: 1rem;
@@ -2004,6 +2005,12 @@ header .menuButton:hover .bar2 {
 .footer-legal a:hover {
   text-decoration: none;
   color: #58b0e3;
+}
+
+.footer-legal ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 @media (max-width: 600px) {
   .footer-partners {

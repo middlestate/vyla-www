@@ -43,12 +43,8 @@ benefit_analysis:
         Processors get a competitive advantage by seeing the origins behind their ingredients, so they can improve mix ratios efficiencies and create products that are better suited to consumer tastes.
     - heading: Consumers
       content: >
-<<<<<<< HEAD
-        Consumers who can see where their food comes from, how it’s been produced, and what impacts its’ having on sustainability and the environment are more brand loyal.
-=======
         Consumers who can see where their food comes from, how it’s been produced, and what impacts its’ having on sustainability and the environment are  more brand loyal.
     - heading: Other Stakeholder
       content: >
         Education and research institutions get more readily accessible data and information to help unlock progress and innovation in the industry.
->>>>>>> dev
 ---

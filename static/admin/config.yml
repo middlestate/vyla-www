@@ -424,3 +424,21 @@ collections:
                 ],
             }
           - { label: 'Meta Title', name: 'meta_title', widget: 'string' }
+  - name: 'policies'
+    label: 'Policies'
+    folder: 'src/pages/policies'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - {
+          label: 'Template Key',
+          name: 'templateKey',
+          widget: 'hidden',
+          default: 'policies-page',
+        }
+      - { label: Slug, name: slug, widget: string }
+      - { label: Heading, name: heading, widget: string }
+      - { label: Subheading, name: subheading, widget: string }
+      - { label: Body, name: body, widget: markdown }
+      - { label: 'Meta Title', name: meta_title, widget: string }
+      - { label: 'Meta Description', name: meta_description, widget: text }          
